@@ -1,10 +1,10 @@
 CUM IAU UN ANUMIT SUBFOLDER:
 
-git clone --filter=blob:none --sparse https://github.com/DariaAdelinne/Bile.git Bile-Docker
+git clone --depth 1 --filter=blob:none --sparse https://github.com/DariaAdelinne/Bile.git Bilet_24
 
-cd Bile-Docker
+cd Bilet_24
 
-git sparse-checkout set Docker
+git sparse-checkout set "Docker/Bilet_24"
 
 
 
