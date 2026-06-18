@@ -8,6 +8,21 @@ git sparse-checkout set "Docker/Bilet_24"
 
 
 
+
+
+Multimi: 3, 4, 16, 17                 https://github.com/DariaAdelinne/Multimi
+Aplicatii Meteo: 5, 35, 36, 37, 40    https://github.com/DariaAdelinne/AplicatiiMeteo
+Okazii: 6, 14, 21, 22                 https://github.com/DariaAdelinne/Okazii-procesoare-flux
+Docker: 2, 24, 25, 26, 27, 28, 29     https://github.com/DariaAdelinne/Docker
+Spark: 7, 30, 33  ;  8, 31, 32        https://github.com/DariaAdelinne/Spark
+Rest, Crud, Cache: 1, 10, 12, 13      https://github.com/DariaAdelinne/REST-CRUD-Cache
+RabbitMQ: 18, 19, 20, 23              https://github.com/DariaAdelinne/Rabbit-MQ
+Map-Reduce:11, 15                     https://github.com/DariaAdelinne/Map-Reduce
+Micronaut: 38                         https://github.com/DariaAdelinne/Bile
+POATE_NE_VEDEM_LA_TOAMNA: 41, 42, 43, 44, 45     https://github.com/DariaAdelinne/poate-avem-noroc-la-anu
+
+
+
 SUBIECT 1 X
 ---------
 Pornind de la exemplul de implementare a agendei cu servicii REST din laborator să se realizeze următoarele:
@@ -385,22 +400,6 @@ Detaliere (din PDF):
   ia cu un getter din NodeResponse si se afiseaza.
 - Logica grafului: daca entry_node e cheie in HashMap si are tranzitia ceruta -> intoarce nodul
   destinatie (operatie valida); altfel -> "no se puede".
-
-
-
-
-Multimi: 3, 4, 16, 17
-Aplicatii Meteo: 5, 35, 36, 37, 40
-Okazii: 6, 14, 21, 22
-Docker: 2, 24, 25, 26, 27, 28, 29
-Spark: 7, 30, 33  ;  8, 31, 32
-Rest, Crud, Cache: 1, 10, 12, 13
-RabbitMQ: 18, 19, 20, 23
-Map-Reduce:11, 15
-Micronaut: 38
-POATE_NE_VEDEM_LA_TOAMNA: 41, 42, 43, 44, 45
-
-
 
 
 
