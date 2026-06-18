@@ -1,12 +1,10 @@
 CUM IAU UN ANUMIT SUBFOLDER:
 
-git clone --filter=blob:none --no-checkout --branch main https://github.com/DariaAdelinne/Bile.git Bile-Docker
+git clone --filter=blob:none --sparse https://github.com/DariaAdelinne/Bile.git Bile-Docker
 
 cd Bile-Docker
 
-git sparse-checkout set --no-cone "/Docker/"
-
-git checkout main
+git sparse-checkout set Docker
 
 
 
