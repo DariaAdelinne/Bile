@@ -1,0 +1,518 @@
+PT PORNIRE GLASSFISH
+
+export JAVA_HOME=/usr/lib/jvm/jdk1.8.0_301
+export AS_JAVA=/usr/lib/jvm/jdk1.8.0_301
+export PATH="$JAVA_HOME/bin:/usr/local/bin:/usr/bin:/bin"
+
+/home/student/Downloads/glassfish5/bin/asadmin start-domain domain1
+
+
+
+OPRIRE PROCESE VECHI:
+sudo fuser -k 8080/tcp
+sudo fuser -k 4848/tcp
+
+
+2. SETAREA JAVA 8
+
+În IntelliJ:
+
+File -> Project Structure -> Project
+
+Setez:
+
+Project SDK: Java 1.8
+Project language level: 8
+
+Calea Java 8 de pe calculator este:
+
+/usr/lib/jvm/jdk1.8.0_301
+
+La:
+
+File -> Project Structure -> SDKs
+
+verific faptul că JDK home path este:
+
+/usr/lib/jvm/jdk1.8.0_301
+
+3. REÎNCĂRCAREA PROIECTULUI MAVEN
+
+* Deschid panoul Maven din dreapta.
+* Apăs Reload All Maven Projects.
+* Aștept să dispară erorile și să se încarce dependențele.
+
+4. CONFIGURAREA BAZEI DE DATE
+
+Deschid:
+
+ejbs/src/main/resources/META-INF/persistence.xml
+
+Unitatea de persistență folosită este:
+
+bazaDeDateSQLite
+
+Calea bazei de date este:
+
+<property name="javax.persistence.jdbc.url"
+       value="jdbc:sqlite:/tmp/studenti.db" />
+
+Fișierul bazei de date va fi creat automat aici:
+
+/tmp/studenti.db
+
+Dacă se schimbă calculatorul, trebuie verificată această cale.
+
+5. DEPENDENȚELE DIN MODULUL EJB
+
+În:
+
+ejbs/pom.xml
+
+trebuie să existe:
+
+* Java EE API
+* SQLite JDBC
+* EclipseLink
+
+Exemplu:
+
+<dependency>
+    <groupId>javax</groupId>
+    <artifactId>javaee-api</artifactId>
+    <version>8.0.1</version>
+    <scope>provided</scope>
+</dependency>
+
+<dependency>
+    <groupId>org.xerial</groupId>
+    <artifactId>sqlite-jdbc</artifactId>
+    <version>3.35.0.1</version>
+</dependency>
+
+<dependency>
+    <groupId>org.eclipse.persistence</groupId>
+    <artifactId>eclipselink</artifactId>
+    <version>2.7.9</version>
+    <scope>provided</scope>
+</dependency>
+
+6. DEPENDENȚA MODULULUI SERVLET FAȚĂ DE EJB
+
+În:
+
+servlets/servlet/pom.xml
+
+modulul ejbs trebuie adăugat ca dependență:
+
+<dependency>
+    <groupId>root.project</groupId>
+    <artifactId>ejbs</artifactId>
+    <version>1.0</version>
+    <type>ejb</type>
+    <scope>provided</scope>
+</dependency>
+
+După modificarea oricărui pom.xml:
+
+Maven -> Reload All Maven Projects
+
+7. CONFIGURAREA EJB-ULUI
+
+În:
+
+ejbs/src/main/resources/META-INF/ejb-jar.xml
+
+este configurat bean-ul:
+
+StudentServiceBean
+
+Maparea JNDI este:
+
+studentservice
+
+Interfața este:
+
+interfaces.StudentServiceBeanRemote
+
+Implementarea este:
+
+ejb.StudentServiceBeanImpl
+
+Tipul bean-ului este:
+
+Stateful
+
+8. CONFIGURAREA SERVLETURILOR
+
+În:
+
+servlets/servlet/src/main/webapp/WEB-INF/web.xml
+
+sunt mapate:
+
+/process-student
+/fetch-student-list
+/update-student
+/delete-student
+/alarm
+
+Tot aici este înregistrat listenerul:
+
+servlet.AppContextListener
+
+Acest listener pornește automat threadul de monitorizare pentru alarmă.
+
+9. CREAREA CONFIGURAȚIEI BUILDLAB2
+
+În IntelliJ:
+
+Run -> Edit Configurations
+
+* -> Maven
+
+Setez:
+
+Name:
+BuildLab2
+
+Run / Command line:
+
+clean package
+
+Working directory:
+
+folderul principal lab2, cel care conține pom.xml
+
+Nu scriu mvn în față.
+
+Apăs:
+
+Apply -> OK
+
+10. CREAREA CONFIGURAȚIEI STARTGLASSFISH
+
+În IntelliJ:
+
+Run -> Edit Configurations
+
+* -> Shell Script
+
+Setez:
+
+Name:
+StartGlassFish
+
+Execute:
+Script text
+
+Script text:
+
+export JAVA_HOME=/usr/lib/jvm/jdk1.8.0_301;
+export AS_JAVA=/usr/lib/jvm/jdk1.8.0_301;
+export PATH=/usr/lib/jvm/jdk1.8.0_301/bin:/usr/local/bin:/usr/bin:/bin;
+/home/student/Downloads/glassfish5/bin/asadmin start-domain domain1
+
+Working directory:
+
+/home/student/Downloads/glassfish5
+
+Environment variables se lasă gol.
+
+Apăs:
+
+Apply -> OK
+
+La rulare trebuie să apară:
+
+Successfully started the domain : domain1
+Admin Port: 4848
+Command start-domain executed successfully
+
+11. COMPILAREA PROIECTULUI
+
+Rulez configurația:
+
+BuildLab2
+
+Trebuie să apară:
+
+BUILD SUCCESS
+
+Artefactul EAR se creează în:
+
+ear/target/ear-1.0.ear
+
+12. CREAREA CONFIGURAȚIEI DEPLOYLAB2
+
+În IntelliJ:
+
+Run -> Edit Configurations
+
+* -> Shell Script
+
+Setez:
+
+Name:
+DeployLab2
+
+Script text:
+
+export JAVA_HOME=/usr/lib/jvm/jdk1.8.0_301;
+export AS_JAVA=/usr/lib/jvm/jdk1.8.0_301;
+export PATH=/usr/lib/jvm/jdk1.8.0_301/bin:/usr/local/bin:/usr/bin:/bin;
+/home/student/Downloads/glassfish5/bin/asadmin deploy /CALEA_PROIECTULUI/lab2/ear/target/ear-1.0.ear
+
+Înlocuiesc:
+
+/CALEA_PROIECTULUI/lab2
+
+cu locația reală a proiectului.
+
+Exemplu:
+
+/home/student/Desktop/SistemeDistribuite/Lab2/lab2
+
+Comanda completă devine:
+
+/home/student/Downloads/glassfish5/bin/asadmin deploy /home/student/Desktop/SistemeDistribuite/Lab2/lab2/ear/target/ear-1.0.ear
+
+Working directory:
+
+folderul principal lab2
+
+Deploy se folosește prima dată.
+
+Trebuie să apară:
+
+Command deploy executed successfully
+
+13. CONFIGURAȚIA REDEPLOYLAB2
+
+După modificarea codului nu mai folosesc deploy, ci redeploy.
+
+Creez alt Shell Script:
+
+Name:
+RedeployLab2
+
+Script text:
+
+export JAVA_HOME=/usr/lib/jvm/jdk1.8.0_301;
+export AS_JAVA=/usr/lib/jvm/jdk1.8.0_301;
+export PATH=/usr/lib/jvm/jdk1.8.0_301/bin:/usr/local/bin:/usr/bin:/bin;
+/home/student/Downloads/glassfish5/bin/asadmin redeploy --name ear-1.0 /CALEA_PROIECTULUI/lab2/ear/target/ear-1.0.ear
+
+După orice modificare rulez:
+
+BuildLab2
+RedeployLab2
+Refresh în browser
+
+14. DESCHIDEREA APLICAȚIEI
+
+Pagina principală este:
+
+http://localhost:8080/servlet/
+
+Consola GlassFish este:
+
+http://localhost:4848
+
+În consola GlassFish pot verifica aplicația în:
+
+Applications
+
+15. FUNCȚIONALITĂȚILE APLICAȚIEI
+
+Pagina principală conține:
+
+Adaugare student
+Afisare lista studenti
+Pagina de alarmare
+
+16. TESTAREA ADĂUGĂRII UNUI STUDENT
+
+Accesez:
+
+http://localhost:8080/servlet/
+
+Apăs:
+
+Adaugare student
+
+Completez:
+
+Nume
+Prenume
+Varsta
+Medie
+
+Apăs butonul de trimitere.
+
+Datele sunt salvate prin JPA în baza SQLite:
+
+/tmp/studenti.db
+
+17. TESTAREA LISTEI DE STUDENȚI
+
+Din pagina principală apăs:
+
+Afisare lista studenti
+
+Se apelează ruta:
+
+/fetch-student-list
+
+Se afișează toți studenții din baza de date.
+
+18. TESTAREA UPDATE
+
+Din lista de studenți aleg opțiunea de actualizare.
+
+Se deschide:
+
+update-student.jsp
+
+Modific datele studentului și trimit formularul.
+
+Se apelează:
+
+/update-student
+
+După actualizare verific din nou lista.
+
+19. TESTAREA DELETE
+
+Din lista de studenți aleg ștergerea unui student.
+
+Se apelează:
+
+/delete-student
+
+După ștergere verific faptul că studentul nu mai apare în listă.
+
+20. FUNCȚIONAREA ALARMEI
+
+La pornirea aplicației se execută:
+
+AppContextListener
+
+Acesta pornește:
+
+DatabaseMonitorThread
+
+Threadul verifică baza de date o dată la 5 secunde.
+
+Intervalele considerate corecte sunt:
+
+Varsta:
+18 - 30
+
+Medie:
+5.0 - 10.0
+
+Dacă un student are vârsta sub 18 sau peste 30, apare alarmă.
+
+Dacă un student are media sub 5 sau peste 10, apare alarmă.
+
+Dacă toate datele sunt corecte, apare:
+
+Nu exista alarme.
+
+21. TESTAREA ALARMEI PENTRU VÂRSTĂ
+
+Adaug un student cu:
+
+Varsta: 15
+
+sau:
+
+Varsta: 40
+
+Aștept aproximativ 5 secunde.
+
+Accesez:
+
+http://localhost:8080/servlet/alarm
+
+Trebuie să apară un mesaj de forma:
+
+ALARMA: campul 'varsta' are valoarea 15 la studentul Nume Prenume
+
+22. TESTAREA ALARMEI PENTRU MEDIE
+
+Adaug un student cu:
+
+Medie: 4
+
+sau:
+
+Medie: 11
+
+Aștept aproximativ 5 secunde.
+
+Accesez:
+
+http://localhost:8080/servlet/alarm
+
+Trebuie să apară un mesaj de forma:
+
+ALARMA: campul 'medie' are valoarea 4.0 la studentul Nume Prenume
+
+23. TESTAREA MAI MULTOR ALARME
+
+Adaug un student cu:
+
+Varsta: 15
+Medie: 4
+
+Aștept aproximativ 5 secunde.
+
+În pagina de alarmare trebuie să apară două mesaje:
+
+* alarmă pentru vârstă;
+* alarmă pentru medie.
+
+24. ELIMINAREA ALARMEI
+
+Actualizez studentul astfel:
+
+Varsta: între 18 și 30
+Medie: între 5 și 10
+
+Aștept aproximativ 5 secunde.
+
+Reîncarc pagina:
+
+http://localhost:8080/servlet/alarm
+
+Trebuie să apară:
+
+Nu exista alarme.
+
+25. CREAREA CONFIGURAȚIEI STOPGLASSFISH
+
+În IntelliJ:
+
+Run -> Edit Configurations
+
+* -> Shell Script
+
+Setez:
+
+Name:
+StopGlassFish
+
+Script text:
+
+export JAVA_HOME=/usr/lib/jvm/jdk1.8.0_301;
+export AS_JAVA=/usr/lib/jvm/jdk1.8.0_301;
+export PATH=/usr/lib/jvm/jdk1.8.0_301/bin:/usr/local/bin:/usr/bin:/bin;
+/home/student/Downloads/glassfish5/bin/asadmin stop-domain domain1
+
+Working directory:
+
+/home/student/Downloads/glassfish5
+
+Rulez StopGlassFish când termin.

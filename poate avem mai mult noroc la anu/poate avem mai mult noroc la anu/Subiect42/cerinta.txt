@@ -1,0 +1,34 @@
+Pornind de la aplicatia exemplu de chat din laboratorul 8, sa se modifice aceasta prin
+utilizarea corutinelor si sa se introduca un procesor flux (un microserviciu separat care sa
+realizeze statistici cu privire la erorile de comunicare (specifice TCP) si tipul acestora care
+au aparut (daca au aparut) si apoi aceste informatii sunt trimise unui serviciu REST care va
+afisa la cererea unui navigator pagina completa cu erorile aparute (deci va trebui ca acesta sa
+tina local un fisier XML in care sa faca adaugare). Daca se considera necesar, se mai pot crea
+oricate servicii se doreste conform gandirii studentului. Microserviciile, conform definitiei
+unui microserviciu, vor fi fiecare in masina lor virtuala. Se va utiliza coregrafia si
+respectarea principiilor SOLID pentru microservicii. La prezentare se va arata diagrama de
+servicii si apoi cea de clase asociate implementarii fiecarui serviciu si se va explica aceasta
+impreuna cu gradul de respectare a principiilor SOLID pentru microservicii, dar si SOLID pentru
+clase in cazul in care implementarea unui serviciu este mai complicata. Apoi va urma discutia pe
+cod.
+
+---------------------------------------------------------------------------------------------
+REZOLVARE (coregrafie, 4 microservicii):
+
+  [Student]x N --(MSG/QUIT, unii defecti)--> [MessageManager :1500]  (chat, CORUTINE)
+                                                     │ detecteaza erorile TCP
+                                                     │  "ERR <tip> <portSursa> <detaliu>"
+                                                     ▼
+                                        [ErrorStatsProcessor :1600]  (procesor de flux, CORUTINE)
+                                                     │ agrega STATISTICI pe tipuri de erori
+                                                     │  HTTP POST /errors
+                                                     ▼
+                                        [ErrorReportRestService :8080]  (Spring Boot REST)
+                                                     ├──> adauga in errors.xml (fisier XML local)
+                                                     └──> GET / : pagina HTML completa in browser
+
+Tipuri de erori TCP detectate de MessageManager:
+  CONNECTION_RESET  - clientul a rupt brusc conexiunea (RST)  -> SocketException "Connection reset"
+  EOF_UNEXPECTED    - clientul a inchis conexiunea fara "QUIT" (EOF neasteptat)
+  MALFORMED_MESSAGE - mesaj care nu respecta protocolul (nu e "MSG"/"QUIT")
+  BROKEN_PIPE       - scriere (broadcast) catre un socket deja inchis

@@ -1,0 +1,11 @@
+Pornind de la aplicația exemplu de chat din laboratorul 8, să se
+modifice aceasta prin utilizarea corutinelor și să se elimine
+procesorul central de mesaje. În locul lui să fie un procesor care să
+mențină o listă de utilizatori activi, iar apoi cei care doresc să
+comunice verifică dacă utilizatorul este activ, îi află adresa și
+portul, după care inițiază o comunicare punctuală.
+Dacă se consideră necesar se mai pot crea oricâte servicii se dorește
+conform gândirii studentului. Se vor respecta principiile SOLID pentru
+microservicii. La prezentare se va arăta diagrama de clase și se va
+explica aceasta împreună cu gradul de respectare a principiilor. Apoi
+va urma discuția pe cod.

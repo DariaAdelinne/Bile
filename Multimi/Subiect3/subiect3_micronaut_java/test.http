@@ -1,0 +1,8 @@
+POST http://localhost:8080/calculate/
+Content-Type: application/json
+
+{
+  "size": 100,
+  "minValue": 1,
+  "maxValue": 50
+}

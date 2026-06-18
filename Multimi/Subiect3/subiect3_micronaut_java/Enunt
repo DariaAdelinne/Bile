@@ -1,0 +1,3 @@
+SUBIECT 3 X
+---------
+Pornind de la aplicația exemplu pentru ciurul lui Eratostene din laboratorul 11, să se modifice aceasta astfel încât să se calculeze bn=suma(ai*ai), i=1..n. Apoi utilizând această funcție în programul principal să se calculeze pornind de la 100 de valori inițializate aleator într-un ADT A și apoi să se depună într-un ADT B rezultatele pentru n=1..100.

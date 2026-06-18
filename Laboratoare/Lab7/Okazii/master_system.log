@@ -1,0 +1,1537 @@
+[27-04-2026 11:25:42] MonitoringMicroservice pornit pe portul 1900
+[27-04-2026 11:25:54] [BiddingProcessor] Pornit pe portul 1700
+[27-04-2026 11:26:02] [MessageProcessor] Pornit pe portul 1600
+[27-04-2026 11:26:06] [Auctioneer] Pornit pe portul 1500
+[27-04-2026 11:26:12] [Bidder] [BIDDER_NECONECTAT] conectat la Auctioneer
+[27-04-2026 11:26:12] [Bidder] [55416] oferta trimisa: 1404 de catre Mihai Stan
+[27-04-2026 11:26:12] [Auctioneer] Oferta primita: [27-04-2026 11:26:12] /127.0.0.1:55416 [Mihai Stan, 0758811543, mihai.stan@email.com] >>> licitez 1404
+[27-04-2026 11:26:27] [MessageProcessor] Mesaj primit: [27-04-2026 11:26:12] /127.0.0.1:55416 [Mihai Stan, 0758811543, mihai.stan@email.com] >>> licitez 1404
+[27-04-2026 11:26:27] [MessageProcessor] Mesajele au fost sortate si trimise catre BiddingProcessor
+[27-04-2026 11:26:27] [BiddingProcessor] Castigator decis: Mihai Stan, telefon: 0758811543, email: mihai.stan@email.com, oferta: licitez 1404
+[27-04-2026 11:26:27] [Auctioneer] Castigator: Mihai Stan, telefon: 0758811543, email: mihai.stan@email.com, pret: 1404
+[27-04-2026 11:26:27] [Auctioneer] Pornit pe portul 1500
+[27-04-2026 11:26:27] [Bidder] [55416] rezultat primit: Licitatie castigata! Pret castigator: 1404
+[05-05-2026 10:29:26] MonitoringMicroservice pornit pe portul 1900
+[05-05-2026 10:29:36] [MessageProcessor] Pornit pe portul 1600
+[05-05-2026 10:29:41] [BiddingProcessor] Pornit pe portul 1700
+[05-05-2026 10:29:46] [Auctioneer] Pornit pe portul 1500
+[05-05-2026 10:29:55] [Bidder] [BIDDER_NECONECTAT] conectat la Auctioneer
+[05-05-2026 10:29:55] [Bidder] [BIDDER_NECONECTAT] conectat la Auctioneer
+[05-05-2026 10:29:55] [Bidder] [BIDDER_NECONECTAT] conectat la Auctioneer
+[05-05-2026 10:29:55] [Bidder] [50967] oferta trimisa: 6550 de catre Ana Radu
+[05-05-2026 10:29:55] [Bidder] [BIDDER_NECONECTAT] conectat la Auctioneer
+[05-05-2026 10:29:55] [Bidder] [BIDDER_NECONECTAT] conectat la Auctioneer
+[05-05-2026 10:29:55] [Bidder] [BIDDER_NECONECTAT] conectat la Auctioneer
+[05-05-2026 10:29:56] [Bidder] [BIDDER_NECONECTAT] conectat la Auctioneer
+[05-05-2026 10:29:56] [Bidder] [BIDDER_NECONECTAT] conectat la Auctioneer
+[05-05-2026 10:29:56] [Bidder] [BIDDER_NECONECTAT] conectat la Auctioneer
+[05-05-2026 10:29:56] [Bidder] [BIDDER_NECONECTAT] conectat la Auctioneer
+[05-05-2026 10:29:56] [Bidder] [BIDDER_NECONECTAT] conectat la Auctioneer
+[05-05-2026 10:29:56] [Bidder] [BIDDER_NECONECTAT] conectat la Auctioneer
+[05-05-2026 10:29:56] [Bidder] [BIDDER_NECONECTAT] conectat la Auctioneer
+[05-05-2026 10:29:56] [Bidder] [BIDDER_NECONECTAT] conectat la Auctioneer
+[05-05-2026 10:29:56] [Bidder] [BIDDER_NECONECTAT] conectat la Auctioneer
+[05-05-2026 10:29:56] [Bidder] [BIDDER_NECONECTAT] conectat la Auctioneer
+[05-05-2026 10:29:56] [Bidder] [BIDDER_NECONECTAT] conectat la Auctioneer
+[05-05-2026 10:29:56] [Bidder] [BIDDER_NECONECTAT] conectat la Auctioneer
+[05-05-2026 10:29:56] [Bidder] [BIDDER_NECONECTAT] conectat la Auctioneer
+[05-05-2026 10:29:56] [Bidder] [50973] oferta trimisa: 6352 de catre Cristian Pavel
+[05-05-2026 10:29:56] [Bidder] [BIDDER_NECONECTAT] conectat la Auctioneer
+[05-05-2026 10:29:56] [Bidder] [BIDDER_NECONECTAT] conectat la Auctioneer
+[05-05-2026 10:29:56] [Bidder] [BIDDER_NECONECTAT] conectat la Auctioneer
+[05-05-2026 10:29:56] [Bidder] [BIDDER_NECONECTAT] conectat la Auctioneer
+[05-05-2026 10:29:56] [Bidder] [50978] oferta trimisa: 3052 de catre Ion Popescu
+[05-05-2026 10:29:56] [Bidder] [BIDDER_NECONECTAT] conectat la Auctioneer
+[05-05-2026 10:29:56] [Bidder] [BIDDER_NECONECTAT] conectat la Auctioneer
+[05-05-2026 10:29:56] [Bidder] [BIDDER_NECONECTAT] conectat la Auctioneer
+[05-05-2026 10:29:56] [Bidder] [BIDDER_NECONECTAT] conectat la Auctioneer
+[05-05-2026 10:29:56] [Bidder] [BIDDER_NECONECTAT] conectat la Auctioneer
+[05-05-2026 10:29:56] [Bidder] [BIDDER_NECONECTAT] conectat la Auctioneer
+[05-05-2026 10:29:56] [Bidder] [BIDDER_NECONECTAT] conectat la Auctioneer
+[05-05-2026 10:29:56] [Bidder] [BIDDER_NECONECTAT] conectat la Auctioneer
+[05-05-2026 10:29:56] [Bidder] [50981] oferta trimisa: 5588 de catre Cristian Pavel
+[05-05-2026 10:29:57] [Bidder] [BIDDER_NECONECTAT] conectat la Auctioneer
+[05-05-2026 10:29:57] [Bidder] [BIDDER_NECONECTAT] conectat la Auctioneer
+[05-05-2026 10:29:57] [Bidder] [50971] oferta trimisa: 5013 de catre Andrei Georgescu
+[05-05-2026 10:29:57] [Bidder] [BIDDER_NECONECTAT] conectat la Auctioneer
+[05-05-2026 10:29:57] [Bidder] [50972] oferta trimisa: 3548 de catre Ana Radu
+[05-05-2026 10:29:57] [Bidder] [BIDDER_NECONECTAT] conectat la Auctioneer
+[05-05-2026 10:29:57] [Bidder] [BIDDER_NECONECTAT] conectat la Auctioneer
+[05-05-2026 10:29:57] [Bidder] [BIDDER_NECONECTAT] conectat la Auctioneer
+[05-05-2026 10:29:57] [Bidder] [BIDDER_NECONECTAT] conectat la Auctioneer
+[05-05-2026 10:29:57] [Bidder] [BIDDER_NECONECTAT] conectat la Auctioneer
+[05-05-2026 10:29:57] [Bidder] [50998] oferta trimisa: 4215 de catre Maria Ionescu
+[05-05-2026 10:29:57] [Bidder] [50970] oferta trimisa: 7313 de catre Andrei Georgescu
+[05-05-2026 10:29:57] [Bidder] [BIDDER_NECONECTAT] conectat la Auctioneer
+[05-05-2026 10:29:57] [Bidder] [50983] oferta trimisa: 1793 de catre Ion Popescu
+[05-05-2026 10:29:57] [Bidder] [BIDDER_NECONECTAT] conectat la Auctioneer
+[05-05-2026 10:29:57] [Bidder] [BIDDER_NECONECTAT] conectat la Auctioneer
+[05-05-2026 10:29:57] [Bidder] [51012] oferta trimisa: 5331 de catre Andrei Georgescu
+[05-05-2026 10:29:57] [Auctioneer] Oferta primita: [05-05-2026 10:29:55] /127.0.0.1:50967 [Ana Radu, 0768493773, ana.radu@email.com] >>> licitez 6550
+[05-05-2026 10:29:57] [Auctioneer] Oferta primita: [05-05-2026 10:29:56] /127.0.0.1:50970 [Andrei Georgescu, 0775428776, andrei.georgescu@email.com] >>> licitez 7313
+[05-05-2026 10:29:57] [Auctioneer] Oferta primita: [05-05-2026 10:29:56] /127.0.0.1:50971 [Andrei Georgescu, 0792736840, andrei.georgescu@email.com] >>> licitez 5013
+[05-05-2026 10:29:57] [Auctioneer] Oferta primita: [05-05-2026 10:29:56] /127.0.0.1:50972 [Ana Radu, 0717030449, ana.radu@email.com] >>> licitez 3548
+[05-05-2026 10:29:57] [Auctioneer] Oferta primita: [05-05-2026 10:29:56] /127.0.0.1:50973 [Cristian Pavel, 0718145692, cristian.pavel@email.com] >>> licitez 6352
+[05-05-2026 10:29:57] [Auctioneer] Oferta primita: [05-05-2026 10:29:56] /127.0.0.1:50978 [Ion Popescu, 0756273548, ion.popescu@email.com] >>> licitez 3052
+[05-05-2026 10:29:57] [Auctioneer] Oferta primita: [05-05-2026 10:29:56] /127.0.0.1:50981 [Cristian Pavel, 0769375430, cristian.pavel@email.com] >>> licitez 5588
+[05-05-2026 10:29:57] [Auctioneer] Oferta primita: [05-05-2026 10:29:56] /127.0.0.1:50983 [Ion Popescu, 0721575554, ion.popescu@email.com] >>> licitez 1793
+[05-05-2026 10:29:57] [Bidder] [BIDDER_NECONECTAT] conectat la Auctioneer
+[05-05-2026 10:29:57] [Bidder] [50994] oferta trimisa: 5402 de catre Ion Popescu
+[05-05-2026 10:29:57] [Bidder] [BIDDER_NECONECTAT] conectat la Auctioneer
+[05-05-2026 10:29:57] [Bidder] [50997] oferta trimisa: 7283 de catre Ion Popescu
+[05-05-2026 10:29:57] [Bidder] [BIDDER_NECONECTAT] conectat la Auctioneer
+[05-05-2026 10:29:57] [Bidder] [BIDDER_NECONECTAT] conectat la Auctioneer
+[05-05-2026 10:29:57] [Bidder] [51011] oferta trimisa: 7789 de catre Ioana Matei
+[05-05-2026 10:29:57] [Bidder] [51018] oferta trimisa: 8883 de catre Ion Popescu
+[05-05-2026 10:29:57] [Bidder] [50999] oferta trimisa: 6341 de catre Ana Radu
+[05-05-2026 10:29:57] [Bidder] [BIDDER_NECONECTAT] conectat la Auctioneer
+[05-05-2026 10:29:57] [Bidder] [BIDDER_NECONECTAT] conectat la Auctioneer
+[05-05-2026 10:29:57] [Bidder] [BIDDER_NECONECTAT] conectat la Auctioneer
+[05-05-2026 10:29:57] [Bidder] [BIDDER_NECONECTAT] conectat la Auctioneer
+[05-05-2026 10:29:57] [Bidder] [51107] oferta trimisa: 5424 de catre Ioana Matei
+[05-05-2026 10:29:57] [Bidder] [51052] oferta trimisa: 5214 de catre Andrei Georgescu
+[05-05-2026 10:29:57] [Bidder] [BIDDER_NECONECTAT] conectat la Auctioneer
+[05-05-2026 10:29:57] [Bidder] [BIDDER_NECONECTAT] conectat la Auctioneer
+[05-05-2026 10:29:57] [Bidder] [BIDDER_NECONECTAT] conectat la Auctioneer
+[05-05-2026 10:29:57] [Bidder] [50991] oferta trimisa: 7765 de catre Ion Popescu
+[05-05-2026 10:29:57] [Bidder] [BIDDER_NECONECTAT] conectat la Auctioneer
+[05-05-2026 10:29:57] [Bidder] [50986] oferta trimisa: 2326 de catre Ioana Matei
+[05-05-2026 10:29:57] [Bidder] [50990] oferta trimisa: 6674 de catre Ioana Matei
+[05-05-2026 10:29:57] [Bidder] [BIDDER_NECONECTAT] conectat la Auctioneer
+[05-05-2026 10:29:57] [Bidder] [BIDDER_NECONECTAT] conectat la Auctioneer
+[05-05-2026 10:29:57] [Bidder] [BIDDER_NECONECTAT] conectat la Auctioneer
+[05-05-2026 10:29:57] [Bidder] [51043] oferta trimisa: 6068 de catre Elena Dumitrescu
+[05-05-2026 10:29:57] [Auctioneer] Oferta primita: [05-05-2026 10:29:57] /127.0.0.1:50986 [Ioana Matei, 0743717565, ioana.matei@email.com] >>> licitez 2326
+[05-05-2026 10:29:57] [Bidder] [51069] oferta trimisa: 4970 de catre Andrei Georgescu
+[05-05-2026 10:29:57] [Bidder] [51108] oferta trimisa: 1032 de catre Cristian Pavel
+[05-05-2026 10:29:57] [Bidder] [51119] oferta trimisa: 4719 de catre Maria Ionescu
+[05-05-2026 10:29:57] [Bidder] [51088] oferta trimisa: 4207 de catre Mihai Stan
+[05-05-2026 10:29:57] [Bidder] [51118] oferta trimisa: 6794 de catre Ioana Matei
+[05-05-2026 10:29:57] [Bidder] [51034] oferta trimisa: 3721 de catre Mihai Stan
+[05-05-2026 10:29:57] [Bidder] [BIDDER_NECONECTAT] conectat la Auctioneer
+[05-05-2026 10:29:57] [Bidder] [BIDDER_NECONECTAT] conectat la Auctioneer
+[05-05-2026 10:29:57] [Bidder] [51023] oferta trimisa: 6877 de catre Mihai Stan
+[05-05-2026 10:29:57] [Bidder] [51087] oferta trimisa: 9004 de catre Ioana Matei
+[05-05-2026 10:29:57] [Bidder] [51021] oferta trimisa: 1933 de catre Ioana Matei
+[05-05-2026 10:29:57] [Bidder] [51057] oferta trimisa: 8281 de catre Mihai Stan
+[05-05-2026 10:29:57] [Bidder] [51093] oferta trimisa: 8342 de catre Maria Ionescu
+[05-05-2026 10:29:57] [Bidder] [51082] oferta trimisa: 6233 de catre Ana Radu
+[05-05-2026 10:29:57] [Bidder] [51026] oferta trimisa: 6383 de catre Maria Ionescu
+[05-05-2026 10:29:57] [Bidder] [51071] oferta trimisa: 9495 de catre Cristian Pavel
+[05-05-2026 10:29:57] [Bidder] [50988] oferta trimisa: 7994 de catre Andrei Georgescu
+[05-05-2026 10:29:57] [Bidder] [51099] oferta trimisa: 3917 de catre Elena Dumitrescu
+[05-05-2026 10:29:57] [Bidder] [51084] oferta trimisa: 1200 de catre Ioana Matei
+[05-05-2026 10:29:57] [Auctioneer] Oferta primita: [05-05-2026 10:29:57] /127.0.0.1:50988 [Andrei Georgescu, 0740582864, andrei.georgescu@email.com] >>> licitez 7994
+[05-05-2026 10:29:57] [Bidder] [BIDDER_NECONECTAT] conectat la Auctioneer
+[05-05-2026 10:29:57] [Bidder] [51066] oferta trimisa: 9874 de catre Mihai Stan
+[05-05-2026 10:29:57] [Bidder] [BIDDER_NECONECTAT] conectat la Auctioneer
+[05-05-2026 10:29:57] [Auctioneer] Oferta primita: [05-05-2026 10:29:57] /127.0.0.1:50990 [Ioana Matei, 0757391686, ioana.matei@email.com] >>> licitez 6674
+[05-05-2026 10:29:57] [Auctioneer] Oferta primita: [05-05-2026 10:29:57] /127.0.0.1:50991 [Ion Popescu, 0761830263, ion.popescu@email.com] >>> licitez 7765
+[05-05-2026 10:29:57] [Bidder] [51136] oferta trimisa: 4937 de catre Cristian Pavel
+[05-05-2026 10:29:57] [Auctioneer] Oferta primita: [05-05-2026 10:29:56] /127.0.0.1:50994 [Ion Popescu, 0769690957, ion.popescu@email.com] >>> licitez 5402
+[05-05-2026 10:29:57] [Auctioneer] Oferta primita: [05-05-2026 10:29:56] /127.0.0.1:50997 [Ion Popescu, 0736768026, ion.popescu@email.com] >>> licitez 7283
+[05-05-2026 10:29:57] [Auctioneer] Oferta primita: [05-05-2026 10:29:56] /127.0.0.1:50998 [Maria Ionescu, 0739522760, maria.ionescu@email.com] >>> licitez 4215
+[05-05-2026 10:29:57] [Auctioneer] Oferta primita: [05-05-2026 10:29:56] /127.0.0.1:50999 [Ana Radu, 0748764804, ana.radu@email.com] >>> licitez 6341
+[05-05-2026 10:29:57] [Auctioneer] Oferta primita: [05-05-2026 10:29:56] /127.0.0.1:51011 [Ioana Matei, 0749653692, ioana.matei@email.com] >>> licitez 7789
+[05-05-2026 10:29:57] [Auctioneer] Oferta primita: [05-05-2026 10:29:56] /127.0.0.1:51012 [Andrei Georgescu, 0744893664, andrei.georgescu@email.com] >>> licitez 5331
+[05-05-2026 10:29:57] [Bidder] [BIDDER_NECONECTAT] conectat la Auctioneer
+[05-05-2026 10:29:57] [Bidder] [51089] oferta trimisa: 8717 de catre Andrei Georgescu
+[05-05-2026 10:29:57] [Bidder] [51067] oferta trimisa: 1074 de catre Maria Ionescu
+[05-05-2026 10:29:57] [Bidder] [BIDDER_NECONECTAT] conectat la Auctioneer
+[05-05-2026 10:29:57] [Bidder] [BIDDER_NECONECTAT] conectat la Auctioneer
+[05-05-2026 10:29:57] [Bidder] [BIDDER_NECONECTAT] conectat la Auctioneer
+[05-05-2026 10:29:57] [Bidder] [BIDDER_NECONECTAT] conectat la Auctioneer
+[05-05-2026 10:29:57] [Bidder] [51176] oferta trimisa: 5344 de catre Cristian Pavel
+[05-05-2026 10:29:57] [Bidder] [51117] oferta trimisa: 6541 de catre Maria Ionescu
+[05-05-2026 10:29:57] [Bidder] [BIDDER_NECONECTAT] conectat la Auctioneer
+[05-05-2026 10:29:57] [Bidder] [51058] oferta trimisa: 2564 de catre Maria Ionescu
+[05-05-2026 10:29:57] [Bidder] [51015] oferta trimisa: 9653 de catre Ana Radu
+[05-05-2026 10:29:57] [Bidder] [51159] oferta trimisa: 6876 de catre Ioana Matei
+[05-05-2026 10:29:57] [Auctioneer] Oferta primita: [05-05-2026 10:29:57] /127.0.0.1:51015 [Ana Radu, 0716546201, ana.radu@email.com] >>> licitez 9653
+[05-05-2026 10:29:57] [Auctioneer] Oferta primita: [05-05-2026 10:29:56] /127.0.0.1:51018 [Ion Popescu, 0764194909, ion.popescu@email.com] >>> licitez 8883
+[05-05-2026 10:29:57] [Auctioneer] Oferta primita: [05-05-2026 10:29:57] /127.0.0.1:51021 [Ioana Matei, 0732015946, ioana.matei@email.com] >>> licitez 1933
+[05-05-2026 10:29:57] [Auctioneer] Oferta primita: [05-05-2026 10:29:57] /127.0.0.1:51023 [Mihai Stan, 0795094577, mihai.stan@email.com] >>> licitez 6877
+[05-05-2026 10:29:57] [Auctioneer] Oferta primita: [05-05-2026 10:29:57] /127.0.0.1:51026 [Maria Ionescu, 0780878970, maria.ionescu@email.com] >>> licitez 6383
+[05-05-2026 10:29:57] [Auctioneer] Oferta primita: [05-05-2026 10:29:57] /127.0.0.1:51034 [Mihai Stan, 0795562237, mihai.stan@email.com] >>> licitez 3721
+[05-05-2026 10:29:57] [Auctioneer] Oferta primita: [05-05-2026 10:29:57] /127.0.0.1:51043 [Elena Dumitrescu, 0712573263, elena.dumitrescu@email.com] >>> licitez 6068
+[05-05-2026 10:29:57] [Bidder] [51111] oferta trimisa: 7993 de catre Cristian Pavel
+[05-05-2026 10:29:57] [Bidder] [BIDDER_NECONECTAT] conectat la Auctioneer
+[05-05-2026 10:29:57] [Bidder] [BIDDER_NECONECTAT] conectat la Auctioneer
+[05-05-2026 10:29:57] [Auctioneer] Oferta primita: [05-05-2026 10:29:57] /127.0.0.1:51052 [Andrei Georgescu, 0730980185, andrei.georgescu@email.com] >>> licitez 5214
+[05-05-2026 10:29:57] [Bidder] [51062] oferta trimisa: 9233 de catre Maria Ionescu
+[05-05-2026 10:29:57] [Bidder] [BIDDER_NECONECTAT] conectat la Auctioneer
+[05-05-2026 10:29:57] [Bidder] [51110] oferta trimisa: 3955 de catre Maria Ionescu
+[05-05-2026 10:29:57] [Bidder] [BIDDER_NECONECTAT] conectat la Auctioneer
+[05-05-2026 10:29:57] [Bidder] [51142] oferta trimisa: 5671 de catre Ana Radu
+[05-05-2026 10:29:57] [Bidder] [51073] oferta trimisa: 1439 de catre Maria Ionescu
+[05-05-2026 10:29:57] [Bidder] [BIDDER_NECONECTAT] conectat la Auctioneer
+[05-05-2026 10:29:57] [Bidder] [BIDDER_NECONECTAT] conectat la Auctioneer
+[05-05-2026 10:29:57] [Bidder] [BIDDER_NECONECTAT] conectat la Auctioneer
+[05-05-2026 10:29:57] [Bidder] [51186] oferta trimisa: 9013 de catre Elena Dumitrescu
+[05-05-2026 10:29:57] [Bidder] [51174] oferta trimisa: 9803 de catre Elena Dumitrescu
+[05-05-2026 10:29:57] [Bidder] [51086] oferta trimisa: 7038 de catre Cristian Pavel
+[05-05-2026 10:29:57] [Bidder] [51254] oferta trimisa: 7947 de catre Maria Ionescu
+[05-05-2026 10:29:57] [Bidder] [51113] oferta trimisa: 3626 de catre Elena Dumitrescu
+[05-05-2026 10:29:57] [Bidder] [BIDDER_NECONECTAT] conectat la Auctioneer
+[05-05-2026 10:29:57] [Bidder] [BIDDER_NECONECTAT] conectat la Auctioneer
+[05-05-2026 10:29:57] [Bidder] [51189] oferta trimisa: 6446 de catre Ion Popescu
+[05-05-2026 10:29:57] [Bidder] [51150] oferta trimisa: 8909 de catre Maria Ionescu
+[05-05-2026 10:29:57] [Bidder] [BIDDER_NECONECTAT] conectat la Auctioneer
+[05-05-2026 10:29:57] [Bidder] [51097] oferta trimisa: 8663 de catre Mihai Stan
+[05-05-2026 10:29:57] [Bidder] [51148] oferta trimisa: 2107 de catre Ioana Matei
+[05-05-2026 10:29:57] [Bidder] [51196] oferta trimisa: 5268 de catre Elena Dumitrescu
+[05-05-2026 10:29:57] [Bidder] [51149] oferta trimisa: 6105 de catre Andrei Georgescu
+[05-05-2026 10:29:57] [Bidder] [51167] oferta trimisa: 5608 de catre Andrei Georgescu
+[05-05-2026 10:29:57] [Bidder] [51144] oferta trimisa: 4112 de catre Elena Dumitrescu
+[05-05-2026 10:29:57] [Bidder] [51224] oferta trimisa: 8319 de catre Elena Dumitrescu
+[05-05-2026 10:29:57] [Bidder] [51181] oferta trimisa: 9189 de catre Andrei Georgescu
+[05-05-2026 10:29:57] [Auctioneer] Oferta primita: [05-05-2026 10:29:57] /127.0.0.1:51057 [Mihai Stan, 0784235115, mihai.stan@email.com] >>> licitez 8281
+[05-05-2026 10:29:57] [Auctioneer] Oferta primita: [05-05-2026 10:29:57] /127.0.0.1:51058 [Maria Ionescu, 0731517599, maria.ionescu@email.com] >>> licitez 2564
+[05-05-2026 10:29:57] [Auctioneer] Oferta primita: [05-05-2026 10:29:57] /127.0.0.1:51062 [Maria Ionescu, 0769893565, maria.ionescu@email.com] >>> licitez 9233
+[05-05-2026 10:29:57] [Bidder] [51251] oferta trimisa: 1211 de catre Ion Popescu
+[05-05-2026 10:29:57] [Bidder] [51243] oferta trimisa: 6964 de catre Ion Popescu
+[05-05-2026 10:29:57] [Bidder] [51269] oferta trimisa: 8236 de catre Maria Ionescu
+[05-05-2026 10:29:57] [Bidder] [51249] oferta trimisa: 8178 de catre Ana Radu
+[05-05-2026 10:29:57] [Bidder] [BIDDER_NECONECTAT] conectat la Auctioneer
+[05-05-2026 10:29:57] [Bidder] [BIDDER_NECONECTAT] conectat la Auctioneer
+[05-05-2026 10:29:57] [Bidder] [51166] oferta trimisa: 1402 de catre Andrei Georgescu
+[05-05-2026 10:29:57] [Bidder] [51242] oferta trimisa: 8828 de catre Ana Radu
+[05-05-2026 10:29:57] [Auctioneer] Oferta primita: [05-05-2026 10:29:57] /127.0.0.1:51066 [Mihai Stan, 0725327972, mihai.stan@email.com] >>> licitez 9874
+[05-05-2026 10:29:57] [Auctioneer] Oferta primita: [05-05-2026 10:29:57] /127.0.0.1:51067 [Maria Ionescu, 0732641493, maria.ionescu@email.com] >>> licitez 1074
+[05-05-2026 10:29:57] [Auctioneer] Oferta primita: [05-05-2026 10:29:57] /127.0.0.1:51069 [Andrei Georgescu, 0734388367, andrei.georgescu@email.com] >>> licitez 4970
+[05-05-2026 10:29:57] [Auctioneer] Oferta primita: [05-05-2026 10:29:57] /127.0.0.1:51071 [Cristian Pavel, 0730093903, cristian.pavel@email.com] >>> licitez 9495
+[05-05-2026 10:29:57] [Auctioneer] Oferta primita: [05-05-2026 10:29:57] /127.0.0.1:51073 [Maria Ionescu, 0735193673, maria.ionescu@email.com] >>> licitez 1439
+[05-05-2026 10:29:57] [Auctioneer] Oferta primita: [05-05-2026 10:29:57] /127.0.0.1:51082 [Ana Radu, 0785813791, ana.radu@email.com] >>> licitez 6233
+[05-05-2026 10:29:57] [Auctioneer] Oferta primita: [05-05-2026 10:29:57] /127.0.0.1:51084 [Ioana Matei, 0748616820, ioana.matei@email.com] >>> licitez 1200
+[05-05-2026 10:29:57] [Auctioneer] Oferta primita: [05-05-2026 10:29:57] /127.0.0.1:51086 [Cristian Pavel, 0756111089, cristian.pavel@email.com] >>> licitez 7038
+[05-05-2026 10:29:57] [Auctioneer] Oferta primita: [05-05-2026 10:29:57] /127.0.0.1:51087 [Ioana Matei, 0759853108, ioana.matei@email.com] >>> licitez 9004
+[05-05-2026 10:29:57] [Auctioneer] Oferta primita: [05-05-2026 10:29:57] /127.0.0.1:51088 [Mihai Stan, 0718070464, mihai.stan@email.com] >>> licitez 4207
+[05-05-2026 10:29:57] [Auctioneer] Oferta primita: [05-05-2026 10:29:57] /127.0.0.1:51089 [Andrei Georgescu, 0718269090, andrei.georgescu@email.com] >>> licitez 8717
+[05-05-2026 10:29:57] [Auctioneer] Oferta primita: [05-05-2026 10:29:57] /127.0.0.1:51093 [Maria Ionescu, 0783921436, maria.ionescu@email.com] >>> licitez 8342
+[05-05-2026 10:29:57] [Auctioneer] Oferta primita: [05-05-2026 10:29:57] /127.0.0.1:51097 [Mihai Stan, 0737410523, mihai.stan@email.com] >>> licitez 8663
+[05-05-2026 10:29:57] [Auctioneer] Oferta primita: [05-05-2026 10:29:57] /127.0.0.1:51099 [Elena Dumitrescu, 0764298977, elena.dumitrescu@email.com] >>> licitez 3917
+[05-05-2026 10:29:57] [Auctioneer] Oferta primita: [05-05-2026 10:29:56] /127.0.0.1:51107 [Ioana Matei, 0723555162, ioana.matei@email.com] >>> licitez 5424
+[05-05-2026 10:29:57] [Auctioneer] Oferta primita: [05-05-2026 10:29:57] /127.0.0.1:51108 [Cristian Pavel, 0794158898, cristian.pavel@email.com] >>> licitez 1032
+[05-05-2026 10:29:57] [Bidder] [51256] oferta trimisa: 4112 de catre Ioana Matei
+[05-05-2026 10:29:57] [Auctioneer] Oferta primita: [05-05-2026 10:29:57] /127.0.0.1:51110 [Maria Ionescu, 0776052113, maria.ionescu@email.com] >>> licitez 3955
+[05-05-2026 10:29:57] [Auctioneer] Oferta primita: [05-05-2026 10:29:57] /127.0.0.1:51111 [Cristian Pavel, 0728511174, cristian.pavel@email.com] >>> licitez 7993
+[05-05-2026 10:29:57] [Auctioneer] Oferta primita: [05-05-2026 10:29:57] /127.0.0.1:51113 [Elena Dumitrescu, 0742789734, elena.dumitrescu@email.com] >>> licitez 3626
+[05-05-2026 10:29:57] [Auctioneer] Oferta primita: [05-05-2026 10:29:57] /127.0.0.1:51117 [Maria Ionescu, 0785245112, maria.ionescu@email.com] >>> licitez 6541
+[05-05-2026 10:29:57] [Bidder] [51172] oferta trimisa: 2308 de catre Cristian Pavel
+[05-05-2026 10:29:57] [Bidder] [BIDDER_NECONECTAT] conectat la Auctioneer
+[05-05-2026 10:29:57] [Bidder] [BIDDER_NECONECTAT] conectat la Auctioneer
+[05-05-2026 10:29:57] [Auctioneer] Oferta primita: [05-05-2026 10:29:57] /127.0.0.1:51118 [Ioana Matei, 0716560262, ioana.matei@email.com] >>> licitez 6794
+[05-05-2026 10:29:57] [Auctioneer] Oferta primita: [05-05-2026 10:29:57] /127.0.0.1:51119 [Maria Ionescu, 0781167955, maria.ionescu@email.com] >>> licitez 4719
+[05-05-2026 10:29:57] [Auctioneer] Oferta primita: [05-05-2026 10:29:57] /127.0.0.1:51186 [Elena Dumitrescu, 0773206611, elena.dumitrescu@email.com] >>> licitez 9013
+[05-05-2026 10:29:57] [Auctioneer] Oferta primita: [05-05-2026 10:29:57] /127.0.0.1:51174 [Elena Dumitrescu, 0732835567, elena.dumitrescu@email.com] >>> licitez 9803
+[05-05-2026 10:29:57] [Auctioneer] Oferta primita: [05-05-2026 10:29:57] /127.0.0.1:51159 [Ioana Matei, 0749707802, ioana.matei@email.com] >>> licitez 6876
+[05-05-2026 10:29:57] [Auctioneer] Oferta primita: [05-05-2026 10:29:57] /127.0.0.1:51196 [Elena Dumitrescu, 0793677682, elena.dumitrescu@email.com] >>> licitez 5268
+[05-05-2026 10:29:57] [Auctioneer] Oferta primita: [05-05-2026 10:29:57] /127.0.0.1:51189 [Ion Popescu, 0762223993, ion.popescu@email.com] >>> licitez 6446
+[05-05-2026 10:29:57] [Auctioneer] Oferta primita: [05-05-2026 10:29:57] /127.0.0.1:51176 [Cristian Pavel, 0734056397, cristian.pavel@email.com] >>> licitez 5344
+[05-05-2026 10:29:57] [Auctioneer] Oferta primita: [05-05-2026 10:29:57] /127.0.0.1:51181 [Andrei Georgescu, 0718750357, andrei.georgescu@email.com] >>> licitez 9189
+[05-05-2026 10:29:57] [Bidder] [51216] oferta trimisa: 3728 de catre Cristian Pavel
+[05-05-2026 10:29:57] [Bidder] [51215] oferta trimisa: 1477 de catre Cristian Pavel
+[05-05-2026 10:29:57] [Bidder] [51164] oferta trimisa: 7542 de catre Maria Ionescu
+[05-05-2026 10:29:57] [Bidder] [51191] oferta trimisa: 6991 de catre Ion Popescu
+[05-05-2026 10:29:57] [Bidder] [51228] oferta trimisa: 8573 de catre Ioana Matei
+[05-05-2026 10:29:57] [Bidder] [51229] oferta trimisa: 4825 de catre Ioana Matei
+[05-05-2026 10:29:57] [Auctioneer] Oferta primita: [05-05-2026 10:29:57] /127.0.0.1:51144 [Elena Dumitrescu, 0737338579, elena.dumitrescu@email.com] >>> licitez 4112
+[05-05-2026 10:29:57] [Auctioneer] Oferta primita: [05-05-2026 10:29:57] /127.0.0.1:51254 [Maria Ionescu, 0752041055, maria.ionescu@email.com] >>> licitez 7947
+[05-05-2026 10:29:57] [Auctioneer] Oferta primita: [05-05-2026 10:29:57] /127.0.0.1:51136 [Cristian Pavel, 0710558391, cristian.pavel@email.com] >>> licitez 4937
+[05-05-2026 10:29:57] [Auctioneer] Oferta primita: [05-05-2026 10:29:57] /127.0.0.1:51269 [Maria Ionescu, 0776026194, maria.ionescu@email.com] >>> licitez 8236
+[05-05-2026 10:29:58] [Auctioneer] Oferta primita: [05-05-2026 10:29:57] /127.0.0.1:51142 [Ana Radu, 0717326638, ana.radu@email.com] >>> licitez 5671
+[05-05-2026 10:29:58] [Auctioneer] Oferta primita: [05-05-2026 10:29:57] /127.0.0.1:51249 [Ana Radu, 0732425479, ana.radu@email.com] >>> licitez 8178
+[05-05-2026 10:29:58] [Auctioneer] Oferta primita: [05-05-2026 10:29:57] /127.0.0.1:51224 [Elena Dumitrescu, 0759362854, elena.dumitrescu@email.com] >>> licitez 8319
+[05-05-2026 10:29:58] [Auctioneer] Oferta primita: [05-05-2026 10:29:57] /127.0.0.1:51148 [Ioana Matei, 0722034090, ioana.matei@email.com] >>> licitez 2107
+[05-05-2026 10:29:58] [Auctioneer] Oferta primita: [05-05-2026 10:29:57] /127.0.0.1:51149 [Andrei Georgescu, 0748601016, andrei.georgescu@email.com] >>> licitez 6105
+[05-05-2026 10:29:58] [Auctioneer] Oferta primita: [05-05-2026 10:29:57] /127.0.0.1:51150 [Maria Ionescu, 0786258644, maria.ionescu@email.com] >>> licitez 8909
+[05-05-2026 10:29:58] [Auctioneer] Oferta primita: [05-05-2026 10:29:57] /127.0.0.1:51256 [Ioana Matei, 0726049352, ioana.matei@email.com] >>> licitez 4112
+[05-05-2026 10:29:58] [Auctioneer] Oferta primita: [05-05-2026 10:29:57] /127.0.0.1:51164 [Maria Ionescu, 0717714976, maria.ionescu@email.com] >>> licitez 7542
+[05-05-2026 10:29:58] [Auctioneer] Oferta primita: [05-05-2026 10:29:57] /127.0.0.1:51166 [Andrei Georgescu, 0781178565, andrei.georgescu@email.com] >>> licitez 1402
+[05-05-2026 10:29:58] [Auctioneer] Oferta primita: [05-05-2026 10:29:57] /127.0.0.1:51167 [Andrei Georgescu, 0783799499, andrei.georgescu@email.com] >>> licitez 5608
+[05-05-2026 10:29:58] [Auctioneer] Oferta primita: [05-05-2026 10:29:57] /127.0.0.1:51242 [Ana Radu, 0756144406, ana.radu@email.com] >>> licitez 8828
+[05-05-2026 10:29:58] [Auctioneer] Oferta primita: [05-05-2026 10:29:57] /127.0.0.1:51243 [Ion Popescu, 0710050125, ion.popescu@email.com] >>> licitez 6964
+[05-05-2026 10:29:58] [Auctioneer] Oferta primita: [05-05-2026 10:29:57] /127.0.0.1:51172 [Cristian Pavel, 0747130567, cristian.pavel@email.com] >>> licitez 2308
+[05-05-2026 10:29:58] [Auctioneer] Oferta primita: [05-05-2026 10:29:57] /127.0.0.1:51251 [Ion Popescu, 0718601208, ion.popescu@email.com] >>> licitez 1211
+[05-05-2026 10:29:58] [Auctioneer] Oferta primita: [05-05-2026 10:29:57] /127.0.0.1:51191 [Ion Popescu, 0730488324, ion.popescu@email.com] >>> licitez 6991
+[05-05-2026 10:29:58] [Auctioneer] Oferta primita: [05-05-2026 10:29:57] /127.0.0.1:51216 [Cristian Pavel, 0712923798, cristian.pavel@email.com] >>> licitez 3728
+[05-05-2026 10:29:58] [Auctioneer] Oferta primita: [05-05-2026 10:29:57] /127.0.0.1:51215 [Cristian Pavel, 0777920895, cristian.pavel@email.com] >>> licitez 1477
+[05-05-2026 10:29:58] [Auctioneer] Oferta primita: [05-05-2026 10:29:57] /127.0.0.1:51229 [Ioana Matei, 0761720907, ioana.matei@email.com] >>> licitez 4825
+[05-05-2026 10:29:58] [Auctioneer] Oferta primita: [05-05-2026 10:29:57] /127.0.0.1:51228 [Ioana Matei, 0772807009, ioana.matei@email.com] >>> licitez 8573
+[05-05-2026 10:29:58] [Bidder] [BIDDER_NECONECTAT] conectat la Auctioneer
+[05-05-2026 10:29:58] [Bidder] [BIDDER_NECONECTAT] conectat la Auctioneer
+[05-05-2026 10:29:58] [Bidder] [BIDDER_NECONECTAT] conectat la Auctioneer
+[05-05-2026 10:29:58] [Bidder] [BIDDER_NECONECTAT] conectat la Auctioneer
+[05-05-2026 10:29:58] [Bidder] [BIDDER_NECONECTAT] conectat la Auctioneer
+[05-05-2026 10:29:58] [Bidder] [BIDDER_NECONECTAT] conectat la Auctioneer
+[05-05-2026 10:29:58] [Bidder] [BIDDER_NECONECTAT] conectat la Auctioneer
+[05-05-2026 10:29:58] [Bidder] [BIDDER_NECONECTAT] conectat la Auctioneer
+[05-05-2026 10:29:58] [Bidder] [BIDDER_NECONECTAT] conectat la Auctioneer
+[05-05-2026 10:29:58] [Bidder] [BIDDER_NECONECTAT] conectat la Auctioneer
+[05-05-2026 10:29:58] [Bidder] [51129] oferta trimisa: 7343 de catre Ana Radu
+[05-05-2026 10:29:58] [Bidder] [51122] oferta trimisa: 4302 de catre Elena Dumitrescu
+[05-05-2026 10:29:58] [Bidder] [51125] oferta trimisa: 1552 de catre Elena Dumitrescu
+[05-05-2026 10:29:58] [Bidder] [51123] oferta trimisa: 6761 de catre Maria Ionescu
+[05-05-2026 10:29:58] [Bidder] [BIDDER_NECONECTAT] conectat la Auctioneer
+[05-05-2026 10:29:58] [Bidder] [BIDDER_NECONECTAT] conectat la Auctioneer
+[05-05-2026 10:29:58] [Bidder] [51128] oferta trimisa: 9733 de catre Elena Dumitrescu
+[05-05-2026 10:29:58] [Bidder] [51121] oferta trimisa: 9111 de catre Ion Popescu
+[05-05-2026 10:29:58] [Bidder] [51124] oferta trimisa: 2300 de catre Ion Popescu
+[05-05-2026 10:29:58] [Auctioneer] Oferta primita: [05-05-2026 10:29:58] /127.0.0.1:51129 [Ana Radu, 0785022102, ana.radu@email.com] >>> licitez 7343
+[05-05-2026 10:29:58] [Bidder] [51130] oferta trimisa: 5003 de catre Ioana Matei
+[05-05-2026 10:29:58] [Bidder] [51131] oferta trimisa: 4993 de catre Ana Radu
+[05-05-2026 10:29:58] [Auctioneer] Oferta primita: [05-05-2026 10:29:58] /127.0.0.1:51128 [Elena Dumitrescu, 0727918446, elena.dumitrescu@email.com] >>> licitez 9733
+[05-05-2026 10:29:58] [Auctioneer] Oferta primita: [05-05-2026 10:29:58] /127.0.0.1:51125 [Elena Dumitrescu, 0759581911, elena.dumitrescu@email.com] >>> licitez 1552
+[05-05-2026 10:29:58] [Bidder] [51132] oferta trimisa: 1911 de catre Ana Radu
+[05-05-2026 10:29:58] [Auctioneer] Oferta primita: [05-05-2026 10:29:58] /127.0.0.1:51124 [Ion Popescu, 0791347746, ion.popescu@email.com] >>> licitez 2300
+[05-05-2026 10:29:58] [Auctioneer] Oferta primita: [05-05-2026 10:29:58] /127.0.0.1:51123 [Maria Ionescu, 0791178441, maria.ionescu@email.com] >>> licitez 6761
+[05-05-2026 10:29:58] [Bidder] [51135] oferta trimisa: 8634 de catre Ion Popescu
+[05-05-2026 10:29:58] [Bidder] [51134] oferta trimisa: 5799 de catre Elena Dumitrescu
+[05-05-2026 10:29:58] [Auctioneer] Oferta primita: [05-05-2026 10:29:58] /127.0.0.1:51122 [Elena Dumitrescu, 0720555797, elena.dumitrescu@email.com] >>> licitez 4302
+[05-05-2026 10:29:58] [Auctioneer] Oferta primita: [05-05-2026 10:29:58] /127.0.0.1:51121 [Ion Popescu, 0771328035, ion.popescu@email.com] >>> licitez 9111
+[05-05-2026 10:29:58] [Auctioneer] Oferta primita: [05-05-2026 10:29:58] /127.0.0.1:51131 [Ana Radu, 0739596550, ana.radu@email.com] >>> licitez 4993
+[05-05-2026 10:29:58] [Auctioneer] Oferta primita: [05-05-2026 10:29:58] /127.0.0.1:51130 [Ioana Matei, 0727958030, ioana.matei@email.com] >>> licitez 5003
+[05-05-2026 10:29:58] [Auctioneer] Oferta primita: [05-05-2026 10:29:58] /127.0.0.1:51132 [Ana Radu, 0741760509, ana.radu@email.com] >>> licitez 1911
+[05-05-2026 10:29:58] [Auctioneer] Oferta primita: [05-05-2026 10:29:58] /127.0.0.1:51135 [Ion Popescu, 0739402474, ion.popescu@email.com] >>> licitez 8634
+[05-05-2026 10:29:58] [Auctioneer] Oferta primita: [05-05-2026 10:29:58] /127.0.0.1:51134 [Elena Dumitrescu, 0774618874, elena.dumitrescu@email.com] >>> licitez 5799
+[05-05-2026 10:29:58] [Bidder] [BIDDER_NECONECTAT] conectat la Auctioneer
+[05-05-2026 10:29:58] [Bidder] [BIDDER_NECONECTAT] conectat la Auctioneer
+[05-05-2026 10:29:58] [Bidder] [51155] oferta trimisa: 6412 de catre Cristian Pavel
+[05-05-2026 10:29:58] [Auctioneer] Oferta primita: [05-05-2026 10:29:58] /127.0.0.1:51155 [Cristian Pavel, 0722304082, cristian.pavel@email.com] >>> licitez 6412
+[05-05-2026 10:29:58] [Bidder] [51157] oferta trimisa: 3920 de catre Ioana Matei
+[05-05-2026 10:29:58] [Auctioneer] Oferta primita: [05-05-2026 10:29:58] /127.0.0.1:51157 [Ioana Matei, 0714323391, ioana.matei@email.com] >>> licitez 3920
+[05-05-2026 10:29:58] [Bidder] [BIDDER_NECONECTAT] conectat la Auctioneer
+[05-05-2026 10:29:58] [Bidder] [BIDDER_NECONECTAT] conectat la Auctioneer
+[05-05-2026 10:29:58] [Bidder] [51193] oferta trimisa: 8936 de catre Ion Popescu
+[05-05-2026 10:29:58] [Bidder] [51194] oferta trimisa: 7656 de catre Mihai Stan
+[05-05-2026 10:29:58] [Auctioneer] Oferta primita: [05-05-2026 10:29:58] /127.0.0.1:51194 [Mihai Stan, 0787289631, mihai.stan@email.com] >>> licitez 7656
+[05-05-2026 10:29:58] [Auctioneer] Oferta primita: [05-05-2026 10:29:58] /127.0.0.1:51193 [Ion Popescu, 0718538839, ion.popescu@email.com] >>> licitez 8936
+[05-05-2026 10:29:58] [Bidder] [BIDDER_NECONECTAT] conectat la Auctioneer
+[05-05-2026 10:29:58] [Bidder] [BIDDER_NECONECTAT] conectat la Auctioneer
+[05-05-2026 10:29:58] [Bidder] [BIDDER_NECONECTAT] conectat la Auctioneer
+[05-05-2026 10:29:58] [Bidder] [51200] oferta trimisa: 8459 de catre Ion Popescu
+[05-05-2026 10:29:58] [Auctioneer] Oferta primita: [05-05-2026 10:29:58] /127.0.0.1:51200 [Ion Popescu, 0781868955, ion.popescu@email.com] >>> licitez 8459
+[05-05-2026 10:29:58] [Bidder] [51202] oferta trimisa: 7295 de catre Ana Radu
+[05-05-2026 10:29:58] [Bidder] [51203] oferta trimisa: 1766 de catre Cristian Pavel
+[05-05-2026 10:29:58] [Auctioneer] Oferta primita: [05-05-2026 10:29:58] /127.0.0.1:51202 [Ana Radu, 0724050531, ana.radu@email.com] >>> licitez 7295
+[05-05-2026 10:29:58] [Auctioneer] Oferta primita: [05-05-2026 10:29:58] /127.0.0.1:51203 [Cristian Pavel, 0774785180, cristian.pavel@email.com] >>> licitez 1766
+[05-05-2026 10:30:13] [MessageProcessor] Mesaj primit: [05-05-2026 10:29:55] /127.0.0.1:50967 [Ana Radu, 0768493773, ana.radu@email.com] >>> licitez 6550
+[05-05-2026 10:30:13] [MessageProcessor] Mesaj primit: [05-05-2026 10:29:56] /127.0.0.1:50970 [Andrei Georgescu, 0775428776, andrei.georgescu@email.com] >>> licitez 7313
+[05-05-2026 10:30:13] [MessageProcessor] Mesaj primit: [05-05-2026 10:29:56] /127.0.0.1:50971 [Andrei Georgescu, 0792736840, andrei.georgescu@email.com] >>> licitez 5013
+[05-05-2026 10:30:13] [MessageProcessor] Mesaj primit: [05-05-2026 10:29:56] /127.0.0.1:50972 [Ana Radu, 0717030449, ana.radu@email.com] >>> licitez 3548
+[05-05-2026 10:30:13] [MessageProcessor] Mesaj primit: [05-05-2026 10:29:56] /127.0.0.1:50973 [Cristian Pavel, 0718145692, cristian.pavel@email.com] >>> licitez 6352
+[05-05-2026 10:30:13] [MessageProcessor] Mesaj primit: [05-05-2026 10:29:56] /127.0.0.1:50978 [Ion Popescu, 0756273548, ion.popescu@email.com] >>> licitez 3052
+[05-05-2026 10:30:13] [MessageProcessor] Mesaj primit: [05-05-2026 10:29:56] /127.0.0.1:50981 [Cristian Pavel, 0769375430, cristian.pavel@email.com] >>> licitez 5588
+[05-05-2026 10:30:13] [MessageProcessor] Mesaj primit: [05-05-2026 10:29:56] /127.0.0.1:50983 [Ion Popescu, 0721575554, ion.popescu@email.com] >>> licitez 1793
+[05-05-2026 10:30:13] [MessageProcessor] Mesaj primit: [05-05-2026 10:29:57] /127.0.0.1:50986 [Ioana Matei, 0743717565, ioana.matei@email.com] >>> licitez 2326
+[05-05-2026 10:30:13] [MessageProcessor] Mesaj primit: [05-05-2026 10:29:57] /127.0.0.1:50988 [Andrei Georgescu, 0740582864, andrei.georgescu@email.com] >>> licitez 7994
+[05-05-2026 10:30:13] [MessageProcessor] Mesaj primit: [05-05-2026 10:29:57] /127.0.0.1:50990 [Ioana Matei, 0757391686, ioana.matei@email.com] >>> licitez 6674
+[05-05-2026 10:30:13] [MessageProcessor] Mesaj primit: [05-05-2026 10:29:57] /127.0.0.1:50991 [Ion Popescu, 0761830263, ion.popescu@email.com] >>> licitez 7765
+[05-05-2026 10:30:13] [MessageProcessor] Mesaj primit: [05-05-2026 10:29:56] /127.0.0.1:50994 [Ion Popescu, 0769690957, ion.popescu@email.com] >>> licitez 5402
+[05-05-2026 10:30:13] [MessageProcessor] Mesaj primit: [05-05-2026 10:29:56] /127.0.0.1:50997 [Ion Popescu, 0736768026, ion.popescu@email.com] >>> licitez 7283
+[05-05-2026 10:30:13] [MessageProcessor] Mesaj primit: [05-05-2026 10:29:56] /127.0.0.1:50998 [Maria Ionescu, 0739522760, maria.ionescu@email.com] >>> licitez 4215
+[05-05-2026 10:30:13] [MessageProcessor] Mesaj primit: [05-05-2026 10:29:56] /127.0.0.1:50999 [Ana Radu, 0748764804, ana.radu@email.com] >>> licitez 6341
+[05-05-2026 10:30:13] [MessageProcessor] Mesaj primit: [05-05-2026 10:29:56] /127.0.0.1:51011 [Ioana Matei, 0749653692, ioana.matei@email.com] >>> licitez 7789
+[05-05-2026 10:30:13] [MessageProcessor] Mesaj primit: [05-05-2026 10:29:56] /127.0.0.1:51012 [Andrei Georgescu, 0744893664, andrei.georgescu@email.com] >>> licitez 5331
+[05-05-2026 10:30:13] [MessageProcessor] Mesaj primit: [05-05-2026 10:29:57] /127.0.0.1:51015 [Ana Radu, 0716546201, ana.radu@email.com] >>> licitez 9653
+[05-05-2026 10:30:13] [MessageProcessor] Mesaj primit: [05-05-2026 10:29:56] /127.0.0.1:51018 [Ion Popescu, 0764194909, ion.popescu@email.com] >>> licitez 8883
+[05-05-2026 10:30:13] [MessageProcessor] Mesaj primit: [05-05-2026 10:29:57] /127.0.0.1:51021 [Ioana Matei, 0732015946, ioana.matei@email.com] >>> licitez 1933
+[05-05-2026 10:30:13] [MessageProcessor] Mesaj primit: [05-05-2026 10:29:57] /127.0.0.1:51023 [Mihai Stan, 0795094577, mihai.stan@email.com] >>> licitez 6877
+[05-05-2026 10:30:13] [MessageProcessor] Mesaj primit: [05-05-2026 10:29:57] /127.0.0.1:51026 [Maria Ionescu, 0780878970, maria.ionescu@email.com] >>> licitez 6383
+[05-05-2026 10:30:13] [MessageProcessor] Mesaj primit: [05-05-2026 10:29:57] /127.0.0.1:51034 [Mihai Stan, 0795562237, mihai.stan@email.com] >>> licitez 3721
+[05-05-2026 10:30:13] [MessageProcessor] Mesaj primit: [05-05-2026 10:29:57] /127.0.0.1:51043 [Elena Dumitrescu, 0712573263, elena.dumitrescu@email.com] >>> licitez 6068
+[05-05-2026 10:30:13] [MessageProcessor] Mesaj primit: [05-05-2026 10:29:57] /127.0.0.1:51052 [Andrei Georgescu, 0730980185, andrei.georgescu@email.com] >>> licitez 5214
+[05-05-2026 10:30:13] [MessageProcessor] Mesaj primit: [05-05-2026 10:29:57] /127.0.0.1:51057 [Mihai Stan, 0784235115, mihai.stan@email.com] >>> licitez 8281
+[05-05-2026 10:30:13] [MessageProcessor] Mesaj primit: [05-05-2026 10:29:57] /127.0.0.1:51058 [Maria Ionescu, 0731517599, maria.ionescu@email.com] >>> licitez 2564
+[05-05-2026 10:30:13] [MessageProcessor] Mesaj primit: [05-05-2026 10:29:57] /127.0.0.1:51062 [Maria Ionescu, 0769893565, maria.ionescu@email.com] >>> licitez 9233
+[05-05-2026 10:30:13] [MessageProcessor] Mesaj primit: [05-05-2026 10:29:57] /127.0.0.1:51066 [Mihai Stan, 0725327972, mihai.stan@email.com] >>> licitez 9874
+[05-05-2026 10:30:13] [MessageProcessor] Mesaj primit: [05-05-2026 10:29:57] /127.0.0.1:51067 [Maria Ionescu, 0732641493, maria.ionescu@email.com] >>> licitez 1074
+[05-05-2026 10:30:13] [MessageProcessor] Mesaj primit: [05-05-2026 10:29:57] /127.0.0.1:51069 [Andrei Georgescu, 0734388367, andrei.georgescu@email.com] >>> licitez 4970
+[05-05-2026 10:30:13] [MessageProcessor] Mesaj primit: [05-05-2026 10:29:57] /127.0.0.1:51071 [Cristian Pavel, 0730093903, cristian.pavel@email.com] >>> licitez 9495
+[05-05-2026 10:30:13] [MessageProcessor] Mesaj primit: [05-05-2026 10:29:57] /127.0.0.1:51073 [Maria Ionescu, 0735193673, maria.ionescu@email.com] >>> licitez 1439
+[05-05-2026 10:30:13] [MessageProcessor] Mesaj primit: [05-05-2026 10:29:57] /127.0.0.1:51082 [Ana Radu, 0785813791, ana.radu@email.com] >>> licitez 6233
+[05-05-2026 10:30:13] [MessageProcessor] Mesaj primit: [05-05-2026 10:29:57] /127.0.0.1:51084 [Ioana Matei, 0748616820, ioana.matei@email.com] >>> licitez 1200
+[05-05-2026 10:30:13] [MessageProcessor] Mesaj primit: [05-05-2026 10:29:57] /127.0.0.1:51086 [Cristian Pavel, 0756111089, cristian.pavel@email.com] >>> licitez 7038
+[05-05-2026 10:30:13] [MessageProcessor] Mesaj primit: [05-05-2026 10:29:57] /127.0.0.1:51087 [Ioana Matei, 0759853108, ioana.matei@email.com] >>> licitez 9004
+[05-05-2026 10:30:13] [MessageProcessor] Mesaj primit: [05-05-2026 10:29:57] /127.0.0.1:51088 [Mihai Stan, 0718070464, mihai.stan@email.com] >>> licitez 4207
+[05-05-2026 10:30:13] [MessageProcessor] Mesaj primit: [05-05-2026 10:29:57] /127.0.0.1:51089 [Andrei Georgescu, 0718269090, andrei.georgescu@email.com] >>> licitez 8717
+[05-05-2026 10:30:13] [MessageProcessor] Mesaj primit: [05-05-2026 10:29:57] /127.0.0.1:51093 [Maria Ionescu, 0783921436, maria.ionescu@email.com] >>> licitez 8342
+[05-05-2026 10:30:13] [MessageProcessor] Mesaj primit: [05-05-2026 10:29:57] /127.0.0.1:51097 [Mihai Stan, 0737410523, mihai.stan@email.com] >>> licitez 8663
+[05-05-2026 10:30:13] [MessageProcessor] Mesaj primit: [05-05-2026 10:29:57] /127.0.0.1:51099 [Elena Dumitrescu, 0764298977, elena.dumitrescu@email.com] >>> licitez 3917
+[05-05-2026 10:30:13] [MessageProcessor] Mesaj primit: [05-05-2026 10:29:56] /127.0.0.1:51107 [Ioana Matei, 0723555162, ioana.matei@email.com] >>> licitez 5424
+[05-05-2026 10:30:13] [MessageProcessor] Mesaj primit: [05-05-2026 10:29:57] /127.0.0.1:51108 [Cristian Pavel, 0794158898, cristian.pavel@email.com] >>> licitez 1032
+[05-05-2026 10:30:13] [MessageProcessor] Mesaj primit: [05-05-2026 10:29:57] /127.0.0.1:51110 [Maria Ionescu, 0776052113, maria.ionescu@email.com] >>> licitez 3955
+[05-05-2026 10:30:13] [MessageProcessor] Mesaj primit: [05-05-2026 10:29:57] /127.0.0.1:51111 [Cristian Pavel, 0728511174, cristian.pavel@email.com] >>> licitez 7993
+[05-05-2026 10:30:13] [MessageProcessor] Mesaj primit: [05-05-2026 10:29:57] /127.0.0.1:51113 [Elena Dumitrescu, 0742789734, elena.dumitrescu@email.com] >>> licitez 3626
+[05-05-2026 10:30:13] [MessageProcessor] Mesaj primit: [05-05-2026 10:29:57] /127.0.0.1:51117 [Maria Ionescu, 0785245112, maria.ionescu@email.com] >>> licitez 6541
+[05-05-2026 10:30:13] [MessageProcessor] Mesaj primit: [05-05-2026 10:29:57] /127.0.0.1:51118 [Ioana Matei, 0716560262, ioana.matei@email.com] >>> licitez 6794
+[05-05-2026 10:30:13] [MessageProcessor] Mesaj primit: [05-05-2026 10:29:57] /127.0.0.1:51119 [Maria Ionescu, 0781167955, maria.ionescu@email.com] >>> licitez 4719
+[05-05-2026 10:30:13] [MessageProcessor] Mesaj primit: [05-05-2026 10:29:57] /127.0.0.1:51186 [Elena Dumitrescu, 0773206611, elena.dumitrescu@email.com] >>> licitez 9013
+[05-05-2026 10:30:13] [MessageProcessor] Mesaj primit: [05-05-2026 10:29:57] /127.0.0.1:51174 [Elena Dumitrescu, 0732835567, elena.dumitrescu@email.com] >>> licitez 9803
+[05-05-2026 10:30:13] [MessageProcessor] Mesaj primit: [05-05-2026 10:29:57] /127.0.0.1:51159 [Ioana Matei, 0749707802, ioana.matei@email.com] >>> licitez 6876
+[05-05-2026 10:30:13] [MessageProcessor] Mesaj primit: [05-05-2026 10:29:57] /127.0.0.1:51196 [Elena Dumitrescu, 0793677682, elena.dumitrescu@email.com] >>> licitez 5268
+[05-05-2026 10:30:13] [MessageProcessor] Mesaj primit: [05-05-2026 10:29:57] /127.0.0.1:51189 [Ion Popescu, 0762223993, ion.popescu@email.com] >>> licitez 6446
+[05-05-2026 10:30:13] [MessageProcessor] Mesaj primit: [05-05-2026 10:29:57] /127.0.0.1:51176 [Cristian Pavel, 0734056397, cristian.pavel@email.com] >>> licitez 5344
+[05-05-2026 10:30:13] [MessageProcessor] Mesaj primit: [05-05-2026 10:29:57] /127.0.0.1:51181 [Andrei Georgescu, 0718750357, andrei.georgescu@email.com] >>> licitez 9189
+[05-05-2026 10:30:13] [MessageProcessor] Mesaj primit: [05-05-2026 10:29:57] /127.0.0.1:51144 [Elena Dumitrescu, 0737338579, elena.dumitrescu@email.com] >>> licitez 4112
+[05-05-2026 10:30:13] [MessageProcessor] Mesaj primit: [05-05-2026 10:29:57] /127.0.0.1:51254 [Maria Ionescu, 0752041055, maria.ionescu@email.com] >>> licitez 7947
+[05-05-2026 10:30:13] [MessageProcessor] Mesaj primit: [05-05-2026 10:29:57] /127.0.0.1:51136 [Cristian Pavel, 0710558391, cristian.pavel@email.com] >>> licitez 4937
+[05-05-2026 10:30:13] [MessageProcessor] Mesaj primit: [05-05-2026 10:29:57] /127.0.0.1:51269 [Maria Ionescu, 0776026194, maria.ionescu@email.com] >>> licitez 8236
+[05-05-2026 10:30:13] [MessageProcessor] Mesaj primit: [05-05-2026 10:29:57] /127.0.0.1:51142 [Ana Radu, 0717326638, ana.radu@email.com] >>> licitez 5671
+[05-05-2026 10:30:13] [MessageProcessor] Mesaj primit: [05-05-2026 10:29:57] /127.0.0.1:51249 [Ana Radu, 0732425479, ana.radu@email.com] >>> licitez 8178
+[05-05-2026 10:30:13] [MessageProcessor] Mesaj primit: [05-05-2026 10:29:57] /127.0.0.1:51224 [Elena Dumitrescu, 0759362854, elena.dumitrescu@email.com] >>> licitez 8319
+[05-05-2026 10:30:13] [MessageProcessor] Mesaj primit: [05-05-2026 10:29:57] /127.0.0.1:51148 [Ioana Matei, 0722034090, ioana.matei@email.com] >>> licitez 2107
+[05-05-2026 10:30:13] [MessageProcessor] Mesaj primit: [05-05-2026 10:29:57] /127.0.0.1:51149 [Andrei Georgescu, 0748601016, andrei.georgescu@email.com] >>> licitez 6105
+[05-05-2026 10:30:13] [MessageProcessor] Mesaj primit: [05-05-2026 10:29:57] /127.0.0.1:51150 [Maria Ionescu, 0786258644, maria.ionescu@email.com] >>> licitez 8909
+[05-05-2026 10:30:13] [MessageProcessor] Mesaj primit: [05-05-2026 10:29:57] /127.0.0.1:51256 [Ioana Matei, 0726049352, ioana.matei@email.com] >>> licitez 4112
+[05-05-2026 10:30:13] [MessageProcessor] Mesaj primit: [05-05-2026 10:29:57] /127.0.0.1:51164 [Maria Ionescu, 0717714976, maria.ionescu@email.com] >>> licitez 7542
+[05-05-2026 10:30:13] [MessageProcessor] Mesaj primit: [05-05-2026 10:29:57] /127.0.0.1:51166 [Andrei Georgescu, 0781178565, andrei.georgescu@email.com] >>> licitez 1402
+[05-05-2026 10:30:13] [MessageProcessor] Mesaj primit: [05-05-2026 10:29:57] /127.0.0.1:51167 [Andrei Georgescu, 0783799499, andrei.georgescu@email.com] >>> licitez 5608
+[05-05-2026 10:30:13] [MessageProcessor] Mesaj primit: [05-05-2026 10:29:57] /127.0.0.1:51242 [Ana Radu, 0756144406, ana.radu@email.com] >>> licitez 8828
+[05-05-2026 10:30:13] [MessageProcessor] Mesaj primit: [05-05-2026 10:29:57] /127.0.0.1:51243 [Ion Popescu, 0710050125, ion.popescu@email.com] >>> licitez 6964
+[05-05-2026 10:30:13] [MessageProcessor] Mesaj primit: [05-05-2026 10:29:57] /127.0.0.1:51172 [Cristian Pavel, 0747130567, cristian.pavel@email.com] >>> licitez 2308
+[05-05-2026 10:30:13] [MessageProcessor] Mesaj primit: [05-05-2026 10:29:57] /127.0.0.1:51251 [Ion Popescu, 0718601208, ion.popescu@email.com] >>> licitez 1211
+[05-05-2026 10:30:13] [MessageProcessor] Mesaj primit: [05-05-2026 10:29:57] /127.0.0.1:51191 [Ion Popescu, 0730488324, ion.popescu@email.com] >>> licitez 6991
+[05-05-2026 10:30:13] [MessageProcessor] Mesaj primit: [05-05-2026 10:29:57] /127.0.0.1:51216 [Cristian Pavel, 0712923798, cristian.pavel@email.com] >>> licitez 3728
+[05-05-2026 10:30:13] [MessageProcessor] Mesaj primit: [05-05-2026 10:29:57] /127.0.0.1:51215 [Cristian Pavel, 0777920895, cristian.pavel@email.com] >>> licitez 1477
+[05-05-2026 10:30:13] [MessageProcessor] Mesaj primit: [05-05-2026 10:29:57] /127.0.0.1:51229 [Ioana Matei, 0761720907, ioana.matei@email.com] >>> licitez 4825
+[05-05-2026 10:30:13] [MessageProcessor] Mesaj primit: [05-05-2026 10:29:57] /127.0.0.1:51228 [Ioana Matei, 0772807009, ioana.matei@email.com] >>> licitez 8573
+[05-05-2026 10:30:13] [MessageProcessor] Mesaj primit: [05-05-2026 10:29:58] /127.0.0.1:51129 [Ana Radu, 0785022102, ana.radu@email.com] >>> licitez 7343
+[05-05-2026 10:30:13] [MessageProcessor] Mesaj primit: [05-05-2026 10:29:58] /127.0.0.1:51128 [Elena Dumitrescu, 0727918446, elena.dumitrescu@email.com] >>> licitez 9733
+[05-05-2026 10:30:13] [MessageProcessor] Mesaj primit: [05-05-2026 10:29:58] /127.0.0.1:51125 [Elena Dumitrescu, 0759581911, elena.dumitrescu@email.com] >>> licitez 1552
+[05-05-2026 10:30:13] [MessageProcessor] Mesaj primit: [05-05-2026 10:29:58] /127.0.0.1:51124 [Ion Popescu, 0791347746, ion.popescu@email.com] >>> licitez 2300
+[05-05-2026 10:30:13] [MessageProcessor] Mesaj primit: [05-05-2026 10:29:58] /127.0.0.1:51123 [Maria Ionescu, 0791178441, maria.ionescu@email.com] >>> licitez 6761
+[05-05-2026 10:30:13] [MessageProcessor] Mesaj primit: [05-05-2026 10:29:58] /127.0.0.1:51122 [Elena Dumitrescu, 0720555797, elena.dumitrescu@email.com] >>> licitez 4302
+[05-05-2026 10:30:13] [MessageProcessor] Mesaj primit: [05-05-2026 10:29:58] /127.0.0.1:51121 [Ion Popescu, 0771328035, ion.popescu@email.com] >>> licitez 9111
+[05-05-2026 10:30:13] [MessageProcessor] Mesaj primit: [05-05-2026 10:29:58] /127.0.0.1:51131 [Ana Radu, 0739596550, ana.radu@email.com] >>> licitez 4993
+[05-05-2026 10:30:13] [MessageProcessor] Mesaj primit: [05-05-2026 10:29:58] /127.0.0.1:51130 [Ioana Matei, 0727958030, ioana.matei@email.com] >>> licitez 5003
+[05-05-2026 10:30:13] [MessageProcessor] Mesaj primit: [05-05-2026 10:29:58] /127.0.0.1:51132 [Ana Radu, 0741760509, ana.radu@email.com] >>> licitez 1911
+[05-05-2026 10:30:13] [MessageProcessor] Mesaj primit: [05-05-2026 10:29:58] /127.0.0.1:51135 [Ion Popescu, 0739402474, ion.popescu@email.com] >>> licitez 8634
+[05-05-2026 10:30:13] [MessageProcessor] Mesaj primit: [05-05-2026 10:29:58] /127.0.0.1:51134 [Elena Dumitrescu, 0774618874, elena.dumitrescu@email.com] >>> licitez 5799
+[05-05-2026 10:30:13] [MessageProcessor] Mesaj primit: [05-05-2026 10:29:58] /127.0.0.1:51155 [Cristian Pavel, 0722304082, cristian.pavel@email.com] >>> licitez 6412
+[05-05-2026 10:30:13] [MessageProcessor] Mesaj primit: [05-05-2026 10:29:58] /127.0.0.1:51157 [Ioana Matei, 0714323391, ioana.matei@email.com] >>> licitez 3920
+[05-05-2026 10:30:13] [MessageProcessor] Mesaj primit: [05-05-2026 10:29:58] /127.0.0.1:51194 [Mihai Stan, 0787289631, mihai.stan@email.com] >>> licitez 7656
+[05-05-2026 10:30:13] [MessageProcessor] Mesaj primit: [05-05-2026 10:29:58] /127.0.0.1:51193 [Ion Popescu, 0718538839, ion.popescu@email.com] >>> licitez 8936
+[05-05-2026 10:30:13] [MessageProcessor] Mesaj primit: [05-05-2026 10:29:58] /127.0.0.1:51200 [Ion Popescu, 0781868955, ion.popescu@email.com] >>> licitez 8459
+[05-05-2026 10:30:13] [MessageProcessor] Mesaj primit: [05-05-2026 10:29:58] /127.0.0.1:51202 [Ana Radu, 0724050531, ana.radu@email.com] >>> licitez 7295
+[05-05-2026 10:30:13] [MessageProcessor] Mesaj primit: [05-05-2026 10:29:58] /127.0.0.1:51203 [Cristian Pavel, 0774785180, cristian.pavel@email.com] >>> licitez 1766
+[05-05-2026 10:30:14] [MessageProcessor] Mesajele au fost sortate si trimise catre BiddingProcessor
+[05-05-2026 10:30:14] [BiddingProcessor] Castigator decis: Mihai Stan, telefon: 0725327972, email: mihai.stan@email.com, oferta: licitez 9874
+[05-05-2026 10:30:14] [Auctioneer] Castigator: Mihai Stan, telefon: 0725327972, email: mihai.stan@email.com, pret: 9874
+[05-05-2026 10:30:14] [Auctioneer] Pornit pe portul 1500
+[05-05-2026 10:30:14] [Bidder] [50972] rezultat primit: Licitatie pierduta...
+[05-05-2026 10:30:14] [Bidder] [50970] rezultat primit: Licitatie pierduta...
+[05-05-2026 10:30:14] [Bidder] [50971] rezultat primit: Licitatie pierduta...
+[05-05-2026 10:30:14] [Bidder] [50983] rezultat primit: Licitatie pierduta...
+[05-05-2026 10:30:14] [Bidder] [50988] rezultat primit: Licitatie pierduta...
+[05-05-2026 10:30:14] [Bidder] [50998] rezultat primit: Licitatie pierduta...
+[05-05-2026 10:30:14] [Bidder] [50999] rezultat primit: Licitatie pierduta...
+[05-05-2026 10:30:14] [Bidder] [51012] rezultat primit: Licitatie pierduta...
+[05-05-2026 10:30:14] [Bidder] [50991] rezultat primit: Licitatie pierduta...
+[05-05-2026 10:30:14] [Bidder] [50994] rezultat primit: Licitatie pierduta...
+[05-05-2026 10:30:14] [Bidder] [50981] rezultat primit: Licitatie pierduta...
+[05-05-2026 10:30:14] [Bidder] [50978] rezultat primit: Licitatie pierduta...
+[05-05-2026 10:30:14] [Bidder] [51026] rezultat primit: Licitatie pierduta...
+[05-05-2026 10:30:14] [Bidder] [50986] rezultat primit: Licitatie pierduta...
+[05-05-2026 10:30:14] [Bidder] [51086] rezultat primit: Licitatie pierduta...
+[05-05-2026 10:30:14] [Bidder] [51099] rezultat primit: Licitatie pierduta...
+[05-05-2026 10:30:14] [Bidder] [51089] rezultat primit: Licitatie pierduta...
+[05-05-2026 10:30:14] [Bidder] [51082] rezultat primit: Licitatie pierduta...
+[05-05-2026 10:30:14] [Bidder] [50973] rezultat primit: Licitatie pierduta...
+[05-05-2026 10:30:14] [Bidder] [51058] rezultat primit: Licitatie pierduta...
+[05-05-2026 10:30:14] [Bidder] [51174] rezultat primit: Licitatie pierduta...
+[05-05-2026 10:30:14] [Bidder] [51067] rezultat primit: Licitatie pierduta...
+[05-05-2026 10:30:14] [Bidder] [51052] rezultat primit: Licitatie pierduta...
+[05-05-2026 10:30:14] [Bidder] [51186] rezultat primit: Licitatie pierduta...
+[05-05-2026 10:30:14] [Bidder] [51117] rezultat primit: Licitatie pierduta...
+[05-05-2026 10:30:14] [Bidder] [51015] rezultat primit: Licitatie pierduta...
+[05-05-2026 10:30:14] [Bidder] [51189] rezultat primit: Licitatie pierduta...
+[05-05-2026 10:30:14] [Bidder] [51181] rezultat primit: Licitatie pierduta...
+[05-05-2026 10:30:14] [Bidder] [51254] rezultat primit: Licitatie pierduta...
+[05-05-2026 10:30:14] [Bidder] [51224] rezultat primit: Licitatie pierduta...
+[05-05-2026 10:30:14] [Bidder] [51148] rezultat primit: Licitatie pierduta...
+[05-05-2026 10:30:14] [Bidder] [51011] rezultat primit: Licitatie pierduta...
+[05-05-2026 10:30:14] [Bidder] [51164] rezultat primit: Licitatie pierduta...
+[05-05-2026 10:30:14] [Bidder] [51150] rezultat primit: Licitatie pierduta...
+[05-05-2026 10:30:14] [Bidder] [51269] rezultat primit: Licitatie pierduta...
+[05-05-2026 10:30:14] [Bidder] [51256] rezultat primit: Licitatie pierduta...
+[05-05-2026 10:30:14] [Bidder] [51149] rezultat primit: Licitatie pierduta...
+[05-05-2026 10:30:14] [Bidder] [51142] rezultat primit: Licitatie pierduta...
+[05-05-2026 10:30:14] [Bidder] [51176] rezultat primit: Licitatie pierduta...
+[05-05-2026 10:30:14] [Bidder] [51166] rezultat primit: Licitatie pierduta...
+[05-05-2026 10:30:14] [Bidder] [51136] rezultat primit: Licitatie pierduta...
+[05-05-2026 10:30:14] [Bidder] [51144] rezultat primit: Licitatie pierduta...
+[05-05-2026 10:30:14] [Bidder] [51097] rezultat primit: Licitatie pierduta...
+[05-05-2026 10:30:14] [Bidder] [51172] rezultat primit: Licitatie pierduta...
+[05-05-2026 10:30:14] [Bidder] [51249] rezultat primit: Licitatie pierduta...
+[05-05-2026 10:30:14] [Bidder] [51243] rezultat primit: Licitatie pierduta...
+[05-05-2026 10:30:14] [Bidder] [51071] rezultat primit: Licitatie pierduta...
+[05-05-2026 10:30:14] [Bidder] [51191] rezultat primit: Licitatie pierduta...
+[05-05-2026 10:30:14] [Bidder] [51167] rezultat primit: Licitatie pierduta...
+[05-05-2026 10:30:14] [Bidder] [51242] rezultat primit: Licitatie pierduta...
+[05-05-2026 10:30:14] [Bidder] [51043] rezultat primit: Licitatie pierduta...
+[05-05-2026 10:30:14] [Bidder] [51251] rezultat primit: Licitatie pierduta...
+[05-05-2026 10:30:14] [Bidder] [50967] rezultat primit: Licitatie pierduta...
+[05-05-2026 10:30:14] [Bidder] [51062] rezultat primit: Licitatie pierduta...
+[05-05-2026 10:30:14] [Bidder] [51118] rezultat primit: Licitatie pierduta...
+[05-05-2026 10:30:14] [Bidder] [51111] rezultat primit: Licitatie pierduta...
+[05-05-2026 10:30:14] [Bidder] [51021] rezultat primit: Licitatie pierduta...
+[05-05-2026 10:30:14] [Bidder] [51216] rezultat primit: Licitatie pierduta...
+[05-05-2026 10:30:14] [Bidder] [51093] rezultat primit: Licitatie pierduta...
+[05-05-2026 10:30:14] [Bidder] [51069] rezultat primit: Licitatie pierduta...
+[05-05-2026 10:30:14] [Bidder] [51108] rezultat primit: Licitatie pierduta...
+[05-05-2026 10:30:14] [Bidder] [51073] rezultat primit: Licitatie pierduta...
+[05-05-2026 10:30:14] [Bidder] [51018] rezultat primit: Licitatie pierduta...
+[05-05-2026 10:30:14] [Bidder] [51034] rezultat primit: Licitatie pierduta...
+[05-05-2026 10:30:14] [Bidder] [51159] rezultat primit: Licitatie pierduta...
+[05-05-2026 10:30:14] [Bidder] [51066] rezultat primit: Licitatie castigata! Pret castigator: 9874
+[05-05-2026 10:30:14] [Bidder] [51113] rezultat primit: Licitatie pierduta...
+[05-05-2026 10:30:14] [Bidder] [51107] rezultat primit: Licitatie pierduta...
+[05-05-2026 10:30:14] [Bidder] [51023] rezultat primit: Licitatie pierduta...
+[05-05-2026 10:30:14] [Bidder] [51215] rezultat primit: Licitatie pierduta...
+[05-05-2026 10:30:14] [Bidder] [51129] rezultat primit: Licitatie pierduta...
+[05-05-2026 10:30:14] [Bidder] [51122] rezultat primit: Licitatie pierduta...
+[05-05-2026 10:30:14] [Bidder] [51155] rezultat primit: Licitatie pierduta...
+[05-05-2026 10:30:14] [Bidder] [51134] rezultat primit: Licitatie pierduta...
+[05-05-2026 10:30:14] [Bidder] [51110] rezultat primit: Licitatie pierduta...
+[05-05-2026 10:30:14] [Bidder] [51157] rezultat primit: Licitatie pierduta...
+[05-05-2026 10:30:14] [Bidder] [51194] rezultat primit: Licitatie pierduta...
+[05-05-2026 10:30:14] [Bidder] [51200] rezultat primit: Licitatie pierduta...
+[05-05-2026 10:30:14] [Bidder] [51124] rezultat primit: Licitatie pierduta...
+[05-05-2026 10:30:14] [Bidder] [51123] rezultat primit: Licitatie pierduta...
+[05-05-2026 10:30:14] [Bidder] [51203] rezultat primit: Licitatie pierduta...
+[05-05-2026 10:30:14] [Bidder] [51229] rezultat primit: Licitatie pierduta...
+[05-05-2026 10:30:14] [Bidder] [51202] rezultat primit: Licitatie pierduta...
+[05-05-2026 10:30:14] [Bidder] [51193] rezultat primit: Licitatie pierduta...
+[05-05-2026 10:30:14] [Bidder] [51128] rezultat primit: Licitatie pierduta...
+[05-05-2026 10:30:14] [Bidder] [51228] rezultat primit: Licitatie pierduta...
+[05-05-2026 10:30:14] [Bidder] [51125] rezultat primit: Licitatie pierduta...
+[05-05-2026 10:30:14] [Bidder] [51131] rezultat primit: Licitatie pierduta...
+[05-05-2026 10:30:14] [Bidder] [50997] rezultat primit: Licitatie pierduta...
+[05-05-2026 10:30:14] [Bidder] [51132] rezultat primit: Licitatie pierduta...
+[05-05-2026 10:30:14] [Bidder] [51135] rezultat primit: Licitatie pierduta...
+[05-05-2026 10:30:14] [Bidder] [51130] rezultat primit: Licitatie pierduta...
+[05-05-2026 10:30:14] [Bidder] [51119] rezultat primit: Licitatie pierduta...
+[05-05-2026 10:30:14] [Bidder] [51121] rezultat primit: Licitatie pierduta...
+[05-05-2026 10:30:14] [Bidder] [51057] rezultat primit: Licitatie pierduta...
+[05-05-2026 10:30:14] [Bidder] [50990] rezultat primit: Licitatie pierduta...
+[05-05-2026 10:30:14] [Bidder] [51084] rezultat primit: Licitatie pierduta...
+[05-05-2026 10:30:14] [Bidder] [51196] rezultat primit: Licitatie pierduta...
+[05-05-2026 10:30:14] [Bidder] [51088] rezultat primit: Licitatie pierduta...
+[05-05-2026 10:30:14] [Bidder] [51087] rezultat primit: Licitatie pierduta...
+[11-05-2026 10:28:55] MonitoringMicroservice pornit pe portul 1900
+[11-05-2026 10:29:11] [MessageProcessor] Pornit pe portul 1600
+[11-05-2026 10:29:21] [BiddingProcessor] Pornit pe portul 1700
+[11-05-2026 10:29:27] [Auctioneer] Pornit pe portul 1500
+[11-05-2026 10:29:36] [Bidder] [BIDDER_NECONECTAT] conectat la Auctioneer
+[11-05-2026 10:29:36] [Bidder] [57903] oferta trimisa: 7864 de catre Ana Radu
+[11-05-2026 10:29:36] [Bidder] [BIDDER_NECONECTAT] conectat la Auctioneer
+[11-05-2026 10:29:36] [Bidder] [BIDDER_NECONECTAT] conectat la Auctioneer
+[11-05-2026 10:29:36] [Bidder] [BIDDER_NECONECTAT] conectat la Auctioneer
+[11-05-2026 10:29:36] [Bidder] [BIDDER_NECONECTAT] conectat la Auctioneer
+[11-05-2026 10:29:36] [Bidder] [BIDDER_NECONECTAT] conectat la Auctioneer
+[11-05-2026 10:29:36] [Bidder] [57895] oferta trimisa: 2252 de catre Ion Popescu
+[11-05-2026 10:29:36] [Bidder] [BIDDER_NECONECTAT] conectat la Auctioneer
+[11-05-2026 10:29:36] [Bidder] [BIDDER_NECONECTAT] conectat la Auctioneer
+[11-05-2026 10:29:37] [Bidder] [57964] oferta trimisa: 9211 de catre Elena Dumitrescu
+[11-05-2026 10:29:37] [Bidder] [BIDDER_NECONECTAT] conectat la Auctioneer
+[11-05-2026 10:29:37] [Bidder] [BIDDER_NECONECTAT] conectat la Auctioneer
+[11-05-2026 10:29:37] [Bidder] [BIDDER_NECONECTAT] conectat la Auctioneer
+[11-05-2026 10:29:37] [Bidder] [BIDDER_NECONECTAT] conectat la Auctioneer
+[11-05-2026 10:29:37] [Bidder] [BIDDER_NECONECTAT] conectat la Auctioneer
+[11-05-2026 10:29:37] [Bidder] [BIDDER_NECONECTAT] conectat la Auctioneer
+[11-05-2026 10:29:37] [Bidder] [BIDDER_NECONECTAT] conectat la Auctioneer
+[11-05-2026 10:29:37] [Bidder] [BIDDER_NECONECTAT] conectat la Auctioneer
+[11-05-2026 10:29:37] [Bidder] [BIDDER_NECONECTAT] conectat la Auctioneer
+[11-05-2026 10:29:37] [Bidder] [BIDDER_NECONECTAT] conectat la Auctioneer
+[11-05-2026 10:29:37] [Bidder] [BIDDER_NECONECTAT] conectat la Auctioneer
+[11-05-2026 10:29:37] [Bidder] [BIDDER_NECONECTAT] conectat la Auctioneer
+[11-05-2026 10:29:37] [Bidder] [BIDDER_NECONECTAT] conectat la Auctioneer
+[11-05-2026 10:29:37] [Bidder] [BIDDER_NECONECTAT] conectat la Auctioneer
+[11-05-2026 10:29:37] [Bidder] [BIDDER_NECONECTAT] conectat la Auctioneer
+[11-05-2026 10:29:37] [Bidder] [BIDDER_NECONECTAT] conectat la Auctioneer
+[11-05-2026 10:29:37] [Bidder] [58037] oferta trimisa: 1692 de catre Cristian Pavel
+[11-05-2026 10:29:37] [Bidder] [BIDDER_NECONECTAT] conectat la Auctioneer
+[11-05-2026 10:29:37] [Bidder] [BIDDER_NECONECTAT] conectat la Auctioneer
+[11-05-2026 10:29:37] [Bidder] [BIDDER_NECONECTAT] conectat la Auctioneer
+[11-05-2026 10:29:37] [Bidder] [BIDDER_NECONECTAT] conectat la Auctioneer
+[11-05-2026 10:29:37] [Bidder] [BIDDER_NECONECTAT] conectat la Auctioneer
+[11-05-2026 10:29:37] [Bidder] [BIDDER_NECONECTAT] conectat la Auctioneer
+[11-05-2026 10:29:37] [Bidder] [BIDDER_NECONECTAT] conectat la Auctioneer
+[11-05-2026 10:29:37] [Bidder] [BIDDER_NECONECTAT] conectat la Auctioneer
+[11-05-2026 10:29:37] [Bidder] [BIDDER_NECONECTAT] conectat la Auctioneer
+[11-05-2026 10:29:37] [Bidder] [BIDDER_NECONECTAT] conectat la Auctioneer
+[11-05-2026 10:29:37] [Bidder] [BIDDER_NECONECTAT] conectat la Auctioneer
+[11-05-2026 10:29:37] [Bidder] [BIDDER_NECONECTAT] conectat la Auctioneer
+[11-05-2026 10:29:37] [Bidder] [57915] oferta trimisa: 3970 de catre Mihai Stan
+[11-05-2026 10:29:37] [Bidder] [57891] oferta trimisa: 8043 de catre Ana Radu
+[11-05-2026 10:29:37] [Bidder] [BIDDER_NECONECTAT] conectat la Auctioneer
+[11-05-2026 10:29:37] [Bidder] [BIDDER_NECONECTAT] conectat la Auctioneer
+[11-05-2026 10:29:37] [Bidder] [57988] oferta trimisa: 6016 de catre Cristian Pavel
+[11-05-2026 10:29:37] [Bidder] [BIDDER_NECONECTAT] conectat la Auctioneer
+[11-05-2026 10:29:37] [Bidder] [58001] oferta trimisa: 6024 de catre Maria Ionescu
+[11-05-2026 10:29:37] [Bidder] [BIDDER_NECONECTAT] conectat la Auctioneer
+[11-05-2026 10:29:37] [Bidder] [57907] oferta trimisa: 8383 de catre Ion Popescu
+[11-05-2026 10:29:37] [Bidder] [BIDDER_NECONECTAT] conectat la Auctioneer
+[11-05-2026 10:29:37] [Bidder] [BIDDER_NECONECTAT] conectat la Auctioneer
+[11-05-2026 10:29:37] [Bidder] [BIDDER_NECONECTAT] conectat la Auctioneer
+[11-05-2026 10:29:37] [Bidder] [57924] oferta trimisa: 1115 de catre Cristian Pavel
+[11-05-2026 10:29:37] [Bidder] [BIDDER_NECONECTAT] conectat la Auctioneer
+[11-05-2026 10:29:37] [Bidder] [57913] oferta trimisa: 4504 de catre Elena Dumitrescu
+[11-05-2026 10:29:37] [Bidder] [57933] oferta trimisa: 3819 de catre Ana Radu
+[11-05-2026 10:29:37] [Bidder] [BIDDER_NECONECTAT] conectat la Auctioneer
+[11-05-2026 10:29:37] [Bidder] [BIDDER_NECONECTAT] conectat la Auctioneer
+[11-05-2026 10:29:37] [Bidder] [BIDDER_NECONECTAT] conectat la Auctioneer
+[11-05-2026 10:29:37] [Bidder] [57962] oferta trimisa: 6807 de catre Mihai Stan
+[11-05-2026 10:29:37] [Bidder] [BIDDER_NECONECTAT] conectat la Auctioneer
+[11-05-2026 10:29:37] [Bidder] [BIDDER_NECONECTAT] conectat la Auctioneer
+[11-05-2026 10:29:37] [Bidder] [BIDDER_NECONECTAT] conectat la Auctioneer
+[11-05-2026 10:29:37] [Bidder] [57926] oferta trimisa: 1579 de catre Elena Dumitrescu
+[11-05-2026 10:29:37] [Bidder] [57922] oferta trimisa: 1283 de catre Ana Radu
+[11-05-2026 10:29:37] [Bidder] [57934] oferta trimisa: 1214 de catre Ioana Matei
+[11-05-2026 10:29:37] [Bidder] [57923] oferta trimisa: 8543 de catre Ion Popescu
+[11-05-2026 10:29:37] [Bidder] [57963] oferta trimisa: 1069 de catre Elena Dumitrescu
+[11-05-2026 10:29:37] [Bidder] [57967] oferta trimisa: 7378 de catre Andrei Georgescu
+[11-05-2026 10:29:37] [Bidder] [57932] oferta trimisa: 7306 de catre Andrei Georgescu
+[11-05-2026 10:29:37] [Bidder] [57993] oferta trimisa: 8193 de catre Andrei Georgescu
+[11-05-2026 10:29:37] [Bidder] [BIDDER_NECONECTAT] conectat la Auctioneer
+[11-05-2026 10:29:37] [Bidder] [58023] oferta trimisa: 5460 de catre Cristian Pavel
+[11-05-2026 10:29:37] [Bidder] [57957] oferta trimisa: 1567 de catre Ion Popescu
+[11-05-2026 10:29:37] [Bidder] [57965] oferta trimisa: 1274 de catre Mihai Stan
+[11-05-2026 10:29:37] [Bidder] [57966] oferta trimisa: 7811 de catre Andrei Georgescu
+[11-05-2026 10:29:38] [Bidder] [57984] oferta trimisa: 1699 de catre Ioana Matei
+[11-05-2026 10:29:38] [Bidder] [58033] oferta trimisa: 6263 de catre Ioana Matei
+[11-05-2026 10:29:38] [Bidder] [57916] oferta trimisa: 2227 de catre Ioana Matei
+[11-05-2026 10:29:38] [Bidder] [57925] oferta trimisa: 5560 de catre Ioana Matei
+[11-05-2026 10:29:38] [Bidder] [57996] oferta trimisa: 9227 de catre Elena Dumitrescu
+[11-05-2026 10:29:38] [Bidder] [57959] oferta trimisa: 2873 de catre Ana Radu
+[11-05-2026 10:29:38] [Bidder] [57927] oferta trimisa: 1953 de catre Ana Radu
+[11-05-2026 10:29:38] [Bidder] [57998] oferta trimisa: 6286 de catre Ana Radu
+[11-05-2026 10:29:38] [Bidder] [58011] oferta trimisa: 7123 de catre Ioana Matei
+[11-05-2026 10:29:38] [Bidder] [57989] oferta trimisa: 1942 de catre Ioana Matei
+[11-05-2026 10:29:38] [Bidder] [58030] oferta trimisa: 5374 de catre Elena Dumitrescu
+[11-05-2026 10:29:38] [Bidder] [58017] oferta trimisa: 6912 de catre Ion Popescu
+[11-05-2026 10:29:38] [Bidder] [58031] oferta trimisa: 5748 de catre Ion Popescu
+[11-05-2026 10:29:38] [Bidder] [58035] oferta trimisa: 4118 de catre Elena Dumitrescu
+[11-05-2026 10:29:38] [Bidder] [57990] oferta trimisa: 4385 de catre Ana Radu
+[11-05-2026 10:29:38] [Auctioneer] Oferta primita: [11-05-2026 10:29:37] /127.0.0.1:57891 [Ana Radu, 0797138098, ana.radu@email.com] >>> licitez 8043
+[11-05-2026 10:29:38] [Auctioneer] Oferta primita: [11-05-2026 10:29:36] /127.0.0.1:57895 [Ion Popescu, 0719493802, ion.popescu@email.com] >>> licitez 2252
+[11-05-2026 10:29:38] [Auctioneer] Oferta primita: [11-05-2026 10:29:36] /127.0.0.1:57903 [Ana Radu, 0738273924, ana.radu@email.com] >>> licitez 7864
+[11-05-2026 10:29:38] [Bidder] [BIDDER_NECONECTAT] conectat la Auctioneer
+[11-05-2026 10:29:38] [Bidder] [58021] oferta trimisa: 9731 de catre Mihai Stan
+[11-05-2026 10:29:38] [Auctioneer] Oferta primita: [11-05-2026 10:29:37] /127.0.0.1:57907 [Ion Popescu, 0737150654, ion.popescu@email.com] >>> licitez 8383
+[11-05-2026 10:29:38] [Bidder] [58002] oferta trimisa: 6446 de catre Cristian Pavel
+[11-05-2026 10:29:38] [Bidder] [BIDDER_NECONECTAT] conectat la Auctioneer
+[11-05-2026 10:29:38] [Auctioneer] Oferta primita: [11-05-2026 10:29:37] /127.0.0.1:57913 [Elena Dumitrescu, 0762435494, elena.dumitrescu@email.com] >>> licitez 4504
+[11-05-2026 10:29:38] [Auctioneer] Oferta primita: [11-05-2026 10:29:37] /127.0.0.1:57915 [Mihai Stan, 0721725423, mihai.stan@email.com] >>> licitez 3970
+[11-05-2026 10:29:38] [Bidder] [BIDDER_NECONECTAT] conectat la Auctioneer
+[11-05-2026 10:29:38] [Auctioneer] Oferta primita: [11-05-2026 10:29:37] /127.0.0.1:57916 [Ioana Matei, 0785243219, ioana.matei@email.com] >>> licitez 2227
+[11-05-2026 10:29:38] [Auctioneer] Oferta primita: [11-05-2026 10:29:37] /127.0.0.1:57922 [Ana Radu, 0748466429, ana.radu@email.com] >>> licitez 1283
+[11-05-2026 10:29:38] [Auctioneer] Oferta primita: [11-05-2026 10:29:37] /127.0.0.1:57923 [Ion Popescu, 0799431389, ion.popescu@email.com] >>> licitez 8543
+[11-05-2026 10:29:38] [Auctioneer] Oferta primita: [11-05-2026 10:29:37] /127.0.0.1:57924 [Cristian Pavel, 0716356771, cristian.pavel@email.com] >>> licitez 1115
+[11-05-2026 10:29:38] [Bidder] [BIDDER_NECONECTAT] conectat la Auctioneer
+[11-05-2026 10:29:38] [Bidder] [BIDDER_NECONECTAT] conectat la Auctioneer
+[11-05-2026 10:29:38] [Bidder] [BIDDER_NECONECTAT] conectat la Auctioneer
+[11-05-2026 10:29:38] [Bidder] [BIDDER_NECONECTAT] conectat la Auctioneer
+[11-05-2026 10:29:38] [Bidder] [57928] oferta trimisa: 8197 de catre Mihai Stan
+[11-05-2026 10:29:38] [Bidder] [57936] oferta trimisa: 1888 de catre Elena Dumitrescu
+[11-05-2026 10:29:38] [Bidder] [58019] oferta trimisa: 3948 de catre Andrei Georgescu
+[11-05-2026 10:29:38] [Bidder] [BIDDER_NECONECTAT] conectat la Auctioneer
+[11-05-2026 10:29:38] [Bidder] [58012] oferta trimisa: 5753 de catre Maria Ionescu
+[11-05-2026 10:29:38] [Bidder] [57981] oferta trimisa: 5946 de catre Elena Dumitrescu
+[11-05-2026 10:29:38] [Bidder] [BIDDER_NECONECTAT] conectat la Auctioneer
+[11-05-2026 10:29:38] [Bidder] [58142] oferta trimisa: 9177 de catre Elena Dumitrescu
+[11-05-2026 10:29:38] [Bidder] [58165] oferta trimisa: 1276 de catre Elena Dumitrescu
+[11-05-2026 10:29:38] [Bidder] [BIDDER_NECONECTAT] conectat la Auctioneer
+[11-05-2026 10:29:38] [Bidder] [58022] oferta trimisa: 8838 de catre Mihai Stan
+[11-05-2026 10:29:38] [Bidder] [58065] oferta trimisa: 3385 de catre Elena Dumitrescu
+[11-05-2026 10:29:38] [Bidder] [58036] oferta trimisa: 3124 de catre Elena Dumitrescu
+[11-05-2026 10:29:38] [Bidder] [58018] oferta trimisa: 9210 de catre Ioana Matei
+[11-05-2026 10:29:38] [Bidder] [58006] oferta trimisa: 5739 de catre Andrei Georgescu
+[11-05-2026 10:29:38] [Auctioneer] Oferta primita: [11-05-2026 10:29:37] /127.0.0.1:57925 [Ioana Matei, 0711317538, ioana.matei@email.com] >>> licitez 5560
+[11-05-2026 10:29:38] [Bidder] [58072] oferta trimisa: 5809 de catre Mihai Stan
+[11-05-2026 10:29:38] [Bidder] [58148] oferta trimisa: 6595 de catre Ana Radu
+[11-05-2026 10:29:38] [Auctioneer] Oferta primita: [11-05-2026 10:29:37] /127.0.0.1:57926 [Elena Dumitrescu, 0771352625, elena.dumitrescu@email.com] >>> licitez 1579
+[11-05-2026 10:29:38] [Bidder] [BIDDER_NECONECTAT] conectat la Auctioneer
+[11-05-2026 10:29:38] [Bidder] [BIDDER_NECONECTAT] conectat la Auctioneer
+[11-05-2026 10:29:38] [Bidder] [58138] oferta trimisa: 6301 de catre Ioana Matei
+[11-05-2026 10:29:38] [Bidder] [58080] oferta trimisa: 1399 de catre Ioana Matei
+[11-05-2026 10:29:38] [Auctioneer] Oferta primita: [11-05-2026 10:29:38] /127.0.0.1:57927 [Ana Radu, 0745482010, ana.radu@email.com] >>> licitez 1953
+[11-05-2026 10:29:38] [Bidder] [BIDDER_NECONECTAT] conectat la Auctioneer
+[11-05-2026 10:29:38] [Auctioneer] Oferta primita: [11-05-2026 10:29:38] /127.0.0.1:57928 [Mihai Stan, 0796467281, mihai.stan@email.com] >>> licitez 8197
+[11-05-2026 10:29:38] [Bidder] [BIDDER_NECONECTAT] conectat la Auctioneer
+[11-05-2026 10:29:38] [Bidder] [58069] oferta trimisa: 6048 de catre Ion Popescu
+[11-05-2026 10:29:38] [Auctioneer] Oferta primita: [11-05-2026 10:29:37] /127.0.0.1:57932 [Andrei Georgescu, 0728191553, andrei.georgescu@email.com] >>> licitez 7306
+[11-05-2026 10:29:38] [Auctioneer] Oferta primita: [11-05-2026 10:29:37] /127.0.0.1:57933 [Ana Radu, 0785054629, ana.radu@email.com] >>> licitez 3819
+[11-05-2026 10:29:38] [Bidder] [BIDDER_NECONECTAT] conectat la Auctioneer
+[11-05-2026 10:29:38] [Auctioneer] Oferta primita: [11-05-2026 10:29:37] /127.0.0.1:57934 [Ioana Matei, 0799606188, ioana.matei@email.com] >>> licitez 1214
+[11-05-2026 10:29:38] [Bidder] [58167] oferta trimisa: 3737 de catre Cristian Pavel
+[11-05-2026 10:29:38] [Bidder] [BIDDER_NECONECTAT] conectat la Auctioneer
+[11-05-2026 10:29:38] [Auctioneer] Oferta primita: [11-05-2026 10:29:38] /127.0.0.1:57936 [Elena Dumitrescu, 0740914645, elena.dumitrescu@email.com] >>> licitez 1888
+[11-05-2026 10:29:38] [Bidder] [58113] oferta trimisa: 3794 de catre Maria Ionescu
+[11-05-2026 10:29:38] [Bidder] [58074] oferta trimisa: 5284 de catre Cristian Pavel
+[11-05-2026 10:29:38] [Bidder] [BIDDER_NECONECTAT] conectat la Auctioneer
+[11-05-2026 10:29:38] [Bidder] [58103] oferta trimisa: 7675 de catre Ion Popescu
+[11-05-2026 10:29:38] [Bidder] [58109] oferta trimisa: 1699 de catre Ana Radu
+[11-05-2026 10:29:38] [Bidder] [BIDDER_NECONECTAT] conectat la Auctioneer
+[11-05-2026 10:29:38] [Bidder] [58101] oferta trimisa: 2571 de catre Maria Ionescu
+[11-05-2026 10:29:38] [Auctioneer] Oferta primita: [11-05-2026 10:29:37] /127.0.0.1:57957 [Ion Popescu, 0787899983, ion.popescu@email.com] >>> licitez 1567
+[11-05-2026 10:29:38] [Bidder] [58115] oferta trimisa: 2850 de catre Andrei Georgescu
+[11-05-2026 10:29:38] [Auctioneer] Oferta primita: [11-05-2026 10:29:38] /127.0.0.1:57959 [Ana Radu, 0731558660, ana.radu@email.com] >>> licitez 2873
+[11-05-2026 10:29:38] [Auctioneer] Oferta primita: [11-05-2026 10:29:37] /127.0.0.1:57962 [Mihai Stan, 0778767000, mihai.stan@email.com] >>> licitez 6807
+[11-05-2026 10:29:38] [Auctioneer] Oferta primita: [11-05-2026 10:29:37] /127.0.0.1:57963 [Elena Dumitrescu, 0712172137, elena.dumitrescu@email.com] >>> licitez 1069
+[11-05-2026 10:29:38] [Auctioneer] Oferta primita: [11-05-2026 10:29:36] /127.0.0.1:57964 [Elena Dumitrescu, 0781506837, elena.dumitrescu@email.com] >>> licitez 9211
+[11-05-2026 10:29:38] [Auctioneer] Oferta primita: [11-05-2026 10:29:37] /127.0.0.1:57965 [Mihai Stan, 0774847221, mihai.stan@email.com] >>> licitez 1274
+[11-05-2026 10:29:38] [Bidder] [58122] oferta trimisa: 9020 de catre Cristian Pavel
+[11-05-2026 10:29:38] [Auctioneer] Oferta primita: [11-05-2026 10:29:37] /127.0.0.1:57966 [Andrei Georgescu, 0733867947, andrei.georgescu@email.com] >>> licitez 7811
+[11-05-2026 10:29:38] [Bidder] [58119] oferta trimisa: 3168 de catre Elena Dumitrescu
+[11-05-2026 10:29:38] [Auctioneer] Oferta primita: [11-05-2026 10:29:37] /127.0.0.1:57967 [Andrei Georgescu, 0769478821, andrei.georgescu@email.com] >>> licitez 7378
+[11-05-2026 10:29:38] [Auctioneer] Oferta primita: [11-05-2026 10:29:38] /127.0.0.1:57981 [Elena Dumitrescu, 0783281609, elena.dumitrescu@email.com] >>> licitez 5946
+[11-05-2026 10:29:38] [Auctioneer] Oferta primita: [11-05-2026 10:29:37] /127.0.0.1:57984 [Ioana Matei, 0780662795, ioana.matei@email.com] >>> licitez 1699
+[11-05-2026 10:29:38] [Auctioneer] Oferta primita: [11-05-2026 10:29:37] /127.0.0.1:57988 [Cristian Pavel, 0752093787, cristian.pavel@email.com] >>> licitez 6016
+[11-05-2026 10:29:38] [Auctioneer] Oferta primita: [11-05-2026 10:29:38] /127.0.0.1:57989 [Ioana Matei, 0738270205, ioana.matei@email.com] >>> licitez 1942
+[11-05-2026 10:29:38] [Bidder] [58126] oferta trimisa: 1321 de catre Maria Ionescu
+[11-05-2026 10:29:38] [Auctioneer] Oferta primita: [11-05-2026 10:29:38] /127.0.0.1:57990 [Ana Radu, 0712717460, ana.radu@email.com] >>> licitez 4385
+[11-05-2026 10:29:38] [Bidder] [BIDDER_NECONECTAT] conectat la Auctioneer
+[11-05-2026 10:29:38] [Bidder] [BIDDER_NECONECTAT] conectat la Auctioneer
+[11-05-2026 10:29:38] [Auctioneer] Oferta primita: [11-05-2026 10:29:37] /127.0.0.1:57993 [Andrei Georgescu, 0765860466, andrei.georgescu@email.com] >>> licitez 8193
+[11-05-2026 10:29:38] [Auctioneer] Oferta primita: [11-05-2026 10:29:38] /127.0.0.1:57996 [Elena Dumitrescu, 0768367979, elena.dumitrescu@email.com] >>> licitez 9227
+[11-05-2026 10:29:38] [Auctioneer] Oferta primita: [11-05-2026 10:29:38] /127.0.0.1:57998 [Ana Radu, 0710981238, ana.radu@email.com] >>> licitez 6286
+[11-05-2026 10:29:38] [Auctioneer] Oferta primita: [11-05-2026 10:29:37] /127.0.0.1:58001 [Maria Ionescu, 0771941561, maria.ionescu@email.com] >>> licitez 6024
+[11-05-2026 10:29:38] [Auctioneer] Oferta primita: [11-05-2026 10:29:38] /127.0.0.1:58002 [Cristian Pavel, 0732433305, cristian.pavel@email.com] >>> licitez 6446
+[11-05-2026 10:29:38] [Auctioneer] Oferta primita: [11-05-2026 10:29:38] /127.0.0.1:58006 [Andrei Georgescu, 0778746824, andrei.georgescu@email.com] >>> licitez 5739
+[11-05-2026 10:29:38] [Auctioneer] Oferta primita: [11-05-2026 10:29:38] /127.0.0.1:58011 [Ioana Matei, 0716768244, ioana.matei@email.com] >>> licitez 7123
+[11-05-2026 10:29:38] [Auctioneer] Oferta primita: [11-05-2026 10:29:38] /127.0.0.1:58012 [Maria Ionescu, 0780308039, maria.ionescu@email.com] >>> licitez 5753
+[11-05-2026 10:29:38] [Bidder] [BIDDER_NECONECTAT] conectat la Auctioneer
+[11-05-2026 10:29:38] [Auctioneer] Oferta primita: [11-05-2026 10:29:38] /127.0.0.1:58017 [Ion Popescu, 0786961289, ion.popescu@email.com] >>> licitez 6912
+[11-05-2026 10:29:38] [Auctioneer] Oferta primita: [11-05-2026 10:29:38] /127.0.0.1:58018 [Ioana Matei, 0773189469, ioana.matei@email.com] >>> licitez 9210
+[11-05-2026 10:29:38] [Auctioneer] Oferta primita: [11-05-2026 10:29:38] /127.0.0.1:58019 [Andrei Georgescu, 0762032573, andrei.georgescu@email.com] >>> licitez 3948
+[11-05-2026 10:29:38] [Auctioneer] Oferta primita: [11-05-2026 10:29:38] /127.0.0.1:58021 [Mihai Stan, 0733173425, mihai.stan@email.com] >>> licitez 9731
+[11-05-2026 10:29:38] [Auctioneer] Oferta primita: [11-05-2026 10:29:38] /127.0.0.1:58022 [Mihai Stan, 0734799932, mihai.stan@email.com] >>> licitez 8838
+[11-05-2026 10:29:38] [Auctioneer] Oferta primita: [11-05-2026 10:29:37] /127.0.0.1:58023 [Cristian Pavel, 0743457314, cristian.pavel@email.com] >>> licitez 5460
+[11-05-2026 10:29:38] [Auctioneer] Oferta primita: [11-05-2026 10:29:38] /127.0.0.1:58030 [Elena Dumitrescu, 0796591653, elena.dumitrescu@email.com] >>> licitez 5374
+[11-05-2026 10:29:38] [Auctioneer] Oferta primita: [11-05-2026 10:29:38] /127.0.0.1:58031 [Ion Popescu, 0731576292, ion.popescu@email.com] >>> licitez 5748
+[11-05-2026 10:29:38] [Auctioneer] Oferta primita: [11-05-2026 10:29:37] /127.0.0.1:58033 [Ioana Matei, 0742545394, ioana.matei@email.com] >>> licitez 6263
+[11-05-2026 10:29:38] [Auctioneer] Oferta primita: [11-05-2026 10:29:38] /127.0.0.1:58035 [Elena Dumitrescu, 0773145563, elena.dumitrescu@email.com] >>> licitez 4118
+[11-05-2026 10:29:38] [Bidder] [58130] oferta trimisa: 2783 de catre Ion Popescu
+[11-05-2026 10:29:38] [Bidder] [58131] oferta trimisa: 4357 de catre Mihai Stan
+[11-05-2026 10:29:38] [Auctioneer] Oferta primita: [11-05-2026 10:29:38] /127.0.0.1:58036 [Elena Dumitrescu, 0714467980, elena.dumitrescu@email.com] >>> licitez 3124
+[11-05-2026 10:29:38] [Auctioneer] Oferta primita: [11-05-2026 10:29:37] /127.0.0.1:58037 [Cristian Pavel, 0716688989, cristian.pavel@email.com] >>> licitez 1692
+[11-05-2026 10:29:38] [Auctioneer] Oferta primita: [11-05-2026 10:29:38] /127.0.0.1:58065 [Elena Dumitrescu, 0777922826, elena.dumitrescu@email.com] >>> licitez 3385
+[11-05-2026 10:29:38] [Auctioneer] Oferta primita: [11-05-2026 10:29:38] /127.0.0.1:58138 [Ioana Matei, 0731266909, ioana.matei@email.com] >>> licitez 6301
+[11-05-2026 10:29:38] [Auctioneer] Oferta primita: [11-05-2026 10:29:38] /127.0.0.1:58165 [Elena Dumitrescu, 0763116039, elena.dumitrescu@email.com] >>> licitez 1276
+[11-05-2026 10:29:38] [Auctioneer] Oferta primita: [11-05-2026 10:29:38] /127.0.0.1:58069 [Ion Popescu, 0743162438, ion.popescu@email.com] >>> licitez 6048
+[11-05-2026 10:29:38] [Auctioneer] Oferta primita: [11-05-2026 10:29:38] /127.0.0.1:58072 [Mihai Stan, 0798442579, mihai.stan@email.com] >>> licitez 5809
+[11-05-2026 10:29:38] [Auctioneer] Oferta primita: [11-05-2026 10:29:38] /127.0.0.1:58142 [Elena Dumitrescu, 0724395776, elena.dumitrescu@email.com] >>> licitez 9177
+[11-05-2026 10:29:38] [Auctioneer] Oferta primita: [11-05-2026 10:29:38] /127.0.0.1:58167 [Cristian Pavel, 0770367126, cristian.pavel@email.com] >>> licitez 3737
+[11-05-2026 10:29:38] [Bidder] [BIDDER_NECONECTAT] conectat la Auctioneer
+[11-05-2026 10:29:38] [Auctioneer] Oferta primita: [11-05-2026 10:29:38] /127.0.0.1:58074 [Cristian Pavel, 0769536984, cristian.pavel@email.com] >>> licitez 5284
+[11-05-2026 10:29:38] [Auctioneer] Oferta primita: [11-05-2026 10:29:38] /127.0.0.1:58148 [Ana Radu, 0722664777, ana.radu@email.com] >>> licitez 6595
+[11-05-2026 10:29:38] [Auctioneer] Oferta primita: [11-05-2026 10:29:38] /127.0.0.1:58080 [Ioana Matei, 0799384103, ioana.matei@email.com] >>> licitez 1399
+[11-05-2026 10:29:38] [Bidder] [58132] oferta trimisa: 3182 de catre Mihai Stan
+[11-05-2026 10:29:38] [Auctioneer] Oferta primita: [11-05-2026 10:29:38] /127.0.0.1:58101 [Maria Ionescu, 0778211885, maria.ionescu@email.com] >>> licitez 2571
+[11-05-2026 10:29:38] [Auctioneer] Oferta primita: [11-05-2026 10:29:38] /127.0.0.1:58103 [Ion Popescu, 0784588976, ion.popescu@email.com] >>> licitez 7675
+[11-05-2026 10:29:38] [Auctioneer] Oferta primita: [11-05-2026 10:29:38] /127.0.0.1:58109 [Ana Radu, 0713975134, ana.radu@email.com] >>> licitez 1699
+[11-05-2026 10:29:38] [Auctioneer] Oferta primita: [11-05-2026 10:29:38] /127.0.0.1:58113 [Maria Ionescu, 0784443371, maria.ionescu@email.com] >>> licitez 3794
+[11-05-2026 10:29:38] [Auctioneer] Oferta primita: [11-05-2026 10:29:38] /127.0.0.1:58115 [Andrei Georgescu, 0797449075, andrei.georgescu@email.com] >>> licitez 2850
+[11-05-2026 10:29:38] [Auctioneer] Oferta primita: [11-05-2026 10:29:38] /127.0.0.1:58119 [Elena Dumitrescu, 0712329941, elena.dumitrescu@email.com] >>> licitez 3168
+[11-05-2026 10:29:38] [Auctioneer] Oferta primita: [11-05-2026 10:29:38] /127.0.0.1:58122 [Cristian Pavel, 0748522007, cristian.pavel@email.com] >>> licitez 9020
+[11-05-2026 10:29:38] [Auctioneer] Oferta primita: [11-05-2026 10:29:38] /127.0.0.1:58126 [Maria Ionescu, 0794160176, maria.ionescu@email.com] >>> licitez 1321
+[11-05-2026 10:29:38] [Auctioneer] Oferta primita: [11-05-2026 10:29:38] /127.0.0.1:58130 [Ion Popescu, 0763401991, ion.popescu@email.com] >>> licitez 2783
+[11-05-2026 10:29:38] [Auctioneer] Oferta primita: [11-05-2026 10:29:38] /127.0.0.1:58131 [Mihai Stan, 0781605242, mihai.stan@email.com] >>> licitez 4357
+[11-05-2026 10:29:38] [Auctioneer] Oferta primita: [11-05-2026 10:29:38] /127.0.0.1:58132 [Mihai Stan, 0730953881, mihai.stan@email.com] >>> licitez 3182
+[11-05-2026 10:29:38] [Bidder] [58137] oferta trimisa: 3212 de catre Ion Popescu
+[11-05-2026 10:29:38] [Auctioneer] Oferta primita: [11-05-2026 10:29:38] /127.0.0.1:58137 [Ion Popescu, 0786211319, ion.popescu@email.com] >>> licitez 3212
+[11-05-2026 10:29:38] [Bidder] [BIDDER_NECONECTAT] conectat la Auctioneer
+[11-05-2026 10:29:38] [Bidder] [58163] oferta trimisa: 2805 de catre Ana Radu
+[11-05-2026 10:29:38] [Auctioneer] Oferta primita: [11-05-2026 10:29:38] /127.0.0.1:58163 [Ana Radu, 0793799915, ana.radu@email.com] >>> licitez 2805
+[11-05-2026 10:29:38] [Bidder] [BIDDER_NECONECTAT] conectat la Auctioneer
+[11-05-2026 10:29:38] [Bidder] [BIDDER_NECONECTAT] conectat la Auctioneer
+[11-05-2026 10:29:39] [Bidder] [BIDDER_NECONECTAT] conectat la Auctioneer
+[11-05-2026 10:29:39] [Bidder] [58040] oferta trimisa: 4167 de catre Andrei Georgescu
+[11-05-2026 10:29:39] [Bidder] [58041] oferta trimisa: 9240 de catre Cristian Pavel
+[11-05-2026 10:29:39] [Auctioneer] Oferta primita: [11-05-2026 10:29:39] /127.0.0.1:58041 [Cristian Pavel, 0726630185, cristian.pavel@email.com] >>> licitez 9240
+[11-05-2026 10:29:39] [Auctioneer] Oferta primita: [11-05-2026 10:29:39] /127.0.0.1:58040 [Andrei Georgescu, 0723410482, andrei.georgescu@email.com] >>> licitez 4167
+[11-05-2026 10:29:39] [Bidder] [BIDDER_NECONECTAT] conectat la Auctioneer
+[11-05-2026 10:29:39] [Bidder] [BIDDER_NECONECTAT] conectat la Auctioneer
+[11-05-2026 10:29:39] [Bidder] [BIDDER_NECONECTAT] conectat la Auctioneer
+[11-05-2026 10:29:39] [Bidder] [58047] oferta trimisa: 2224 de catre Mihai Stan
+[11-05-2026 10:29:39] [Auctioneer] Oferta primita: [11-05-2026 10:29:39] /127.0.0.1:58047 [Mihai Stan, 0757089967, mihai.stan@email.com] >>> licitez 2224
+[11-05-2026 10:29:39] [Bidder] [BIDDER_NECONECTAT] conectat la Auctioneer
+[11-05-2026 10:29:39] [Bidder] [58052] oferta trimisa: 1857 de catre Cristian Pavel
+[11-05-2026 10:29:39] [Bidder] [58051] oferta trimisa: 9677 de catre Maria Ionescu
+[11-05-2026 10:29:39] [Auctioneer] Oferta primita: [11-05-2026 10:29:39] /127.0.0.1:58051 [Maria Ionescu, 0730288661, maria.ionescu@email.com] >>> licitez 9677
+[11-05-2026 10:29:39] [Auctioneer] Oferta primita: [11-05-2026 10:29:39] /127.0.0.1:58052 [Cristian Pavel, 0746466859, cristian.pavel@email.com] >>> licitez 1857
+[11-05-2026 10:29:39] [Bidder] [58053] oferta trimisa: 8598 de catre Ioana Matei
+[11-05-2026 10:29:39] [Auctioneer] Oferta primita: [11-05-2026 10:29:39] /127.0.0.1:58053 [Ioana Matei, 0787352208, ioana.matei@email.com] >>> licitez 8598
+[11-05-2026 10:29:39] [Bidder] [BIDDER_NECONECTAT] conectat la Auctioneer
+[11-05-2026 10:29:39] [Bidder] [BIDDER_NECONECTAT] conectat la Auctioneer
+[11-05-2026 10:29:39] [Bidder] [BIDDER_NECONECTAT] conectat la Auctioneer
+[11-05-2026 10:29:39] [Bidder] [58055] oferta trimisa: 6161 de catre Elena Dumitrescu
+[11-05-2026 10:29:39] [Auctioneer] Oferta primita: [11-05-2026 10:29:39] /127.0.0.1:58055 [Elena Dumitrescu, 0735878188, elena.dumitrescu@email.com] >>> licitez 6161
+[11-05-2026 10:29:39] [Bidder] [BIDDER_NECONECTAT] conectat la Auctioneer
+[11-05-2026 10:29:39] [Bidder] [BIDDER_NECONECTAT] conectat la Auctioneer
+[11-05-2026 10:29:39] [Bidder] [58056] oferta trimisa: 1825 de catre Mihai Stan
+[11-05-2026 10:29:39] [Auctioneer] Oferta primita: [11-05-2026 10:29:39] /127.0.0.1:58056 [Mihai Stan, 0746292938, mihai.stan@email.com] >>> licitez 1825
+[11-05-2026 10:29:39] [Bidder] [58057] oferta trimisa: 5638 de catre Ioana Matei
+[11-05-2026 10:29:39] [Auctioneer] Oferta primita: [11-05-2026 10:29:39] /127.0.0.1:58057 [Ioana Matei, 0791487353, ioana.matei@email.com] >>> licitez 5638
+[11-05-2026 10:29:39] [Bidder] [58058] oferta trimisa: 9122 de catre Cristian Pavel
+[11-05-2026 10:29:39] [Auctioneer] Oferta primita: [11-05-2026 10:29:39] /127.0.0.1:58058 [Cristian Pavel, 0793919357, cristian.pavel@email.com] >>> licitez 9122
+[11-05-2026 10:29:39] [Bidder] [58059] oferta trimisa: 8513 de catre Mihai Stan
+[11-05-2026 10:29:39] [Bidder] [58062] oferta trimisa: 6862 de catre Ana Radu
+[11-05-2026 10:29:39] [Auctioneer] Oferta primita: [11-05-2026 10:29:39] /127.0.0.1:58062 [Ana Radu, 0767960003, ana.radu@email.com] >>> licitez 6862
+[11-05-2026 10:29:39] [Auctioneer] Oferta primita: [11-05-2026 10:29:39] /127.0.0.1:58059 [Mihai Stan, 0796565055, mihai.stan@email.com] >>> licitez 8513
+[11-05-2026 10:29:39] [Bidder] [BIDDER_NECONECTAT] conectat la Auctioneer
+[11-05-2026 10:29:39] [Bidder] [58078] oferta trimisa: 7269 de catre Ioana Matei
+[11-05-2026 10:29:39] [Bidder] [BIDDER_NECONECTAT] conectat la Auctioneer
+[11-05-2026 10:29:39] [Auctioneer] Oferta primita: [11-05-2026 10:29:39] /127.0.0.1:58078 [Ioana Matei, 0788094415, ioana.matei@email.com] >>> licitez 7269
+[11-05-2026 10:29:39] [Bidder] [BIDDER_NECONECTAT] conectat la Auctioneer
+[11-05-2026 10:29:39] [Bidder] [BIDDER_NECONECTAT] conectat la Auctioneer
+[11-05-2026 10:29:39] [Bidder] [58084] oferta trimisa: 8047 de catre Ana Radu
+[11-05-2026 10:29:39] [Bidder] [58085] oferta trimisa: 3132 de catre Ion Popescu
+[11-05-2026 10:29:39] [Bidder] [BIDDER_NECONECTAT] conectat la Auctioneer
+[11-05-2026 10:29:39] [Auctioneer] Oferta primita: [11-05-2026 10:29:39] /127.0.0.1:58084 [Ana Radu, 0726387011, ana.radu@email.com] >>> licitez 8047
+[11-05-2026 10:29:39] [Auctioneer] Oferta primita: [11-05-2026 10:29:39] /127.0.0.1:58085 [Ion Popescu, 0784606010, ion.popescu@email.com] >>> licitez 3132
+[11-05-2026 10:29:39] [Bidder] [58086] oferta trimisa: 9875 de catre Ion Popescu
+[11-05-2026 10:29:39] [Auctioneer] Oferta primita: [11-05-2026 10:29:39] /127.0.0.1:58086 [Ion Popescu, 0745761471, ion.popescu@email.com] >>> licitez 9875
+[11-05-2026 10:29:39] [Bidder] [BIDDER_NECONECTAT] conectat la Auctioneer
+[11-05-2026 10:29:39] [Bidder] [58087] oferta trimisa: 5799 de catre Cristian Pavel
+[11-05-2026 10:29:39] [Auctioneer] Oferta primita: [11-05-2026 10:29:39] /127.0.0.1:58087 [Cristian Pavel, 0771761287, cristian.pavel@email.com] >>> licitez 5799
+[11-05-2026 10:29:39] [Bidder] [BIDDER_NECONECTAT] conectat la Auctioneer
+[11-05-2026 10:29:39] [Bidder] [58089] oferta trimisa: 8825 de catre Ion Popescu
+[11-05-2026 10:29:39] [Auctioneer] Oferta primita: [11-05-2026 10:29:39] /127.0.0.1:58089 [Ion Popescu, 0711622453, ion.popescu@email.com] >>> licitez 8825
+[11-05-2026 10:29:39] [Bidder] [BIDDER_NECONECTAT] conectat la Auctioneer
+[11-05-2026 10:29:39] [Bidder] [58095] oferta trimisa: 5289 de catre Ion Popescu
+[11-05-2026 10:29:39] [Auctioneer] Oferta primita: [11-05-2026 10:29:39] /127.0.0.1:58095 [Ion Popescu, 0712183875, ion.popescu@email.com] >>> licitez 5289
+[11-05-2026 10:29:39] [Bidder] [BIDDER_NECONECTAT] conectat la Auctioneer
+[11-05-2026 10:29:39] [Bidder] [58096] oferta trimisa: 8603 de catre Ioana Matei
+[11-05-2026 10:29:39] [Auctioneer] Oferta primita: [11-05-2026 10:29:39] /127.0.0.1:58096 [Ioana Matei, 0713415186, ioana.matei@email.com] >>> licitez 8603
+[11-05-2026 10:29:39] [Bidder] [BIDDER_NECONECTAT] conectat la Auctioneer
+[11-05-2026 10:29:39] [Bidder] [58098] oferta trimisa: 8271 de catre Maria Ionescu
+[11-05-2026 10:29:39] [Auctioneer] Oferta primita: [11-05-2026 10:29:39] /127.0.0.1:58098 [Maria Ionescu, 0737324273, maria.ionescu@email.com] >>> licitez 8271
+[11-05-2026 10:29:39] [Bidder] [BIDDER_NECONECTAT] conectat la Auctioneer
+[11-05-2026 10:29:39] [Bidder] [BIDDER_NECONECTAT] conectat la Auctioneer
+[11-05-2026 10:29:39] [Bidder] [58102] oferta trimisa: 5111 de catre Cristian Pavel
+[11-05-2026 10:29:39] [Auctioneer] Oferta primita: [11-05-2026 10:29:39] /127.0.0.1:58102 [Cristian Pavel, 0733426069, cristian.pavel@email.com] >>> licitez 5111
+[11-05-2026 10:29:39] [Bidder] [BIDDER_NECONECTAT] conectat la Auctioneer
+[11-05-2026 10:29:39] [Bidder] [58105] oferta trimisa: 2244 de catre Elena Dumitrescu
+[11-05-2026 10:29:39] [Auctioneer] Oferta primita: [11-05-2026 10:29:39] /127.0.0.1:58105 [Elena Dumitrescu, 0730617583, elena.dumitrescu@email.com] >>> licitez 2244
+[11-05-2026 10:29:39] [Bidder] [58108] oferta trimisa: 1883 de catre Elena Dumitrescu
+[11-05-2026 10:29:39] [Auctioneer] Oferta primita: [11-05-2026 10:29:39] /127.0.0.1:58108 [Elena Dumitrescu, 0742989253, elena.dumitrescu@email.com] >>> licitez 1883
+[11-05-2026 10:29:39] [Bidder] [58111] oferta trimisa: 2202 de catre Maria Ionescu
+[11-05-2026 10:29:39] [Auctioneer] Oferta primita: [11-05-2026 10:29:39] /127.0.0.1:58111 [Maria Ionescu, 0728880519, maria.ionescu@email.com] >>> licitez 2202
+[11-05-2026 10:29:39] [Bidder] [BIDDER_NECONECTAT] conectat la Auctioneer
+[11-05-2026 10:29:39] [Bidder] [58128] oferta trimisa: 1555 de catre Ana Radu
+[11-05-2026 10:29:39] [Auctioneer] Oferta primita: [11-05-2026 10:29:39] /127.0.0.1:58128 [Ana Radu, 0729938491, ana.radu@email.com] >>> licitez 1555
+[11-05-2026 10:29:54] [MessageProcessor] Mesaj primit: [11-05-2026 10:29:37] /127.0.0.1:57891 [Ana Radu, 0797138098, ana.radu@email.com] >>> licitez 8043
+[11-05-2026 10:29:54] [MessageProcessor] Mesaj primit: [11-05-2026 10:29:36] /127.0.0.1:57895 [Ion Popescu, 0719493802, ion.popescu@email.com] >>> licitez 2252
+[11-05-2026 10:29:54] [MessageProcessor] Mesaj primit: [11-05-2026 10:29:36] /127.0.0.1:57903 [Ana Radu, 0738273924, ana.radu@email.com] >>> licitez 7864
+[11-05-2026 10:29:54] [MessageProcessor] Mesaj primit: [11-05-2026 10:29:37] /127.0.0.1:57907 [Ion Popescu, 0737150654, ion.popescu@email.com] >>> licitez 8383
+[11-05-2026 10:29:54] [MessageProcessor] Mesaj primit: [11-05-2026 10:29:37] /127.0.0.1:57913 [Elena Dumitrescu, 0762435494, elena.dumitrescu@email.com] >>> licitez 4504
+[11-05-2026 10:29:54] [MessageProcessor] Mesaj primit: [11-05-2026 10:29:37] /127.0.0.1:57915 [Mihai Stan, 0721725423, mihai.stan@email.com] >>> licitez 3970
+[11-05-2026 10:29:54] [MessageProcessor] Mesaj primit: [11-05-2026 10:29:37] /127.0.0.1:57916 [Ioana Matei, 0785243219, ioana.matei@email.com] >>> licitez 2227
+[11-05-2026 10:29:54] [MessageProcessor] Mesaj primit: [11-05-2026 10:29:37] /127.0.0.1:57922 [Ana Radu, 0748466429, ana.radu@email.com] >>> licitez 1283
+[11-05-2026 10:29:54] [MessageProcessor] Mesaj primit: [11-05-2026 10:29:37] /127.0.0.1:57923 [Ion Popescu, 0799431389, ion.popescu@email.com] >>> licitez 8543
+[11-05-2026 10:29:54] [MessageProcessor] Mesaj primit: [11-05-2026 10:29:37] /127.0.0.1:57924 [Cristian Pavel, 0716356771, cristian.pavel@email.com] >>> licitez 1115
+[11-05-2026 10:29:54] [MessageProcessor] Mesaj primit: [11-05-2026 10:29:37] /127.0.0.1:57925 [Ioana Matei, 0711317538, ioana.matei@email.com] >>> licitez 5560
+[11-05-2026 10:29:54] [MessageProcessor] Mesaj primit: [11-05-2026 10:29:37] /127.0.0.1:57926 [Elena Dumitrescu, 0771352625, elena.dumitrescu@email.com] >>> licitez 1579
+[11-05-2026 10:29:54] [MessageProcessor] Mesaj primit: [11-05-2026 10:29:38] /127.0.0.1:57927 [Ana Radu, 0745482010, ana.radu@email.com] >>> licitez 1953
+[11-05-2026 10:29:54] [MessageProcessor] Mesaj primit: [11-05-2026 10:29:38] /127.0.0.1:57928 [Mihai Stan, 0796467281, mihai.stan@email.com] >>> licitez 8197
+[11-05-2026 10:29:54] [MessageProcessor] Mesaj primit: [11-05-2026 10:29:37] /127.0.0.1:57932 [Andrei Georgescu, 0728191553, andrei.georgescu@email.com] >>> licitez 7306
+[11-05-2026 10:29:54] [MessageProcessor] Mesaj primit: [11-05-2026 10:29:37] /127.0.0.1:57933 [Ana Radu, 0785054629, ana.radu@email.com] >>> licitez 3819
+[11-05-2026 10:29:54] [MessageProcessor] Mesaj primit: [11-05-2026 10:29:37] /127.0.0.1:57934 [Ioana Matei, 0799606188, ioana.matei@email.com] >>> licitez 1214
+[11-05-2026 10:29:54] [MessageProcessor] Mesaj primit: [11-05-2026 10:29:38] /127.0.0.1:57936 [Elena Dumitrescu, 0740914645, elena.dumitrescu@email.com] >>> licitez 1888
+[11-05-2026 10:29:54] [MessageProcessor] Mesaj primit: [11-05-2026 10:29:37] /127.0.0.1:57957 [Ion Popescu, 0787899983, ion.popescu@email.com] >>> licitez 1567
+[11-05-2026 10:29:54] [MessageProcessor] Mesaj primit: [11-05-2026 10:29:38] /127.0.0.1:57959 [Ana Radu, 0731558660, ana.radu@email.com] >>> licitez 2873
+[11-05-2026 10:29:54] [MessageProcessor] Mesaj primit: [11-05-2026 10:29:37] /127.0.0.1:57962 [Mihai Stan, 0778767000, mihai.stan@email.com] >>> licitez 6807
+[11-05-2026 10:29:54] [MessageProcessor] Mesaj primit: [11-05-2026 10:29:37] /127.0.0.1:57963 [Elena Dumitrescu, 0712172137, elena.dumitrescu@email.com] >>> licitez 1069
+[11-05-2026 10:29:54] [MessageProcessor] Mesaj primit: [11-05-2026 10:29:36] /127.0.0.1:57964 [Elena Dumitrescu, 0781506837, elena.dumitrescu@email.com] >>> licitez 9211
+[11-05-2026 10:29:54] [MessageProcessor] Mesaj primit: [11-05-2026 10:29:37] /127.0.0.1:57965 [Mihai Stan, 0774847221, mihai.stan@email.com] >>> licitez 1274
+[11-05-2026 10:29:54] [MessageProcessor] Mesaj primit: [11-05-2026 10:29:37] /127.0.0.1:57966 [Andrei Georgescu, 0733867947, andrei.georgescu@email.com] >>> licitez 7811
+[11-05-2026 10:29:54] [MessageProcessor] Mesaj primit: [11-05-2026 10:29:37] /127.0.0.1:57967 [Andrei Georgescu, 0769478821, andrei.georgescu@email.com] >>> licitez 7378
+[11-05-2026 10:29:54] [MessageProcessor] Mesaj primit: [11-05-2026 10:29:38] /127.0.0.1:57981 [Elena Dumitrescu, 0783281609, elena.dumitrescu@email.com] >>> licitez 5946
+[11-05-2026 10:29:54] [MessageProcessor] Mesaj primit: [11-05-2026 10:29:37] /127.0.0.1:57984 [Ioana Matei, 0780662795, ioana.matei@email.com] >>> licitez 1699
+[11-05-2026 10:29:54] [MessageProcessor] Mesaj primit: [11-05-2026 10:29:37] /127.0.0.1:57988 [Cristian Pavel, 0752093787, cristian.pavel@email.com] >>> licitez 6016
+[11-05-2026 10:29:54] [MessageProcessor] Mesaj primit: [11-05-2026 10:29:38] /127.0.0.1:57989 [Ioana Matei, 0738270205, ioana.matei@email.com] >>> licitez 1942
+[11-05-2026 10:29:54] [MessageProcessor] Mesaj primit: [11-05-2026 10:29:38] /127.0.0.1:57990 [Ana Radu, 0712717460, ana.radu@email.com] >>> licitez 4385
+[11-05-2026 10:29:54] [MessageProcessor] Mesaj primit: [11-05-2026 10:29:37] /127.0.0.1:57993 [Andrei Georgescu, 0765860466, andrei.georgescu@email.com] >>> licitez 8193
+[11-05-2026 10:29:54] [MessageProcessor] Mesaj primit: [11-05-2026 10:29:38] /127.0.0.1:57996 [Elena Dumitrescu, 0768367979, elena.dumitrescu@email.com] >>> licitez 9227
+[11-05-2026 10:29:54] [MessageProcessor] Mesaj primit: [11-05-2026 10:29:38] /127.0.0.1:57998 [Ana Radu, 0710981238, ana.radu@email.com] >>> licitez 6286
+[11-05-2026 10:29:54] [MessageProcessor] Mesaj primit: [11-05-2026 10:29:37] /127.0.0.1:58001 [Maria Ionescu, 0771941561, maria.ionescu@email.com] >>> licitez 6024
+[11-05-2026 10:29:54] [MessageProcessor] Mesaj primit: [11-05-2026 10:29:38] /127.0.0.1:58002 [Cristian Pavel, 0732433305, cristian.pavel@email.com] >>> licitez 6446
+[11-05-2026 10:29:54] [MessageProcessor] Mesaj primit: [11-05-2026 10:29:38] /127.0.0.1:58006 [Andrei Georgescu, 0778746824, andrei.georgescu@email.com] >>> licitez 5739
+[11-05-2026 10:29:54] [MessageProcessor] Mesaj primit: [11-05-2026 10:29:38] /127.0.0.1:58011 [Ioana Matei, 0716768244, ioana.matei@email.com] >>> licitez 7123
+[11-05-2026 10:29:54] [MessageProcessor] Mesaj primit: [11-05-2026 10:29:38] /127.0.0.1:58012 [Maria Ionescu, 0780308039, maria.ionescu@email.com] >>> licitez 5753
+[11-05-2026 10:29:54] [MessageProcessor] Mesaj primit: [11-05-2026 10:29:38] /127.0.0.1:58017 [Ion Popescu, 0786961289, ion.popescu@email.com] >>> licitez 6912
+[11-05-2026 10:29:54] [MessageProcessor] Mesaj primit: [11-05-2026 10:29:38] /127.0.0.1:58018 [Ioana Matei, 0773189469, ioana.matei@email.com] >>> licitez 9210
+[11-05-2026 10:29:54] [MessageProcessor] Mesaj primit: [11-05-2026 10:29:38] /127.0.0.1:58019 [Andrei Georgescu, 0762032573, andrei.georgescu@email.com] >>> licitez 3948
+[11-05-2026 10:29:54] [MessageProcessor] Mesaj primit: [11-05-2026 10:29:38] /127.0.0.1:58021 [Mihai Stan, 0733173425, mihai.stan@email.com] >>> licitez 9731
+[11-05-2026 10:29:54] [MessageProcessor] Mesaj primit: [11-05-2026 10:29:38] /127.0.0.1:58022 [Mihai Stan, 0734799932, mihai.stan@email.com] >>> licitez 8838
+[11-05-2026 10:29:54] [MessageProcessor] Mesaj primit: [11-05-2026 10:29:37] /127.0.0.1:58023 [Cristian Pavel, 0743457314, cristian.pavel@email.com] >>> licitez 5460
+[11-05-2026 10:29:54] [MessageProcessor] Mesaj primit: [11-05-2026 10:29:38] /127.0.0.1:58030 [Elena Dumitrescu, 0796591653, elena.dumitrescu@email.com] >>> licitez 5374
+[11-05-2026 10:29:54] [MessageProcessor] Mesaj primit: [11-05-2026 10:29:38] /127.0.0.1:58031 [Ion Popescu, 0731576292, ion.popescu@email.com] >>> licitez 5748
+[11-05-2026 10:29:54] [MessageProcessor] Mesaj primit: [11-05-2026 10:29:37] /127.0.0.1:58033 [Ioana Matei, 0742545394, ioana.matei@email.com] >>> licitez 6263
+[11-05-2026 10:29:54] [MessageProcessor] Mesaj primit: [11-05-2026 10:29:38] /127.0.0.1:58035 [Elena Dumitrescu, 0773145563, elena.dumitrescu@email.com] >>> licitez 4118
+[11-05-2026 10:29:54] [MessageProcessor] Mesaj primit: [11-05-2026 10:29:38] /127.0.0.1:58036 [Elena Dumitrescu, 0714467980, elena.dumitrescu@email.com] >>> licitez 3124
+[11-05-2026 10:29:54] [MessageProcessor] Mesaj primit: [11-05-2026 10:29:37] /127.0.0.1:58037 [Cristian Pavel, 0716688989, cristian.pavel@email.com] >>> licitez 1692
+[11-05-2026 10:29:54] [MessageProcessor] Mesaj primit: [11-05-2026 10:29:38] /127.0.0.1:58065 [Elena Dumitrescu, 0777922826, elena.dumitrescu@email.com] >>> licitez 3385
+[11-05-2026 10:29:54] [MessageProcessor] Mesaj primit: [11-05-2026 10:29:38] /127.0.0.1:58138 [Ioana Matei, 0731266909, ioana.matei@email.com] >>> licitez 6301
+[11-05-2026 10:29:54] [MessageProcessor] Mesaj primit: [11-05-2026 10:29:38] /127.0.0.1:58165 [Elena Dumitrescu, 0763116039, elena.dumitrescu@email.com] >>> licitez 1276
+[11-05-2026 10:29:54] [MessageProcessor] Mesaj primit: [11-05-2026 10:29:38] /127.0.0.1:58069 [Ion Popescu, 0743162438, ion.popescu@email.com] >>> licitez 6048
+[11-05-2026 10:29:54] [MessageProcessor] Mesaj primit: [11-05-2026 10:29:38] /127.0.0.1:58072 [Mihai Stan, 0798442579, mihai.stan@email.com] >>> licitez 5809
+[11-05-2026 10:29:54] [MessageProcessor] Mesaj primit: [11-05-2026 10:29:38] /127.0.0.1:58142 [Elena Dumitrescu, 0724395776, elena.dumitrescu@email.com] >>> licitez 9177
+[11-05-2026 10:29:54] [MessageProcessor] Mesaj primit: [11-05-2026 10:29:38] /127.0.0.1:58167 [Cristian Pavel, 0770367126, cristian.pavel@email.com] >>> licitez 3737
+[11-05-2026 10:29:54] [MessageProcessor] Mesaj primit: [11-05-2026 10:29:38] /127.0.0.1:58074 [Cristian Pavel, 0769536984, cristian.pavel@email.com] >>> licitez 5284
+[11-05-2026 10:29:54] [MessageProcessor] Mesaj primit: [11-05-2026 10:29:38] /127.0.0.1:58148 [Ana Radu, 0722664777, ana.radu@email.com] >>> licitez 6595
+[11-05-2026 10:29:54] [MessageProcessor] Mesaj primit: [11-05-2026 10:29:38] /127.0.0.1:58080 [Ioana Matei, 0799384103, ioana.matei@email.com] >>> licitez 1399
+[11-05-2026 10:29:54] [MessageProcessor] Mesaj primit: [11-05-2026 10:29:38] /127.0.0.1:58101 [Maria Ionescu, 0778211885, maria.ionescu@email.com] >>> licitez 2571
+[11-05-2026 10:29:54] [MessageProcessor] Mesaj primit: [11-05-2026 10:29:38] /127.0.0.1:58103 [Ion Popescu, 0784588976, ion.popescu@email.com] >>> licitez 7675
+[11-05-2026 10:29:54] [MessageProcessor] Mesaj primit: [11-05-2026 10:29:38] /127.0.0.1:58109 [Ana Radu, 0713975134, ana.radu@email.com] >>> licitez 1699
+[11-05-2026 10:29:54] [MessageProcessor] Mesaj primit: [11-05-2026 10:29:38] /127.0.0.1:58113 [Maria Ionescu, 0784443371, maria.ionescu@email.com] >>> licitez 3794
+[11-05-2026 10:29:54] [MessageProcessor] Mesaj primit: [11-05-2026 10:29:38] /127.0.0.1:58115 [Andrei Georgescu, 0797449075, andrei.georgescu@email.com] >>> licitez 2850
+[11-05-2026 10:29:54] [MessageProcessor] Mesaj primit: [11-05-2026 10:29:38] /127.0.0.1:58119 [Elena Dumitrescu, 0712329941, elena.dumitrescu@email.com] >>> licitez 3168
+[11-05-2026 10:29:54] [MessageProcessor] Mesaj primit: [11-05-2026 10:29:38] /127.0.0.1:58122 [Cristian Pavel, 0748522007, cristian.pavel@email.com] >>> licitez 9020
+[11-05-2026 10:29:54] [MessageProcessor] Mesaj primit: [11-05-2026 10:29:38] /127.0.0.1:58126 [Maria Ionescu, 0794160176, maria.ionescu@email.com] >>> licitez 1321
+[11-05-2026 10:29:54] [MessageProcessor] Mesaj primit: [11-05-2026 10:29:38] /127.0.0.1:58130 [Ion Popescu, 0763401991, ion.popescu@email.com] >>> licitez 2783
+[11-05-2026 10:29:54] [MessageProcessor] Mesaj primit: [11-05-2026 10:29:38] /127.0.0.1:58131 [Mihai Stan, 0781605242, mihai.stan@email.com] >>> licitez 4357
+[11-05-2026 10:29:54] [MessageProcessor] Mesaj primit: [11-05-2026 10:29:38] /127.0.0.1:58132 [Mihai Stan, 0730953881, mihai.stan@email.com] >>> licitez 3182
+[11-05-2026 10:29:54] [MessageProcessor] Mesaj primit: [11-05-2026 10:29:38] /127.0.0.1:58137 [Ion Popescu, 0786211319, ion.popescu@email.com] >>> licitez 3212
+[11-05-2026 10:29:54] [MessageProcessor] Mesaj primit: [11-05-2026 10:29:38] /127.0.0.1:58163 [Ana Radu, 0793799915, ana.radu@email.com] >>> licitez 2805
+[11-05-2026 10:29:54] [MessageProcessor] Mesaj primit: [11-05-2026 10:29:39] /127.0.0.1:58041 [Cristian Pavel, 0726630185, cristian.pavel@email.com] >>> licitez 9240
+[11-05-2026 10:29:54] [MessageProcessor] Mesaj primit: [11-05-2026 10:29:39] /127.0.0.1:58040 [Andrei Georgescu, 0723410482, andrei.georgescu@email.com] >>> licitez 4167
+[11-05-2026 10:29:54] [MessageProcessor] Mesaj primit: [11-05-2026 10:29:39] /127.0.0.1:58047 [Mihai Stan, 0757089967, mihai.stan@email.com] >>> licitez 2224
+[11-05-2026 10:29:54] [MessageProcessor] Mesaj primit: [11-05-2026 10:29:39] /127.0.0.1:58051 [Maria Ionescu, 0730288661, maria.ionescu@email.com] >>> licitez 9677
+[11-05-2026 10:29:54] [MessageProcessor] Mesaj primit: [11-05-2026 10:29:39] /127.0.0.1:58052 [Cristian Pavel, 0746466859, cristian.pavel@email.com] >>> licitez 1857
+[11-05-2026 10:29:54] [MessageProcessor] Mesaj primit: [11-05-2026 10:29:39] /127.0.0.1:58053 [Ioana Matei, 0787352208, ioana.matei@email.com] >>> licitez 8598
+[11-05-2026 10:29:54] [MessageProcessor] Mesaj primit: [11-05-2026 10:29:39] /127.0.0.1:58055 [Elena Dumitrescu, 0735878188, elena.dumitrescu@email.com] >>> licitez 6161
+[11-05-2026 10:29:54] [MessageProcessor] Mesaj primit: [11-05-2026 10:29:39] /127.0.0.1:58056 [Mihai Stan, 0746292938, mihai.stan@email.com] >>> licitez 1825
+[11-05-2026 10:29:54] [MessageProcessor] Mesaj primit: [11-05-2026 10:29:39] /127.0.0.1:58057 [Ioana Matei, 0791487353, ioana.matei@email.com] >>> licitez 5638
+[11-05-2026 10:29:54] [MessageProcessor] Mesaj primit: [11-05-2026 10:29:39] /127.0.0.1:58058 [Cristian Pavel, 0793919357, cristian.pavel@email.com] >>> licitez 9122
+[11-05-2026 10:29:54] [MessageProcessor] Mesaj primit: [11-05-2026 10:29:39] /127.0.0.1:58062 [Ana Radu, 0767960003, ana.radu@email.com] >>> licitez 6862
+[11-05-2026 10:29:54] [MessageProcessor] Mesaj primit: [11-05-2026 10:29:39] /127.0.0.1:58059 [Mihai Stan, 0796565055, mihai.stan@email.com] >>> licitez 8513
+[11-05-2026 10:29:54] [MessageProcessor] Mesaj primit: [11-05-2026 10:29:39] /127.0.0.1:58078 [Ioana Matei, 0788094415, ioana.matei@email.com] >>> licitez 7269
+[11-05-2026 10:29:54] [MessageProcessor] Mesaj primit: [11-05-2026 10:29:39] /127.0.0.1:58084 [Ana Radu, 0726387011, ana.radu@email.com] >>> licitez 8047
+[11-05-2026 10:29:54] [MessageProcessor] Mesaj primit: [11-05-2026 10:29:39] /127.0.0.1:58085 [Ion Popescu, 0784606010, ion.popescu@email.com] >>> licitez 3132
+[11-05-2026 10:29:54] [MessageProcessor] Mesaj primit: [11-05-2026 10:29:39] /127.0.0.1:58086 [Ion Popescu, 0745761471, ion.popescu@email.com] >>> licitez 9875
+[11-05-2026 10:29:54] [MessageProcessor] Mesaj primit: [11-05-2026 10:29:39] /127.0.0.1:58087 [Cristian Pavel, 0771761287, cristian.pavel@email.com] >>> licitez 5799
+[11-05-2026 10:29:54] [MessageProcessor] Mesaj primit: [11-05-2026 10:29:39] /127.0.0.1:58089 [Ion Popescu, 0711622453, ion.popescu@email.com] >>> licitez 8825
+[11-05-2026 10:29:54] [MessageProcessor] Mesaj primit: [11-05-2026 10:29:39] /127.0.0.1:58095 [Ion Popescu, 0712183875, ion.popescu@email.com] >>> licitez 5289
+[11-05-2026 10:29:54] [MessageProcessor] Mesaj primit: [11-05-2026 10:29:39] /127.0.0.1:58096 [Ioana Matei, 0713415186, ioana.matei@email.com] >>> licitez 8603
+[11-05-2026 10:29:54] [MessageProcessor] Mesaj primit: [11-05-2026 10:29:39] /127.0.0.1:58098 [Maria Ionescu, 0737324273, maria.ionescu@email.com] >>> licitez 8271
+[11-05-2026 10:29:54] [MessageProcessor] Mesaj primit: [11-05-2026 10:29:39] /127.0.0.1:58102 [Cristian Pavel, 0733426069, cristian.pavel@email.com] >>> licitez 5111
+[11-05-2026 10:29:54] [MessageProcessor] Mesaj primit: [11-05-2026 10:29:39] /127.0.0.1:58105 [Elena Dumitrescu, 0730617583, elena.dumitrescu@email.com] >>> licitez 2244
+[11-05-2026 10:29:54] [MessageProcessor] Mesaj primit: [11-05-2026 10:29:39] /127.0.0.1:58108 [Elena Dumitrescu, 0742989253, elena.dumitrescu@email.com] >>> licitez 1883
+[11-05-2026 10:29:54] [MessageProcessor] Mesaj primit: [11-05-2026 10:29:39] /127.0.0.1:58111 [Maria Ionescu, 0728880519, maria.ionescu@email.com] >>> licitez 2202
+[11-05-2026 10:29:54] [MessageProcessor] Mesaj primit: [11-05-2026 10:29:39] /127.0.0.1:58128 [Ana Radu, 0729938491, ana.radu@email.com] >>> licitez 1555
+[11-05-2026 10:29:54] [MessageProcessor] Mesajele au fost sortate si trimise catre BiddingProcessor
+[11-05-2026 10:29:55] [BiddingProcessor] Castigator decis: Ion Popescu, telefon: 0745761471, email: ion.popescu@email.com, oferta: licitez 9875
+[11-05-2026 10:29:55] [Auctioneer] Castigator: Ion Popescu, telefon: 0745761471, email: ion.popescu@email.com, pret: 9875
+[11-05-2026 10:29:55] [Auctioneer] Pornit pe portul 1500
+[11-05-2026 10:29:55] [Bidder] [57895] rezultat primit: Licitatie pierduta...
+[11-05-2026 10:29:55] [Bidder] [57915] rezultat primit: Licitatie pierduta...
+[11-05-2026 10:29:55] [Bidder] [57913] rezultat primit: Licitatie pierduta...
+[11-05-2026 10:29:55] [Bidder] [57903] rezultat primit: Licitatie pierduta...
+[11-05-2026 10:29:55] [Bidder] [57907] rezultat primit: Licitatie pierduta...
+[11-05-2026 10:29:55] [Bidder] [57923] rezultat primit: Licitatie pierduta...
+[11-05-2026 10:29:55] [Bidder] [57916] rezultat primit: Licitatie pierduta...
+[11-05-2026 10:29:55] [Bidder] [57922] rezultat primit: Licitatie pierduta...
+[11-05-2026 10:29:55] [Bidder] [57927] rezultat primit: Licitatie pierduta...
+[11-05-2026 10:29:55] [Bidder] [57925] rezultat primit: Licitatie pierduta...
+[11-05-2026 10:29:55] [Bidder] [57928] rezultat primit: Licitatie pierduta...
+[11-05-2026 10:29:55] [Bidder] [57926] rezultat primit: Licitatie pierduta...
+[11-05-2026 10:29:55] [Bidder] [57891] rezultat primit: Licitatie pierduta...
+[11-05-2026 10:29:55] [Bidder] [57924] rezultat primit: Licitatie pierduta...
+[11-05-2026 10:29:55] [Bidder] [57933] rezultat primit: Licitatie pierduta...
+[11-05-2026 10:29:55] [Bidder] [57932] rezultat primit: Licitatie pierduta...
+[11-05-2026 10:29:55] [Bidder] [57936] rezultat primit: Licitatie pierduta...
+[11-05-2026 10:29:55] [Bidder] [57957] rezultat primit: Licitatie pierduta...
+[11-05-2026 10:29:55] [Bidder] [57964] rezultat primit: Licitatie pierduta...
+[11-05-2026 10:29:55] [Bidder] [57962] rezultat primit: Licitatie pierduta...
+[11-05-2026 10:29:55] [Bidder] [57966] rezultat primit: Licitatie pierduta...
+[11-05-2026 10:29:55] [Bidder] [57959] rezultat primit: Licitatie pierduta...
+[11-05-2026 10:29:55] [Bidder] [57963] rezultat primit: Licitatie pierduta...
+[11-05-2026 10:29:55] [Bidder] [57967] rezultat primit: Licitatie pierduta...
+[11-05-2026 10:29:55] [Bidder] [57934] rezultat primit: Licitatie pierduta...
+[11-05-2026 10:29:55] [Bidder] [57988] rezultat primit: Licitatie pierduta...
+[11-05-2026 10:29:55] [Bidder] [57990] rezultat primit: Licitatie pierduta...
+[11-05-2026 10:29:55] [Bidder] [57989] rezultat primit: Licitatie pierduta...
+[11-05-2026 10:29:55] [Bidder] [57981] rezultat primit: Licitatie pierduta...
+[11-05-2026 10:29:55] [Bidder] [57993] rezultat primit: Licitatie pierduta...
+[11-05-2026 10:29:55] [Bidder] [57998] rezultat primit: Licitatie pierduta...
+[11-05-2026 10:29:55] [Bidder] [58002] rezultat primit: Licitatie pierduta...
+[11-05-2026 10:29:55] [Bidder] [58001] rezultat primit: Licitatie pierduta...
+[11-05-2026 10:29:55] [Bidder] [57965] rezultat primit: Licitatie pierduta...
+[11-05-2026 10:29:55] [Bidder] [58011] rezultat primit: Licitatie pierduta...
+[11-05-2026 10:29:55] [Bidder] [58017] rezultat primit: Licitatie pierduta...
+[11-05-2026 10:29:55] [Bidder] [58018] rezultat primit: Licitatie pierduta...
+[11-05-2026 10:29:55] [Bidder] [57984] rezultat primit: Licitatie pierduta...
+[11-05-2026 10:29:55] [Bidder] [57996] rezultat primit: Licitatie pierduta...
+[11-05-2026 10:29:55] [Bidder] [58012] rezultat primit: Licitatie pierduta...
+[11-05-2026 10:29:55] [Bidder] [58022] rezultat primit: Licitatie pierduta...
+[11-05-2026 10:29:55] [Bidder] [58023] rezultat primit: Licitatie pierduta...
+[11-05-2026 10:29:55] [Bidder] [58036] rezultat primit: Licitatie pierduta...
+[11-05-2026 10:29:55] [Bidder] [58030] rezultat primit: Licitatie pierduta...
+[11-05-2026 10:29:55] [Bidder] [58035] rezultat primit: Licitatie pierduta...
+[11-05-2026 10:29:55] [Bidder] [58031] rezultat primit: Licitatie pierduta...
+[11-05-2026 10:29:55] [Bidder] [58033] rezultat primit: Licitatie pierduta...
+[11-05-2026 10:29:55] [Bidder] [58037] rezultat primit: Licitatie pierduta...
+[11-05-2026 10:29:55] [Bidder] [58006] rezultat primit: Licitatie pierduta...
+[11-05-2026 10:29:55] [Bidder] [58138] rezultat primit: Licitatie pierduta...
+[11-05-2026 10:29:55] [Bidder] [58019] rezultat primit: Licitatie pierduta...
+[11-05-2026 10:29:55] [Bidder] [58021] rezultat primit: Licitatie pierduta...
+[11-05-2026 10:29:55] [Bidder] [58065] rezultat primit: Licitatie pierduta...
+[11-05-2026 10:29:55] [Bidder] [58165] rezultat primit: Licitatie pierduta...
+[11-05-2026 10:29:55] [Bidder] [58128] rezultat primit: Licitatie pierduta...
+[11-05-2026 10:29:55] [Bidder] [58072] rezultat primit: Licitatie pierduta...
+[11-05-2026 10:29:55] [Bidder] [58148] rezultat primit: Licitatie pierduta...
+[11-05-2026 10:29:55] [Bidder] [58080] rezultat primit: Licitatie pierduta...
+[11-05-2026 10:29:55] [Bidder] [58122] rezultat primit: Licitatie pierduta...
+[11-05-2026 10:29:55] [Bidder] [58115] rezultat primit: Licitatie pierduta...
+[11-05-2026 10:29:55] [Bidder] [58119] rezultat primit: Licitatie pierduta...
+[11-05-2026 10:29:55] [Bidder] [58126] rezultat primit: Licitatie pierduta...
+[11-05-2026 10:29:55] [Bidder] [58109] rezultat primit: Licitatie pierduta...
+[11-05-2026 10:29:55] [Bidder] [58130] rezultat primit: Licitatie pierduta...
+[11-05-2026 10:29:55] [Bidder] [58132] rezultat primit: Licitatie pierduta...
+[11-05-2026 10:29:55] [Bidder] [58047] rezultat primit: Licitatie pierduta...
+[11-05-2026 10:29:55] [Bidder] [58131] rezultat primit: Licitatie pierduta...
+[11-05-2026 10:29:55] [Bidder] [58041] rezultat primit: Licitatie pierduta...
+[11-05-2026 10:29:55] [Bidder] [58101] rezultat primit: Licitatie pierduta...
+[11-05-2026 10:29:55] [Bidder] [58163] rezultat primit: Licitatie pierduta...
+[11-05-2026 10:29:55] [Bidder] [58053] rezultat primit: Licitatie pierduta...
+[11-05-2026 10:29:55] [Bidder] [58056] rezultat primit: Licitatie pierduta...
+[11-05-2026 10:29:55] [Bidder] [58052] rezultat primit: Licitatie pierduta...
+[11-05-2026 10:29:55] [Bidder] [58055] rezultat primit: Licitatie pierduta...
+[11-05-2026 10:29:55] [Bidder] [58040] rezultat primit: Licitatie pierduta...
+[11-05-2026 10:29:55] [Bidder] [58051] rezultat primit: Licitatie pierduta...
+[11-05-2026 10:29:55] [Bidder] [58069] rezultat primit: Licitatie pierduta...
+[11-05-2026 10:29:55] [Bidder] [58058] rezultat primit: Licitatie pierduta...
+[11-05-2026 10:29:55] [Bidder] [58057] rezultat primit: Licitatie pierduta...
+[11-05-2026 10:29:55] [Bidder] [58062] rezultat primit: Licitatie pierduta...
+[11-05-2026 10:29:55] [Bidder] [58103] rezultat primit: Licitatie pierduta...
+[11-05-2026 10:29:55] [Bidder] [58059] rezultat primit: Licitatie pierduta...
+[11-05-2026 10:29:55] [Bidder] [58078] rezultat primit: Licitatie pierduta...
+[11-05-2026 10:29:55] [Bidder] [58074] rezultat primit: Licitatie pierduta...
+[11-05-2026 10:29:55] [Bidder] [58113] rezultat primit: Licitatie pierduta...
+[11-05-2026 10:29:55] [Bidder] [58167] rezultat primit: Licitatie pierduta...
+[11-05-2026 10:29:55] [Bidder] [58084] rezultat primit: Licitatie pierduta...
+[11-05-2026 10:29:55] [Bidder] [58086] rezultat primit: Licitatie castigata! Pret castigator: 9875
+[11-05-2026 10:29:55] [Bidder] [58089] rezultat primit: Licitatie pierduta...
+[11-05-2026 10:29:55] [Bidder] [58085] rezultat primit: Licitatie pierduta...
+[11-05-2026 10:29:55] [Bidder] [58142] rezultat primit: Licitatie pierduta...
+[11-05-2026 10:29:55] [Bidder] [58137] rezultat primit: Licitatie pierduta...
+[11-05-2026 10:29:55] [Bidder] [58102] rezultat primit: Licitatie pierduta...
+[11-05-2026 10:29:55] [Bidder] [58095] rezultat primit: Licitatie pierduta...
+[11-05-2026 10:29:55] [Bidder] [58087] rezultat primit: Licitatie pierduta...
+[11-05-2026 10:29:55] [Bidder] [58111] rezultat primit: Licitatie pierduta...
+[11-05-2026 10:29:55] [Bidder] [58105] rezultat primit: Licitatie pierduta...
+[11-05-2026 10:29:55] [Bidder] [58098] rezultat primit: Licitatie pierduta...
+[11-05-2026 10:29:55] [Bidder] [58108] rezultat primit: Licitatie pierduta...
+[11-05-2026 10:29:55] [Bidder] [58096] rezultat primit: Licitatie pierduta...
+[12-05-2026 16:16:19] MonitoringMicroservice pornit pe portul 1900
+[12-05-2026 16:16:27] [MessageProcessor] Pornit pe portul 1600
+[12-05-2026 16:16:33] [BiddingProcessor] Pornit pe portul 1700
+[12-05-2026 16:16:38] [Auctioneer] Pornit pe portul 1500
+[12-05-2026 16:16:45] [Bidder] [BIDDER_NECONECTAT] conectat la Auctioneer
+[12-05-2026 16:16:45] [Bidder] [BIDDER_NECONECTAT] conectat la Auctioneer
+[12-05-2026 16:16:45] [Bidder] [BIDDER_NECONECTAT] conectat la Auctioneer
+[12-05-2026 16:16:45] [Bidder] [BIDDER_NECONECTAT] conectat la Auctioneer
+[12-05-2026 16:16:46] [Bidder] [BIDDER_NECONECTAT] conectat la Auctioneer
+[12-05-2026 16:16:46] [Bidder] [BIDDER_NECONECTAT] conectat la Auctioneer
+[12-05-2026 16:16:46] [Bidder] [BIDDER_NECONECTAT] conectat la Auctioneer
+[12-05-2026 16:16:46] [Bidder] [BIDDER_NECONECTAT] conectat la Auctioneer
+[12-05-2026 16:16:46] [Bidder] [BIDDER_NECONECTAT] conectat la Auctioneer
+[12-05-2026 16:16:46] [Bidder] [BIDDER_NECONECTAT] conectat la Auctioneer
+[12-05-2026 16:16:46] [Bidder] [BIDDER_NECONECTAT] conectat la Auctioneer
+[12-05-2026 16:16:46] [Bidder] [BIDDER_NECONECTAT] conectat la Auctioneer
+[12-05-2026 16:16:46] [Bidder] [BIDDER_NECONECTAT] conectat la Auctioneer
+[12-05-2026 16:16:46] [Bidder] [BIDDER_NECONECTAT] conectat la Auctioneer
+[12-05-2026 16:16:46] [Bidder] [BIDDER_NECONECTAT] conectat la Auctioneer
+[12-05-2026 16:16:46] [Bidder] [49541] oferta trimisa: 4172 de catre Ion Popescu
+[12-05-2026 16:16:46] [Bidder] [BIDDER_NECONECTAT] conectat la Auctioneer
+[12-05-2026 16:16:46] [Bidder] [BIDDER_NECONECTAT] conectat la Auctioneer
+[12-05-2026 16:16:46] [Bidder] [BIDDER_NECONECTAT] conectat la Auctioneer
+[12-05-2026 16:16:46] [Bidder] [BIDDER_NECONECTAT] conectat la Auctioneer
+[12-05-2026 16:16:46] [Bidder] [BIDDER_NECONECTAT] conectat la Auctioneer
+[12-05-2026 16:16:46] [Bidder] [BIDDER_NECONECTAT] conectat la Auctioneer
+[12-05-2026 16:16:46] [Bidder] [BIDDER_NECONECTAT] conectat la Auctioneer
+[12-05-2026 16:16:47] [Bidder] [BIDDER_NECONECTAT] conectat la Auctioneer
+[12-05-2026 16:16:47] [Bidder] [BIDDER_NECONECTAT] conectat la Auctioneer
+[12-05-2026 16:16:47] [Bidder] [BIDDER_NECONECTAT] conectat la Auctioneer
+[12-05-2026 16:16:47] [Bidder] [BIDDER_NECONECTAT] conectat la Auctioneer
+[12-05-2026 16:16:47] [Bidder] [BIDDER_NECONECTAT] conectat la Auctioneer
+[12-05-2026 16:16:47] [Bidder] [BIDDER_NECONECTAT] conectat la Auctioneer
+[12-05-2026 16:16:47] [Bidder] [BIDDER_NECONECTAT] conectat la Auctioneer
+[12-05-2026 16:16:47] [Bidder] [BIDDER_NECONECTAT] conectat la Auctioneer
+[12-05-2026 16:16:47] [Bidder] [BIDDER_NECONECTAT] conectat la Auctioneer
+[12-05-2026 16:16:47] [Bidder] [BIDDER_NECONECTAT] conectat la Auctioneer
+[12-05-2026 16:16:47] [Bidder] [49535] oferta trimisa: 5982 de catre Ana Radu
+[12-05-2026 16:16:47] [Bidder] [49534] oferta trimisa: 1885 de catre Ion Popescu
+[12-05-2026 16:16:47] [Bidder] [49575] oferta trimisa: 5135 de catre Ana Radu
+[12-05-2026 16:16:47] [Bidder] [49532] oferta trimisa: 5406 de catre Ion Popescu
+[12-05-2026 16:16:47] [Bidder] [49527] oferta trimisa: 6108 de catre Elena Dumitrescu
+[12-05-2026 16:16:47] [Bidder] [BIDDER_NECONECTAT] conectat la Auctioneer
+[12-05-2026 16:16:47] [Bidder] [49544] oferta trimisa: 6129 de catre Cristian Pavel
+[12-05-2026 16:16:47] [Bidder] [BIDDER_NECONECTAT] conectat la Auctioneer
+[12-05-2026 16:16:47] [Bidder] [BIDDER_NECONECTAT] conectat la Auctioneer
+[12-05-2026 16:16:47] [Bidder] [BIDDER_NECONECTAT] conectat la Auctioneer
+[12-05-2026 16:16:47] [Bidder] [BIDDER_NECONECTAT] conectat la Auctioneer
+[12-05-2026 16:16:47] [Bidder] [BIDDER_NECONECTAT] conectat la Auctioneer
+[12-05-2026 16:16:47] [Bidder] [BIDDER_NECONECTAT] conectat la Auctioneer
+[12-05-2026 16:16:47] [Bidder] [49547] oferta trimisa: 6410 de catre Cristian Pavel
+[12-05-2026 16:16:47] [Bidder] [49600] oferta trimisa: 5633 de catre Mihai Stan
+[12-05-2026 16:16:47] [Bidder] [BIDDER_NECONECTAT] conectat la Auctioneer
+[12-05-2026 16:16:47] [Bidder] [BIDDER_NECONECTAT] conectat la Auctioneer
+[12-05-2026 16:16:47] [Bidder] [BIDDER_NECONECTAT] conectat la Auctioneer
+[12-05-2026 16:16:47] [Bidder] [BIDDER_NECONECTAT] conectat la Auctioneer
+[12-05-2026 16:16:47] [Bidder] [49553] oferta trimisa: 2852 de catre Elena Dumitrescu
+[12-05-2026 16:16:47] [Bidder] [49562] oferta trimisa: 5475 de catre Ion Popescu
+[12-05-2026 16:16:47] [Bidder] [49605] oferta trimisa: 7121 de catre Elena Dumitrescu
+[12-05-2026 16:16:47] [Bidder] [BIDDER_NECONECTAT] conectat la Auctioneer
+[12-05-2026 16:16:47] [Bidder] [49655] oferta trimisa: 6601 de catre Ion Popescu
+[12-05-2026 16:16:47] [Bidder] [49549] oferta trimisa: 1752 de catre Elena Dumitrescu
+[12-05-2026 16:16:47] [Bidder] [49614] oferta trimisa: 9960 de catre Andrei Georgescu
+[12-05-2026 16:16:47] [Bidder] [BIDDER_NECONECTAT] conectat la Auctioneer
+[12-05-2026 16:16:47] [Bidder] [49536] oferta trimisa: 4350 de catre Andrei Georgescu
+[12-05-2026 16:16:47] [Bidder] [BIDDER_NECONECTAT] conectat la Auctioneer
+[12-05-2026 16:16:47] [Bidder] [49565] oferta trimisa: 6783 de catre Ion Popescu
+[12-05-2026 16:16:47] [Bidder] [49663] oferta trimisa: 6214 de catre Maria Ionescu
+[12-05-2026 16:16:47] [Bidder] [49643] oferta trimisa: 6583 de catre Ion Popescu
+[12-05-2026 16:16:47] [Bidder] [49552] oferta trimisa: 7471 de catre Ioana Matei
+[12-05-2026 16:16:47] [Bidder] [BIDDER_NECONECTAT] conectat la Auctioneer
+[12-05-2026 16:16:47] [Bidder] [BIDDER_NECONECTAT] conectat la Auctioneer
+[12-05-2026 16:16:47] [Bidder] [49644] oferta trimisa: 2981 de catre Mihai Stan
+[12-05-2026 16:16:47] [Bidder] [49581] oferta trimisa: 8428 de catre Mihai Stan
+[12-05-2026 16:16:47] [Bidder] [BIDDER_NECONECTAT] conectat la Auctioneer
+[12-05-2026 16:16:47] [Bidder] [49545] oferta trimisa: 9713 de catre Ioana Matei
+[12-05-2026 16:16:47] [Bidder] [49548] oferta trimisa: 3388 de catre Andrei Georgescu
+[12-05-2026 16:16:47] [Bidder] [49574] oferta trimisa: 4224 de catre Cristian Pavel
+[12-05-2026 16:16:47] [Bidder] [49608] oferta trimisa: 2529 de catre Mihai Stan
+[12-05-2026 16:16:47] [Bidder] [49596] oferta trimisa: 9597 de catre Mihai Stan
+[12-05-2026 16:16:47] [Bidder] [BIDDER_NECONECTAT] conectat la Auctioneer
+[12-05-2026 16:16:47] [Bidder] [49593] oferta trimisa: 6400 de catre Andrei Georgescu
+[12-05-2026 16:16:47] [Bidder] [49576] oferta trimisa: 7718 de catre Maria Ionescu
+[12-05-2026 16:16:47] [Bidder] [49591] oferta trimisa: 3338 de catre Ioana Matei
+[12-05-2026 16:16:47] [Bidder] [49612] oferta trimisa: 8050 de catre Maria Ionescu
+[12-05-2026 16:16:47] [Bidder] [49628] oferta trimisa: 9672 de catre Ana Radu
+[12-05-2026 16:16:47] [Bidder] [49551] oferta trimisa: 1985 de catre Ioana Matei
+[12-05-2026 16:16:47] [Bidder] [49590] oferta trimisa: 3007 de catre Ion Popescu
+[12-05-2026 16:16:47] [Bidder] [49648] oferta trimisa: 2657 de catre Ioana Matei
+[12-05-2026 16:16:47] [Bidder] [BIDDER_NECONECTAT] conectat la Auctioneer
+[12-05-2026 16:16:47] [Bidder] [49566] oferta trimisa: 4972 de catre Elena Dumitrescu
+[12-05-2026 16:16:47] [Auctioneer] Oferta primita: [12-05-2026 16:16:46] /127.0.0.1:49527 [Elena Dumitrescu, 0766500366, elena.dumitrescu@email.com] >>> licitez 6108
+[12-05-2026 16:16:47] [Auctioneer] Oferta primita: [12-05-2026 16:16:46] /127.0.0.1:49532 [Ion Popescu, 0799336857, ion.popescu@email.com] >>> licitez 5406
+[12-05-2026 16:16:47] [Auctioneer] Oferta primita: [12-05-2026 16:16:46] /127.0.0.1:49534 [Ion Popescu, 0713043420, ion.popescu@email.com] >>> licitez 1885
+[12-05-2026 16:16:47] [Auctioneer] Oferta primita: [12-05-2026 16:16:46] /127.0.0.1:49535 [Ana Radu, 0730608705, ana.radu@email.com] >>> licitez 5982
+[12-05-2026 16:16:47] [Auctioneer] Oferta primita: [12-05-2026 16:16:46] /127.0.0.1:49536 [Andrei Georgescu, 0764786695, andrei.georgescu@email.com] >>> licitez 4350
+[12-05-2026 16:16:47] [Auctioneer] Oferta primita: [12-05-2026 16:16:46] /127.0.0.1:49541 [Ion Popescu, 0752291628, ion.popescu@email.com] >>> licitez 4172
+[12-05-2026 16:16:47] [Auctioneer] Oferta primita: [12-05-2026 16:16:46] /127.0.0.1:49544 [Cristian Pavel, 0779421846, cristian.pavel@email.com] >>> licitez 6129
+[12-05-2026 16:16:47] [Bidder] [49567] oferta trimisa: 3426 de catre Andrei Georgescu
+[12-05-2026 16:16:47] [Bidder] [BIDDER_NECONECTAT] conectat la Auctioneer
+[12-05-2026 16:16:47] [Auctioneer] Oferta primita: [12-05-2026 16:16:47] /127.0.0.1:49545 [Ioana Matei, 0798018402, ioana.matei@email.com] >>> licitez 9713
+[12-05-2026 16:16:47] [Auctioneer] Oferta primita: [12-05-2026 16:16:46] /127.0.0.1:49547 [Cristian Pavel, 0723674746, cristian.pavel@email.com] >>> licitez 6410
+[12-05-2026 16:16:47] [Auctioneer] Oferta primita: [12-05-2026 16:16:47] /127.0.0.1:49548 [Andrei Georgescu, 0764041708, andrei.georgescu@email.com] >>> licitez 3388
+[12-05-2026 16:16:47] [Bidder] [49621] oferta trimisa: 1632 de catre Andrei Georgescu
+[12-05-2026 16:16:47] [Bidder] [BIDDER_NECONECTAT] conectat la Auctioneer
+[12-05-2026 16:16:47] [Bidder] [BIDDER_NECONECTAT] conectat la Auctioneer
+[12-05-2026 16:16:47] [Bidder] [49571] oferta trimisa: 1353 de catre Mihai Stan
+[12-05-2026 16:16:47] [Bidder] [BIDDER_NECONECTAT] conectat la Auctioneer
+[12-05-2026 16:16:47] [Bidder] [BIDDER_NECONECTAT] conectat la Auctioneer
+[12-05-2026 16:16:47] [Bidder] [49633] oferta trimisa: 3725 de catre Elena Dumitrescu
+[12-05-2026 16:16:47] [Bidder] [49606] oferta trimisa: 3161 de catre Ioana Matei
+[12-05-2026 16:16:47] [Bidder] [49632] oferta trimisa: 8658 de catre Mihai Stan
+[12-05-2026 16:16:47] [Bidder] [49637] oferta trimisa: 9441 de catre Elena Dumitrescu
+[12-05-2026 16:16:47] [Bidder] [49640] oferta trimisa: 5665 de catre Ana Radu
+[12-05-2026 16:16:47] [Bidder] [49619] oferta trimisa: 6365 de catre Cristian Pavel
+[12-05-2026 16:16:47] [Bidder] [49626] oferta trimisa: 6091 de catre Mihai Stan
+[12-05-2026 16:16:47] [Bidder] [49667] oferta trimisa: 6124 de catre Maria Ionescu
+[12-05-2026 16:16:47] [Bidder] [49658] oferta trimisa: 5590 de catre Mihai Stan
+[12-05-2026 16:16:47] [Bidder] [BIDDER_NECONECTAT] conectat la Auctioneer
+[12-05-2026 16:16:47] [Bidder] [BIDDER_NECONECTAT] conectat la Auctioneer
+[12-05-2026 16:16:47] [Bidder] [49610] oferta trimisa: 1977 de catre Ion Popescu
+[12-05-2026 16:16:47] [Bidder] [49687] oferta trimisa: 8930 de catre Ioana Matei
+[12-05-2026 16:16:47] [Bidder] [49653] oferta trimisa: 3059 de catre Andrei Georgescu
+[12-05-2026 16:16:47] [Bidder] [BIDDER_NECONECTAT] conectat la Auctioneer
+[12-05-2026 16:16:47] [Bidder] [49584] oferta trimisa: 8418 de catre Elena Dumitrescu
+[12-05-2026 16:16:47] [Auctioneer] Oferta primita: [12-05-2026 16:16:46] /127.0.0.1:49549 [Elena Dumitrescu, 0759474588, elena.dumitrescu@email.com] >>> licitez 1752
+[12-05-2026 16:16:47] [Bidder] [BIDDER_NECONECTAT] conectat la Auctioneer
+[12-05-2026 16:16:47] [Auctioneer] Oferta primita: [12-05-2026 16:16:47] /127.0.0.1:49551 [Ioana Matei, 0782842267, ioana.matei@email.com] >>> licitez 1985
+[12-05-2026 16:16:47] [Auctioneer] Oferta primita: [12-05-2026 16:16:47] /127.0.0.1:49552 [Ioana Matei, 0726553438, ioana.matei@email.com] >>> licitez 7471
+[12-05-2026 16:16:47] [Auctioneer] Oferta primita: [12-05-2026 16:16:46] /127.0.0.1:49553 [Elena Dumitrescu, 0762191688, elena.dumitrescu@email.com] >>> licitez 2852
+[12-05-2026 16:16:47] [Auctioneer] Oferta primita: [12-05-2026 16:16:46] /127.0.0.1:49562 [Ion Popescu, 0726571028, ion.popescu@email.com] >>> licitez 5475
+[12-05-2026 16:16:47] [Auctioneer] Oferta primita: [12-05-2026 16:16:46] /127.0.0.1:49565 [Ion Popescu, 0775298416, ion.popescu@email.com] >>> licitez 6783
+[12-05-2026 16:16:47] [Auctioneer] Oferta primita: [12-05-2026 16:16:47] /127.0.0.1:49566 [Elena Dumitrescu, 0759400401, elena.dumitrescu@email.com] >>> licitez 4972
+[12-05-2026 16:16:47] [Auctioneer] Oferta primita: [12-05-2026 16:16:47] /127.0.0.1:49567 [Andrei Georgescu, 0773889630, andrei.georgescu@email.com] >>> licitez 3426
+[12-05-2026 16:16:47] [Bidder] [BIDDER_NECONECTAT] conectat la Auctioneer
+[12-05-2026 16:16:47] [Auctioneer] Oferta primita: [12-05-2026 16:16:47] /127.0.0.1:49571 [Mihai Stan, 0756844046, mihai.stan@email.com] >>> licitez 1353
+[12-05-2026 16:16:47] [Auctioneer] Oferta primita: [12-05-2026 16:16:47] /127.0.0.1:49574 [Cristian Pavel, 0790249179, cristian.pavel@email.com] >>> licitez 4224
+[12-05-2026 16:16:47] [Auctioneer] Oferta primita: [12-05-2026 16:16:46] /127.0.0.1:49575 [Ana Radu, 0781418779, ana.radu@email.com] >>> licitez 5135
+[12-05-2026 16:16:47] [Bidder] [BIDDER_NECONECTAT] conectat la Auctioneer
+[12-05-2026 16:16:47] [Bidder] [49781] oferta trimisa: 3641 de catre Ana Radu
+[12-05-2026 16:16:47] [Bidder] [49691] oferta trimisa: 6195 de catre Elena Dumitrescu
+[12-05-2026 16:16:47] [Bidder] [BIDDER_NECONECTAT] conectat la Auctioneer
+[12-05-2026 16:16:48] [Bidder] [BIDDER_NECONECTAT] conectat la Auctioneer
+[12-05-2026 16:16:48] [Bidder] [BIDDER_NECONECTAT] conectat la Auctioneer
+[12-05-2026 16:16:48] [Bidder] [BIDDER_NECONECTAT] conectat la Auctioneer
+[12-05-2026 16:16:48] [Bidder] [BIDDER_NECONECTAT] conectat la Auctioneer
+[12-05-2026 16:16:48] [Bidder] [BIDDER_NECONECTAT] conectat la Auctioneer
+[12-05-2026 16:16:48] [Bidder] [49746] oferta trimisa: 5684 de catre Maria Ionescu
+[12-05-2026 16:16:48] [Bidder] [49749] oferta trimisa: 1103 de catre Andrei Georgescu
+[12-05-2026 16:16:48] [Bidder] [BIDDER_NECONECTAT] conectat la Auctioneer
+[12-05-2026 16:16:48] [Bidder] [49807] oferta trimisa: 6204 de catre Ion Popescu
+[12-05-2026 16:16:48] [Bidder] [49683] oferta trimisa: 3502 de catre Maria Ionescu
+[12-05-2026 16:16:48] [Bidder] [49834] oferta trimisa: 6523 de catre Mihai Stan
+[12-05-2026 16:16:48] [Bidder] [49796] oferta trimisa: 4713 de catre Ioana Matei
+[12-05-2026 16:16:48] [Bidder] [49753] oferta trimisa: 1493 de catre Andrei Georgescu
+[12-05-2026 16:16:48] [Bidder] [BIDDER_NECONECTAT] conectat la Auctioneer
+[12-05-2026 16:16:48] [Bidder] [BIDDER_NECONECTAT] conectat la Auctioneer
+[12-05-2026 16:16:48] [Bidder] [BIDDER_NECONECTAT] conectat la Auctioneer
+[12-05-2026 16:16:48] [Bidder] [49752] oferta trimisa: 8090 de catre Maria Ionescu
+[12-05-2026 16:16:48] [Bidder] [49810] oferta trimisa: 2504 de catre Maria Ionescu
+[12-05-2026 16:16:48] [Bidder] [49806] oferta trimisa: 2629 de catre Mihai Stan
+[12-05-2026 16:16:48] [Bidder] [49792] oferta trimisa: 2356 de catre Ion Popescu
+[12-05-2026 16:16:48] [Bidder] [49747] oferta trimisa: 9515 de catre Maria Ionescu
+[12-05-2026 16:16:48] [Bidder] [49757] oferta trimisa: 2044 de catre Elena Dumitrescu
+[12-05-2026 16:16:48] [Bidder] [49835] oferta trimisa: 9356 de catre Maria Ionescu
+[12-05-2026 16:16:48] [Bidder] [49744] oferta trimisa: 8272 de catre Andrei Georgescu
+[12-05-2026 16:16:48] [Auctioneer] Oferta primita: [12-05-2026 16:16:47] /127.0.0.1:49576 [Maria Ionescu, 0715655082, maria.ionescu@email.com] >>> licitez 7718
+[12-05-2026 16:16:48] [Auctioneer] Oferta primita: [12-05-2026 16:16:47] /127.0.0.1:49581 [Mihai Stan, 0776431994, mihai.stan@email.com] >>> licitez 8428
+[12-05-2026 16:16:48] [Auctioneer] Oferta primita: [12-05-2026 16:16:47] /127.0.0.1:49584 [Elena Dumitrescu, 0710871740, elena.dumitrescu@email.com] >>> licitez 8418
+[12-05-2026 16:16:48] [Auctioneer] Oferta primita: [12-05-2026 16:16:47] /127.0.0.1:49590 [Ion Popescu, 0767503328, ion.popescu@email.com] >>> licitez 3007
+[12-05-2026 16:16:48] [Auctioneer] Oferta primita: [12-05-2026 16:16:47] /127.0.0.1:49591 [Ioana Matei, 0753325038, ioana.matei@email.com] >>> licitez 3338
+[12-05-2026 16:16:48] [Bidder] [49760] oferta trimisa: 5443 de catre Cristian Pavel
+[12-05-2026 16:16:48] [Auctioneer] Oferta primita: [12-05-2026 16:16:47] /127.0.0.1:49593 [Andrei Georgescu, 0729447906, andrei.georgescu@email.com] >>> licitez 6400
+[12-05-2026 16:16:48] [Auctioneer] Oferta primita: [12-05-2026 16:16:47] /127.0.0.1:49596 [Mihai Stan, 0727325028, mihai.stan@email.com] >>> licitez 9597
+[12-05-2026 16:16:48] [Auctioneer] Oferta primita: [12-05-2026 16:16:46] /127.0.0.1:49600 [Mihai Stan, 0799440897, mihai.stan@email.com] >>> licitez 5633
+[12-05-2026 16:16:48] [Auctioneer] Oferta primita: [12-05-2026 16:16:46] /127.0.0.1:49605 [Elena Dumitrescu, 0782585441, elena.dumitrescu@email.com] >>> licitez 7121
+[12-05-2026 16:16:48] [Bidder] [BIDDER_NECONECTAT] conectat la Auctioneer
+[12-05-2026 16:16:48] [Auctioneer] Oferta primita: [12-05-2026 16:16:47] /127.0.0.1:49606 [Ioana Matei, 0756316046, ioana.matei@email.com] >>> licitez 3161
+[12-05-2026 16:16:48] [Auctioneer] Oferta primita: [12-05-2026 16:16:47] /127.0.0.1:49608 [Mihai Stan, 0736755106, mihai.stan@email.com] >>> licitez 2529
+[12-05-2026 16:16:48] [Auctioneer] Oferta primita: [12-05-2026 16:16:47] /127.0.0.1:49610 [Ion Popescu, 0731514258, ion.popescu@email.com] >>> licitez 1977
+[12-05-2026 16:16:48] [Bidder] [49761] oferta trimisa: 1516 de catre Cristian Pavel
+[12-05-2026 16:16:48] [Bidder] [49831] oferta trimisa: 7347 de catre Ioana Matei
+[12-05-2026 16:16:48] [Auctioneer] Oferta primita: [12-05-2026 16:16:47] /127.0.0.1:49612 [Maria Ionescu, 0777529508, maria.ionescu@email.com] >>> licitez 8050
+[12-05-2026 16:16:48] [Auctioneer] Oferta primita: [12-05-2026 16:16:46] /127.0.0.1:49614 [Andrei Georgescu, 0729964401, andrei.georgescu@email.com] >>> licitez 9960
+[12-05-2026 16:16:48] [Auctioneer] Oferta primita: [12-05-2026 16:16:47] /127.0.0.1:49619 [Cristian Pavel, 0728126232, cristian.pavel@email.com] >>> licitez 6365
+[12-05-2026 16:16:48] [Auctioneer] Oferta primita: [12-05-2026 16:16:47] /127.0.0.1:49621 [Andrei Georgescu, 0795900871, andrei.georgescu@email.com] >>> licitez 1632
+[12-05-2026 16:16:48] [Bidder] [49779] oferta trimisa: 1988 de catre Andrei Georgescu
+[12-05-2026 16:16:48] [Auctioneer] Oferta primita: [12-05-2026 16:16:47] /127.0.0.1:49626 [Mihai Stan, 0719862090, mihai.stan@email.com] >>> licitez 6091
+[12-05-2026 16:16:48] [Auctioneer] Oferta primita: [12-05-2026 16:16:47] /127.0.0.1:49628 [Ana Radu, 0776231681, ana.radu@email.com] >>> licitez 9672
+[12-05-2026 16:16:48] [Auctioneer] Oferta primita: [12-05-2026 16:16:47] /127.0.0.1:49632 [Mihai Stan, 0783129693, mihai.stan@email.com] >>> licitez 8658
+[12-05-2026 16:16:48] [Auctioneer] Oferta primita: [12-05-2026 16:16:47] /127.0.0.1:49633 [Elena Dumitrescu, 0711802614, elena.dumitrescu@email.com] >>> licitez 3725
+[12-05-2026 16:16:48] [Auctioneer] Oferta primita: [12-05-2026 16:16:47] /127.0.0.1:49637 [Elena Dumitrescu, 0718316436, elena.dumitrescu@email.com] >>> licitez 9441
+[12-05-2026 16:16:48] [Auctioneer] Oferta primita: [12-05-2026 16:16:47] /127.0.0.1:49640 [Ana Radu, 0762081467, ana.radu@email.com] >>> licitez 5665
+[12-05-2026 16:16:48] [Auctioneer] Oferta primita: [12-05-2026 16:16:46] /127.0.0.1:49643 [Ion Popescu, 0721917552, ion.popescu@email.com] >>> licitez 6583
+[12-05-2026 16:16:48] [Auctioneer] Oferta primita: [12-05-2026 16:16:47] /127.0.0.1:49644 [Mihai Stan, 0762110337, mihai.stan@email.com] >>> licitez 2981
+[12-05-2026 16:16:48] [Auctioneer] Oferta primita: [12-05-2026 16:16:47] /127.0.0.1:49648 [Ioana Matei, 0753857813, ioana.matei@email.com] >>> licitez 2657
+[12-05-2026 16:16:48] [Auctioneer] Oferta primita: [12-05-2026 16:16:47] /127.0.0.1:49653 [Andrei Georgescu, 0729839710, andrei.georgescu@email.com] >>> licitez 3059
+[12-05-2026 16:16:48] [Auctioneer] Oferta primita: [12-05-2026 16:16:46] /127.0.0.1:49655 [Ion Popescu, 0774894834, ion.popescu@email.com] >>> licitez 6601
+[12-05-2026 16:16:48] [Auctioneer] Oferta primita: [12-05-2026 16:16:47] /127.0.0.1:49658 [Mihai Stan, 0789428673, mihai.stan@email.com] >>> licitez 5590
+[12-05-2026 16:16:48] [Auctioneer] Oferta primita: [12-05-2026 16:16:46] /127.0.0.1:49663 [Maria Ionescu, 0728123951, maria.ionescu@email.com] >>> licitez 6214
+[12-05-2026 16:16:48] [Auctioneer] Oferta primita: [12-05-2026 16:16:47] /127.0.0.1:49667 [Maria Ionescu, 0768791186, maria.ionescu@email.com] >>> licitez 6124
+[12-05-2026 16:16:48] [Auctioneer] Oferta primita: [12-05-2026 16:16:47] /127.0.0.1:49683 [Maria Ionescu, 0763553417, maria.ionescu@email.com] >>> licitez 3502
+[12-05-2026 16:16:48] [Auctioneer] Oferta primita: [12-05-2026 16:16:48] /127.0.0.1:49806 [Mihai Stan, 0796465853, mihai.stan@email.com] >>> licitez 2629
+[12-05-2026 16:16:48] [Auctioneer] Oferta primita: [12-05-2026 16:16:47] /127.0.0.1:49810 [Maria Ionescu, 0728558160, maria.ionescu@email.com] >>> licitez 2504
+[12-05-2026 16:16:48] [Auctioneer] Oferta primita: [12-05-2026 16:16:47] /127.0.0.1:49807 [Ion Popescu, 0798854555, ion.popescu@email.com] >>> licitez 6204
+[12-05-2026 16:16:48] [Auctioneer] Oferta primita: [12-05-2026 16:16:47] /127.0.0.1:49792 [Ion Popescu, 0744325757, ion.popescu@email.com] >>> licitez 2356
+[12-05-2026 16:16:48] [Auctioneer] Oferta primita: [12-05-2026 16:16:47] /127.0.0.1:49781 [Ana Radu, 0774603231, ana.radu@email.com] >>> licitez 3641
+[12-05-2026 16:16:48] [Auctioneer] Oferta primita: [12-05-2026 16:16:47] /127.0.0.1:49687 [Ioana Matei, 0726847457, ioana.matei@email.com] >>> licitez 8930
+[12-05-2026 16:16:48] [Auctioneer] Oferta primita: [12-05-2026 16:16:47] /127.0.0.1:49757 [Elena Dumitrescu, 0799406388, elena.dumitrescu@email.com] >>> licitez 2044
+[12-05-2026 16:16:48] [Auctioneer] Oferta primita: [12-05-2026 16:16:47] /127.0.0.1:49796 [Ioana Matei, 0751550584, ioana.matei@email.com] >>> licitez 4713
+[12-05-2026 16:16:48] [Auctioneer] Oferta primita: [12-05-2026 16:16:47] /127.0.0.1:49691 [Elena Dumitrescu, 0775838216, elena.dumitrescu@email.com] >>> licitez 6195
+[12-05-2026 16:16:48] [Auctioneer] Oferta primita: [12-05-2026 16:16:47] /127.0.0.1:49834 [Mihai Stan, 0713374375, mihai.stan@email.com] >>> licitez 6523
+[12-05-2026 16:16:48] [Auctioneer] Oferta primita: [12-05-2026 16:16:48] /127.0.0.1:49744 [Andrei Georgescu, 0718179179, andrei.georgescu@email.com] >>> licitez 8272
+[12-05-2026 16:16:48] [Auctioneer] Oferta primita: [12-05-2026 16:16:47] /127.0.0.1:49746 [Maria Ionescu, 0784359281, maria.ionescu@email.com] >>> licitez 5684
+[12-05-2026 16:16:48] [Auctioneer] Oferta primita: [12-05-2026 16:16:48] /127.0.0.1:49835 [Maria Ionescu, 0720627230, maria.ionescu@email.com] >>> licitez 9356
+[12-05-2026 16:16:48] [Auctioneer] Oferta primita: [12-05-2026 16:16:48] /127.0.0.1:49747 [Maria Ionescu, 0728766591, maria.ionescu@email.com] >>> licitez 9515
+[12-05-2026 16:16:48] [Auctioneer] Oferta primita: [12-05-2026 16:16:47] /127.0.0.1:49749 [Andrei Georgescu, 0740688881, andrei.georgescu@email.com] >>> licitez 1103
+[12-05-2026 16:16:48] [Auctioneer] Oferta primita: [12-05-2026 16:16:47] /127.0.0.1:49752 [Maria Ionescu, 0749012197, maria.ionescu@email.com] >>> licitez 8090
+[12-05-2026 16:16:48] [Auctioneer] Oferta primita: [12-05-2026 16:16:47] /127.0.0.1:49753 [Andrei Georgescu, 0749265558, andrei.georgescu@email.com] >>> licitez 1493
+[12-05-2026 16:16:48] [Auctioneer] Oferta primita: [12-05-2026 16:16:48] /127.0.0.1:49831 [Ioana Matei, 0777345213, ioana.matei@email.com] >>> licitez 7347
+[12-05-2026 16:16:48] [Auctioneer] Oferta primita: [12-05-2026 16:16:48] /127.0.0.1:49761 [Cristian Pavel, 0766792302, cristian.pavel@email.com] >>> licitez 1516
+[12-05-2026 16:16:48] [Auctioneer] Oferta primita: [12-05-2026 16:16:48] /127.0.0.1:49760 [Cristian Pavel, 0727659609, cristian.pavel@email.com] >>> licitez 5443
+[12-05-2026 16:16:48] [Auctioneer] Oferta primita: [12-05-2026 16:16:48] /127.0.0.1:49779 [Andrei Georgescu, 0730240703, andrei.georgescu@email.com] >>> licitez 1988
+[12-05-2026 16:16:48] [Bidder] [BIDDER_NECONECTAT] conectat la Auctioneer
+[12-05-2026 16:16:48] [Bidder] [49789] oferta trimisa: 5980 de catre Ion Popescu
+[12-05-2026 16:16:48] [Auctioneer] Oferta primita: [12-05-2026 16:16:48] /127.0.0.1:49789 [Ion Popescu, 0784155606, ion.popescu@email.com] >>> licitez 5980
+[12-05-2026 16:16:48] [Bidder] [BIDDER_NECONECTAT] conectat la Auctioneer
+[12-05-2026 16:16:48] [Bidder] [BIDDER_NECONECTAT] conectat la Auctioneer
+[12-05-2026 16:16:48] [Bidder] [BIDDER_NECONECTAT] conectat la Auctioneer
+[12-05-2026 16:16:48] [Bidder] [BIDDER_NECONECTAT] conectat la Auctioneer
+[12-05-2026 16:16:48] [Bidder] [BIDDER_NECONECTAT] conectat la Auctioneer
+[12-05-2026 16:16:48] [Bidder] [49668] oferta trimisa: 7355 de catre Ioana Matei
+[12-05-2026 16:16:48] [Auctioneer] Oferta primita: [12-05-2026 16:16:48] /127.0.0.1:49668 [Ioana Matei, 0743175098, ioana.matei@email.com] >>> licitez 7355
+[12-05-2026 16:16:48] [Bidder] [49669] oferta trimisa: 6857 de catre Andrei Georgescu
+[12-05-2026 16:16:48] [Auctioneer] Oferta primita: [12-05-2026 16:16:48] /127.0.0.1:49669 [Andrei Georgescu, 0762198517, andrei.georgescu@email.com] >>> licitez 6857
+[12-05-2026 16:16:48] [Bidder] [49670] oferta trimisa: 7967 de catre Cristian Pavel
+[12-05-2026 16:16:48] [Auctioneer] Oferta primita: [12-05-2026 16:16:48] /127.0.0.1:49670 [Cristian Pavel, 0745095204, cristian.pavel@email.com] >>> licitez 7967
+[12-05-2026 16:16:48] [Bidder] [BIDDER_NECONECTAT] conectat la Auctioneer
+[12-05-2026 16:16:48] [Bidder] [49673] oferta trimisa: 8061 de catre Ana Radu
+[12-05-2026 16:16:48] [Bidder] [49674] oferta trimisa: 8801 de catre Mihai Stan
+[12-05-2026 16:16:48] [Auctioneer] Oferta primita: [12-05-2026 16:16:48] /127.0.0.1:49674 [Mihai Stan, 0787397385, mihai.stan@email.com] >>> licitez 8801
+[12-05-2026 16:16:48] [Auctioneer] Oferta primita: [12-05-2026 16:16:48] /127.0.0.1:49673 [Ana Radu, 0795370053, ana.radu@email.com] >>> licitez 8061
+[12-05-2026 16:16:48] [Bidder] [49680] oferta trimisa: 1659 de catre Maria Ionescu
+[12-05-2026 16:16:48] [Auctioneer] Oferta primita: [12-05-2026 16:16:48] /127.0.0.1:49680 [Maria Ionescu, 0759404539, maria.ionescu@email.com] >>> licitez 1659
+[12-05-2026 16:16:48] [Bidder] [BIDDER_NECONECTAT] conectat la Auctioneer
+[12-05-2026 16:16:48] [Bidder] [BIDDER_NECONECTAT] conectat la Auctioneer
+[12-05-2026 16:16:48] [Bidder] [49693] oferta trimisa: 3762 de catre Maria Ionescu
+[12-05-2026 16:16:48] [Bidder] [49692] oferta trimisa: 7824 de catre Elena Dumitrescu
+[12-05-2026 16:16:48] [Auctioneer] Oferta primita: [12-05-2026 16:16:48] /127.0.0.1:49693 [Maria Ionescu, 0766632160, maria.ionescu@email.com] >>> licitez 3762
+[12-05-2026 16:16:48] [Auctioneer] Oferta primita: [12-05-2026 16:16:48] /127.0.0.1:49692 [Elena Dumitrescu, 0768487456, elena.dumitrescu@email.com] >>> licitez 7824
+[12-05-2026 16:16:48] [Bidder] [BIDDER_NECONECTAT] conectat la Auctioneer
+[12-05-2026 16:16:48] [Bidder] [BIDDER_NECONECTAT] conectat la Auctioneer
+[12-05-2026 16:16:48] [Bidder] [49703] oferta trimisa: 1262 de catre Mihai Stan
+[12-05-2026 16:16:48] [Bidder] [49704] oferta trimisa: 8912 de catre Ion Popescu
+[12-05-2026 16:16:48] [Auctioneer] Oferta primita: [12-05-2026 16:16:48] /127.0.0.1:49704 [Ion Popescu, 0767150913, ion.popescu@email.com] >>> licitez 8912
+[12-05-2026 16:16:48] [Auctioneer] Oferta primita: [12-05-2026 16:16:48] /127.0.0.1:49703 [Mihai Stan, 0751104807, mihai.stan@email.com] >>> licitez 1262
+[12-05-2026 16:16:48] [Bidder] [BIDDER_NECONECTAT] conectat la Auctioneer
+[12-05-2026 16:16:48] [Bidder] [BIDDER_NECONECTAT] conectat la Auctioneer
+[12-05-2026 16:16:48] [Bidder] [BIDDER_NECONECTAT] conectat la Auctioneer
+[12-05-2026 16:16:48] [Bidder] [BIDDER_NECONECTAT] conectat la Auctioneer
+[12-05-2026 16:16:48] [Bidder] [49711] oferta trimisa: 2344 de catre Ana Radu
+[12-05-2026 16:16:48] [Bidder] [49710] oferta trimisa: 6544 de catre Andrei Georgescu
+[12-05-2026 16:16:48] [Auctioneer] Oferta primita: [12-05-2026 16:16:48] /127.0.0.1:49711 [Ana Radu, 0734054386, ana.radu@email.com] >>> licitez 2344
+[12-05-2026 16:16:48] [Auctioneer] Oferta primita: [12-05-2026 16:16:48] /127.0.0.1:49710 [Andrei Georgescu, 0717013955, andrei.georgescu@email.com] >>> licitez 6544
+[12-05-2026 16:16:48] [Bidder] [49709] oferta trimisa: 4880 de catre Ana Radu
+[12-05-2026 16:16:48] [Bidder] [BIDDER_NECONECTAT] conectat la Auctioneer
+[12-05-2026 16:16:48] [Bidder] [49713] oferta trimisa: 8529 de catre Cristian Pavel
+[12-05-2026 16:16:48] [Auctioneer] Oferta primita: [12-05-2026 16:16:48] /127.0.0.1:49709 [Ana Radu, 0714940714, ana.radu@email.com] >>> licitez 4880
+[12-05-2026 16:16:48] [Auctioneer] Oferta primita: [12-05-2026 16:16:48] /127.0.0.1:49713 [Cristian Pavel, 0741521614, cristian.pavel@email.com] >>> licitez 8529
+[12-05-2026 16:16:48] [Bidder] [BIDDER_NECONECTAT] conectat la Auctioneer
+[12-05-2026 16:16:48] [Bidder] [BIDDER_NECONECTAT] conectat la Auctioneer
+[12-05-2026 16:16:48] [Bidder] [49716] oferta trimisa: 6944 de catre Ana Radu
+[12-05-2026 16:16:48] [Auctioneer] Oferta primita: [12-05-2026 16:16:48] /127.0.0.1:49716 [Ana Radu, 0760538887, ana.radu@email.com] >>> licitez 6944
+[12-05-2026 16:16:48] [Bidder] [BIDDER_NECONECTAT] conectat la Auctioneer
+[12-05-2026 16:16:48] [Bidder] [BIDDER_NECONECTAT] conectat la Auctioneer
+[12-05-2026 16:16:48] [Bidder] [49720] oferta trimisa: 8322 de catre Elena Dumitrescu
+[12-05-2026 16:16:48] [Auctioneer] Oferta primita: [12-05-2026 16:16:48] /127.0.0.1:49720 [Elena Dumitrescu, 0765026813, elena.dumitrescu@email.com] >>> licitez 8322
+[12-05-2026 16:16:48] [Bidder] [49722] oferta trimisa: 6066 de catre Mihai Stan
+[12-05-2026 16:16:48] [Auctioneer] Oferta primita: [12-05-2026 16:16:48] /127.0.0.1:49722 [Mihai Stan, 0793995051, mihai.stan@email.com] >>> licitez 6066
+[12-05-2026 16:16:48] [Bidder] [BIDDER_NECONECTAT] conectat la Auctioneer
+[12-05-2026 16:16:48] [Bidder] [49723] oferta trimisa: 5778 de catre Ioana Matei
+[12-05-2026 16:16:48] [Auctioneer] Oferta primita: [12-05-2026 16:16:48] /127.0.0.1:49723 [Ioana Matei, 0734216401, ioana.matei@email.com] >>> licitez 5778
+[12-05-2026 16:16:48] [Bidder] [49727] oferta trimisa: 4197 de catre Ion Popescu
+[12-05-2026 16:16:48] [Auctioneer] Oferta primita: [12-05-2026 16:16:48] /127.0.0.1:49727 [Ion Popescu, 0782215973, ion.popescu@email.com] >>> licitez 4197
+[12-05-2026 16:16:48] [Bidder] [49731] oferta trimisa: 1823 de catre Mihai Stan
+[12-05-2026 16:16:48] [Auctioneer] Oferta primita: [12-05-2026 16:16:48] /127.0.0.1:49731 [Mihai Stan, 0726416317, mihai.stan@email.com] >>> licitez 1823
+[12-05-2026 16:16:48] [Bidder] [BIDDER_NECONECTAT] conectat la Auctioneer
+[12-05-2026 16:16:48] [Bidder] [BIDDER_NECONECTAT] conectat la Auctioneer
+[12-05-2026 16:16:48] [Bidder] [49737] oferta trimisa: 5134 de catre Cristian Pavel
+[12-05-2026 16:16:48] [Auctioneer] Oferta primita: [12-05-2026 16:16:48] /127.0.0.1:49737 [Cristian Pavel, 0736196316, cristian.pavel@email.com] >>> licitez 5134
+[12-05-2026 16:16:48] [Bidder] [49739] oferta trimisa: 2234 de catre Cristian Pavel
+[12-05-2026 16:16:48] [Auctioneer] Oferta primita: [12-05-2026 16:16:48] /127.0.0.1:49739 [Cristian Pavel, 0760475630, cristian.pavel@email.com] >>> licitez 2234
+[12-05-2026 16:16:48] [Bidder] [BIDDER_NECONECTAT] conectat la Auctioneer
+[12-05-2026 16:16:48] [Bidder] [49764] oferta trimisa: 4125 de catre Ion Popescu
+[12-05-2026 16:16:48] [Auctioneer] Oferta primita: [12-05-2026 16:16:48] /127.0.0.1:49764 [Ion Popescu, 0786867588, ion.popescu@email.com] >>> licitez 4125
+[12-05-2026 16:16:48] [Bidder] [BIDDER_NECONECTAT] conectat la Auctioneer
+[12-05-2026 16:16:48] [Bidder] [BIDDER_NECONECTAT] conectat la Auctioneer
+[12-05-2026 16:16:49] [Bidder] [49773] oferta trimisa: 7221 de catre Ana Radu
+[12-05-2026 16:16:49] [Auctioneer] Oferta primita: [12-05-2026 16:16:49] /127.0.0.1:49773 [Ana Radu, 0748385670, ana.radu@email.com] >>> licitez 7221
+[12-05-2026 16:16:49] [Bidder] [BIDDER_NECONECTAT] conectat la Auctioneer
+[12-05-2026 16:16:49] [Bidder] [49775] oferta trimisa: 9589 de catre Cristian Pavel
+[12-05-2026 16:16:49] [Auctioneer] Oferta primita: [12-05-2026 16:16:49] /127.0.0.1:49775 [Cristian Pavel, 0746579419, cristian.pavel@email.com] >>> licitez 9589
+[12-05-2026 16:16:49] [Bidder] [49776] oferta trimisa: 3786 de catre Ion Popescu
+[12-05-2026 16:16:49] [Auctioneer] Oferta primita: [12-05-2026 16:16:49] /127.0.0.1:49776 [Ion Popescu, 0749822445, ion.popescu@email.com] >>> licitez 3786
+[12-05-2026 16:17:04] [MessageProcessor] Mesaj primit: [12-05-2026 16:16:46] /127.0.0.1:49527 [Elena Dumitrescu, 0766500366, elena.dumitrescu@email.com] >>> licitez 6108
+[12-05-2026 16:17:04] [MessageProcessor] Mesaj primit: [12-05-2026 16:16:46] /127.0.0.1:49532 [Ion Popescu, 0799336857, ion.popescu@email.com] >>> licitez 5406
+[12-05-2026 16:17:04] [MessageProcessor] Mesaj primit: [12-05-2026 16:16:46] /127.0.0.1:49534 [Ion Popescu, 0713043420, ion.popescu@email.com] >>> licitez 1885
+[12-05-2026 16:17:04] [MessageProcessor] Mesaj primit: [12-05-2026 16:16:46] /127.0.0.1:49535 [Ana Radu, 0730608705, ana.radu@email.com] >>> licitez 5982
+[12-05-2026 16:17:04] [MessageProcessor] Mesaj primit: [12-05-2026 16:16:46] /127.0.0.1:49536 [Andrei Georgescu, 0764786695, andrei.georgescu@email.com] >>> licitez 4350
+[12-05-2026 16:17:04] [MessageProcessor] Mesaj primit: [12-05-2026 16:16:46] /127.0.0.1:49541 [Ion Popescu, 0752291628, ion.popescu@email.com] >>> licitez 4172
+[12-05-2026 16:17:04] [MessageProcessor] Mesaj primit: [12-05-2026 16:16:46] /127.0.0.1:49544 [Cristian Pavel, 0779421846, cristian.pavel@email.com] >>> licitez 6129
+[12-05-2026 16:17:04] [MessageProcessor] Mesaj primit: [12-05-2026 16:16:47] /127.0.0.1:49545 [Ioana Matei, 0798018402, ioana.matei@email.com] >>> licitez 9713
+[12-05-2026 16:17:04] [MessageProcessor] Mesaj primit: [12-05-2026 16:16:46] /127.0.0.1:49547 [Cristian Pavel, 0723674746, cristian.pavel@email.com] >>> licitez 6410
+[12-05-2026 16:17:04] [MessageProcessor] Mesaj primit: [12-05-2026 16:16:47] /127.0.0.1:49548 [Andrei Georgescu, 0764041708, andrei.georgescu@email.com] >>> licitez 3388
+[12-05-2026 16:17:04] [MessageProcessor] Mesaj primit: [12-05-2026 16:16:46] /127.0.0.1:49549 [Elena Dumitrescu, 0759474588, elena.dumitrescu@email.com] >>> licitez 1752
+[12-05-2026 16:17:04] [MessageProcessor] Mesaj primit: [12-05-2026 16:16:47] /127.0.0.1:49551 [Ioana Matei, 0782842267, ioana.matei@email.com] >>> licitez 1985
+[12-05-2026 16:17:04] [MessageProcessor] Mesaj primit: [12-05-2026 16:16:47] /127.0.0.1:49552 [Ioana Matei, 0726553438, ioana.matei@email.com] >>> licitez 7471
+[12-05-2026 16:17:04] [MessageProcessor] Mesaj primit: [12-05-2026 16:16:46] /127.0.0.1:49553 [Elena Dumitrescu, 0762191688, elena.dumitrescu@email.com] >>> licitez 2852
+[12-05-2026 16:17:04] [MessageProcessor] Mesaj primit: [12-05-2026 16:16:46] /127.0.0.1:49562 [Ion Popescu, 0726571028, ion.popescu@email.com] >>> licitez 5475
+[12-05-2026 16:17:04] [MessageProcessor] Mesaj primit: [12-05-2026 16:16:46] /127.0.0.1:49565 [Ion Popescu, 0775298416, ion.popescu@email.com] >>> licitez 6783
+[12-05-2026 16:17:04] [MessageProcessor] Mesaj primit: [12-05-2026 16:16:47] /127.0.0.1:49566 [Elena Dumitrescu, 0759400401, elena.dumitrescu@email.com] >>> licitez 4972
+[12-05-2026 16:17:04] [MessageProcessor] Mesaj primit: [12-05-2026 16:16:47] /127.0.0.1:49567 [Andrei Georgescu, 0773889630, andrei.georgescu@email.com] >>> licitez 3426
+[12-05-2026 16:17:04] [MessageProcessor] Mesaj primit: [12-05-2026 16:16:47] /127.0.0.1:49571 [Mihai Stan, 0756844046, mihai.stan@email.com] >>> licitez 1353
+[12-05-2026 16:17:04] [MessageProcessor] Mesaj primit: [12-05-2026 16:16:47] /127.0.0.1:49574 [Cristian Pavel, 0790249179, cristian.pavel@email.com] >>> licitez 4224
+[12-05-2026 16:17:04] [MessageProcessor] Mesaj primit: [12-05-2026 16:16:46] /127.0.0.1:49575 [Ana Radu, 0781418779, ana.radu@email.com] >>> licitez 5135
+[12-05-2026 16:17:04] [MessageProcessor] Mesaj primit: [12-05-2026 16:16:47] /127.0.0.1:49576 [Maria Ionescu, 0715655082, maria.ionescu@email.com] >>> licitez 7718
+[12-05-2026 16:17:04] [MessageProcessor] Mesaj primit: [12-05-2026 16:16:47] /127.0.0.1:49581 [Mihai Stan, 0776431994, mihai.stan@email.com] >>> licitez 8428
+[12-05-2026 16:17:04] [MessageProcessor] Mesaj primit: [12-05-2026 16:16:47] /127.0.0.1:49584 [Elena Dumitrescu, 0710871740, elena.dumitrescu@email.com] >>> licitez 8418
+[12-05-2026 16:17:04] [MessageProcessor] Mesaj primit: [12-05-2026 16:16:47] /127.0.0.1:49590 [Ion Popescu, 0767503328, ion.popescu@email.com] >>> licitez 3007
+[12-05-2026 16:17:04] [MessageProcessor] Mesaj primit: [12-05-2026 16:16:47] /127.0.0.1:49591 [Ioana Matei, 0753325038, ioana.matei@email.com] >>> licitez 3338
+[12-05-2026 16:17:04] [MessageProcessor] Mesaj primit: [12-05-2026 16:16:47] /127.0.0.1:49593 [Andrei Georgescu, 0729447906, andrei.georgescu@email.com] >>> licitez 6400
+[12-05-2026 16:17:04] [MessageProcessor] Mesaj primit: [12-05-2026 16:16:47] /127.0.0.1:49596 [Mihai Stan, 0727325028, mihai.stan@email.com] >>> licitez 9597
+[12-05-2026 16:17:04] [MessageProcessor] Mesaj primit: [12-05-2026 16:16:46] /127.0.0.1:49600 [Mihai Stan, 0799440897, mihai.stan@email.com] >>> licitez 5633
+[12-05-2026 16:17:04] [MessageProcessor] Mesaj primit: [12-05-2026 16:16:46] /127.0.0.1:49605 [Elena Dumitrescu, 0782585441, elena.dumitrescu@email.com] >>> licitez 7121
+[12-05-2026 16:17:04] [MessageProcessor] Mesaj primit: [12-05-2026 16:16:47] /127.0.0.1:49606 [Ioana Matei, 0756316046, ioana.matei@email.com] >>> licitez 3161
+[12-05-2026 16:17:04] [MessageProcessor] Mesaj primit: [12-05-2026 16:16:47] /127.0.0.1:49608 [Mihai Stan, 0736755106, mihai.stan@email.com] >>> licitez 2529
+[12-05-2026 16:17:04] [MessageProcessor] Mesaj primit: [12-05-2026 16:16:47] /127.0.0.1:49610 [Ion Popescu, 0731514258, ion.popescu@email.com] >>> licitez 1977
+[12-05-2026 16:17:04] [MessageProcessor] Mesaj primit: [12-05-2026 16:16:47] /127.0.0.1:49612 [Maria Ionescu, 0777529508, maria.ionescu@email.com] >>> licitez 8050
+[12-05-2026 16:17:04] [MessageProcessor] Mesaj primit: [12-05-2026 16:16:46] /127.0.0.1:49614 [Andrei Georgescu, 0729964401, andrei.georgescu@email.com] >>> licitez 9960
+[12-05-2026 16:17:04] [MessageProcessor] Mesaj primit: [12-05-2026 16:16:47] /127.0.0.1:49619 [Cristian Pavel, 0728126232, cristian.pavel@email.com] >>> licitez 6365
+[12-05-2026 16:17:04] [MessageProcessor] Mesaj primit: [12-05-2026 16:16:47] /127.0.0.1:49621 [Andrei Georgescu, 0795900871, andrei.georgescu@email.com] >>> licitez 1632
+[12-05-2026 16:17:04] [MessageProcessor] Mesaj primit: [12-05-2026 16:16:47] /127.0.0.1:49626 [Mihai Stan, 0719862090, mihai.stan@email.com] >>> licitez 6091
+[12-05-2026 16:17:04] [MessageProcessor] Mesaj primit: [12-05-2026 16:16:47] /127.0.0.1:49628 [Ana Radu, 0776231681, ana.radu@email.com] >>> licitez 9672
+[12-05-2026 16:17:04] [MessageProcessor] Mesaj primit: [12-05-2026 16:16:47] /127.0.0.1:49632 [Mihai Stan, 0783129693, mihai.stan@email.com] >>> licitez 8658
+[12-05-2026 16:17:04] [MessageProcessor] Mesaj primit: [12-05-2026 16:16:47] /127.0.0.1:49633 [Elena Dumitrescu, 0711802614, elena.dumitrescu@email.com] >>> licitez 3725
+[12-05-2026 16:17:04] [MessageProcessor] Mesaj primit: [12-05-2026 16:16:47] /127.0.0.1:49637 [Elena Dumitrescu, 0718316436, elena.dumitrescu@email.com] >>> licitez 9441
+[12-05-2026 16:17:04] [MessageProcessor] Mesaj primit: [12-05-2026 16:16:47] /127.0.0.1:49640 [Ana Radu, 0762081467, ana.radu@email.com] >>> licitez 5665
+[12-05-2026 16:17:04] [MessageProcessor] Mesaj primit: [12-05-2026 16:16:46] /127.0.0.1:49643 [Ion Popescu, 0721917552, ion.popescu@email.com] >>> licitez 6583
+[12-05-2026 16:17:04] [MessageProcessor] Mesaj primit: [12-05-2026 16:16:47] /127.0.0.1:49644 [Mihai Stan, 0762110337, mihai.stan@email.com] >>> licitez 2981
+[12-05-2026 16:17:04] [MessageProcessor] Mesaj primit: [12-05-2026 16:16:47] /127.0.0.1:49648 [Ioana Matei, 0753857813, ioana.matei@email.com] >>> licitez 2657
+[12-05-2026 16:17:04] [MessageProcessor] Mesaj primit: [12-05-2026 16:16:47] /127.0.0.1:49653 [Andrei Georgescu, 0729839710, andrei.georgescu@email.com] >>> licitez 3059
+[12-05-2026 16:17:04] [MessageProcessor] Mesaj primit: [12-05-2026 16:16:46] /127.0.0.1:49655 [Ion Popescu, 0774894834, ion.popescu@email.com] >>> licitez 6601
+[12-05-2026 16:17:04] [MessageProcessor] Mesaj primit: [12-05-2026 16:16:47] /127.0.0.1:49658 [Mihai Stan, 0789428673, mihai.stan@email.com] >>> licitez 5590
+[12-05-2026 16:17:04] [MessageProcessor] Mesaj primit: [12-05-2026 16:16:46] /127.0.0.1:49663 [Maria Ionescu, 0728123951, maria.ionescu@email.com] >>> licitez 6214
+[12-05-2026 16:17:04] [MessageProcessor] Mesaj primit: [12-05-2026 16:16:47] /127.0.0.1:49667 [Maria Ionescu, 0768791186, maria.ionescu@email.com] >>> licitez 6124
+[12-05-2026 16:17:04] [MessageProcessor] Mesaj primit: [12-05-2026 16:16:47] /127.0.0.1:49683 [Maria Ionescu, 0763553417, maria.ionescu@email.com] >>> licitez 3502
+[12-05-2026 16:17:04] [MessageProcessor] Mesaj primit: [12-05-2026 16:16:48] /127.0.0.1:49806 [Mihai Stan, 0796465853, mihai.stan@email.com] >>> licitez 2629
+[12-05-2026 16:17:04] [MessageProcessor] Mesaj primit: [12-05-2026 16:16:47] /127.0.0.1:49810 [Maria Ionescu, 0728558160, maria.ionescu@email.com] >>> licitez 2504
+[12-05-2026 16:17:04] [MessageProcessor] Mesaj primit: [12-05-2026 16:16:47] /127.0.0.1:49807 [Ion Popescu, 0798854555, ion.popescu@email.com] >>> licitez 6204
+[12-05-2026 16:17:04] [MessageProcessor] Mesaj primit: [12-05-2026 16:16:47] /127.0.0.1:49792 [Ion Popescu, 0744325757, ion.popescu@email.com] >>> licitez 2356
+[12-05-2026 16:17:04] [MessageProcessor] Mesaj primit: [12-05-2026 16:16:47] /127.0.0.1:49781 [Ana Radu, 0774603231, ana.radu@email.com] >>> licitez 3641
+[12-05-2026 16:17:04] [MessageProcessor] Mesaj primit: [12-05-2026 16:16:47] /127.0.0.1:49687 [Ioana Matei, 0726847457, ioana.matei@email.com] >>> licitez 8930
+[12-05-2026 16:17:04] [MessageProcessor] Mesaj primit: [12-05-2026 16:16:47] /127.0.0.1:49757 [Elena Dumitrescu, 0799406388, elena.dumitrescu@email.com] >>> licitez 2044
+[12-05-2026 16:17:04] [MessageProcessor] Mesaj primit: [12-05-2026 16:16:47] /127.0.0.1:49796 [Ioana Matei, 0751550584, ioana.matei@email.com] >>> licitez 4713
+[12-05-2026 16:17:04] [MessageProcessor] Mesaj primit: [12-05-2026 16:16:47] /127.0.0.1:49691 [Elena Dumitrescu, 0775838216, elena.dumitrescu@email.com] >>> licitez 6195
+[12-05-2026 16:17:04] [MessageProcessor] Mesaj primit: [12-05-2026 16:16:47] /127.0.0.1:49834 [Mihai Stan, 0713374375, mihai.stan@email.com] >>> licitez 6523
+[12-05-2026 16:17:04] [MessageProcessor] Mesaj primit: [12-05-2026 16:16:48] /127.0.0.1:49744 [Andrei Georgescu, 0718179179, andrei.georgescu@email.com] >>> licitez 8272
+[12-05-2026 16:17:04] [MessageProcessor] Mesaj primit: [12-05-2026 16:16:47] /127.0.0.1:49746 [Maria Ionescu, 0784359281, maria.ionescu@email.com] >>> licitez 5684
+[12-05-2026 16:17:04] [MessageProcessor] Mesaj primit: [12-05-2026 16:16:48] /127.0.0.1:49835 [Maria Ionescu, 0720627230, maria.ionescu@email.com] >>> licitez 9356
+[12-05-2026 16:17:04] [MessageProcessor] Mesaj primit: [12-05-2026 16:16:48] /127.0.0.1:49747 [Maria Ionescu, 0728766591, maria.ionescu@email.com] >>> licitez 9515
+[12-05-2026 16:17:04] [MessageProcessor] Mesaj primit: [12-05-2026 16:16:47] /127.0.0.1:49749 [Andrei Georgescu, 0740688881, andrei.georgescu@email.com] >>> licitez 1103
+[12-05-2026 16:17:04] [MessageProcessor] Mesaj primit: [12-05-2026 16:16:47] /127.0.0.1:49752 [Maria Ionescu, 0749012197, maria.ionescu@email.com] >>> licitez 8090
+[12-05-2026 16:17:04] [MessageProcessor] Mesaj primit: [12-05-2026 16:16:47] /127.0.0.1:49753 [Andrei Georgescu, 0749265558, andrei.georgescu@email.com] >>> licitez 1493
+[12-05-2026 16:17:04] [MessageProcessor] Mesaj primit: [12-05-2026 16:16:48] /127.0.0.1:49831 [Ioana Matei, 0777345213, ioana.matei@email.com] >>> licitez 7347
+[12-05-2026 16:17:04] [MessageProcessor] Mesaj primit: [12-05-2026 16:16:48] /127.0.0.1:49761 [Cristian Pavel, 0766792302, cristian.pavel@email.com] >>> licitez 1516
+[12-05-2026 16:17:04] [MessageProcessor] Mesaj primit: [12-05-2026 16:16:48] /127.0.0.1:49760 [Cristian Pavel, 0727659609, cristian.pavel@email.com] >>> licitez 5443
+[12-05-2026 16:17:04] [MessageProcessor] Mesaj primit: [12-05-2026 16:16:48] /127.0.0.1:49779 [Andrei Georgescu, 0730240703, andrei.georgescu@email.com] >>> licitez 1988
+[12-05-2026 16:17:04] [MessageProcessor] Mesaj primit: [12-05-2026 16:16:48] /127.0.0.1:49789 [Ion Popescu, 0784155606, ion.popescu@email.com] >>> licitez 5980
+[12-05-2026 16:17:04] [MessageProcessor] Mesaj primit: [12-05-2026 16:16:48] /127.0.0.1:49668 [Ioana Matei, 0743175098, ioana.matei@email.com] >>> licitez 7355
+[12-05-2026 16:17:04] [MessageProcessor] Mesaj primit: [12-05-2026 16:16:48] /127.0.0.1:49669 [Andrei Georgescu, 0762198517, andrei.georgescu@email.com] >>> licitez 6857
+[12-05-2026 16:17:04] [MessageProcessor] Mesaj primit: [12-05-2026 16:16:48] /127.0.0.1:49670 [Cristian Pavel, 0745095204, cristian.pavel@email.com] >>> licitez 7967
+[12-05-2026 16:17:04] [MessageProcessor] Mesaj primit: [12-05-2026 16:16:48] /127.0.0.1:49674 [Mihai Stan, 0787397385, mihai.stan@email.com] >>> licitez 8801
+[12-05-2026 16:17:04] [MessageProcessor] Mesaj primit: [12-05-2026 16:16:48] /127.0.0.1:49673 [Ana Radu, 0795370053, ana.radu@email.com] >>> licitez 8061
+[12-05-2026 16:17:04] [MessageProcessor] Mesaj primit: [12-05-2026 16:16:48] /127.0.0.1:49680 [Maria Ionescu, 0759404539, maria.ionescu@email.com] >>> licitez 1659
+[12-05-2026 16:17:04] [MessageProcessor] Mesaj primit: [12-05-2026 16:16:48] /127.0.0.1:49693 [Maria Ionescu, 0766632160, maria.ionescu@email.com] >>> licitez 3762
+[12-05-2026 16:17:04] [MessageProcessor] Mesaj primit: [12-05-2026 16:16:48] /127.0.0.1:49692 [Elena Dumitrescu, 0768487456, elena.dumitrescu@email.com] >>> licitez 7824
+[12-05-2026 16:17:04] [MessageProcessor] Mesaj primit: [12-05-2026 16:16:48] /127.0.0.1:49704 [Ion Popescu, 0767150913, ion.popescu@email.com] >>> licitez 8912
+[12-05-2026 16:17:04] [MessageProcessor] Mesaj primit: [12-05-2026 16:16:48] /127.0.0.1:49703 [Mihai Stan, 0751104807, mihai.stan@email.com] >>> licitez 1262
+[12-05-2026 16:17:04] [MessageProcessor] Mesaj primit: [12-05-2026 16:16:48] /127.0.0.1:49711 [Ana Radu, 0734054386, ana.radu@email.com] >>> licitez 2344
+[12-05-2026 16:17:04] [MessageProcessor] Mesaj primit: [12-05-2026 16:16:48] /127.0.0.1:49710 [Andrei Georgescu, 0717013955, andrei.georgescu@email.com] >>> licitez 6544
+[12-05-2026 16:17:04] [MessageProcessor] Mesaj primit: [12-05-2026 16:16:48] /127.0.0.1:49709 [Ana Radu, 0714940714, ana.radu@email.com] >>> licitez 4880
+[12-05-2026 16:17:04] [MessageProcessor] Mesaj primit: [12-05-2026 16:16:48] /127.0.0.1:49713 [Cristian Pavel, 0741521614, cristian.pavel@email.com] >>> licitez 8529
+[12-05-2026 16:17:04] [MessageProcessor] Mesaj primit: [12-05-2026 16:16:48] /127.0.0.1:49716 [Ana Radu, 0760538887, ana.radu@email.com] >>> licitez 6944
+[12-05-2026 16:17:04] [MessageProcessor] Mesaj primit: [12-05-2026 16:16:48] /127.0.0.1:49720 [Elena Dumitrescu, 0765026813, elena.dumitrescu@email.com] >>> licitez 8322
+[12-05-2026 16:17:04] [MessageProcessor] Mesaj primit: [12-05-2026 16:16:48] /127.0.0.1:49722 [Mihai Stan, 0793995051, mihai.stan@email.com] >>> licitez 6066
+[12-05-2026 16:17:04] [MessageProcessor] Mesaj primit: [12-05-2026 16:16:48] /127.0.0.1:49723 [Ioana Matei, 0734216401, ioana.matei@email.com] >>> licitez 5778
+[12-05-2026 16:17:04] [MessageProcessor] Mesaj primit: [12-05-2026 16:16:48] /127.0.0.1:49727 [Ion Popescu, 0782215973, ion.popescu@email.com] >>> licitez 4197
+[12-05-2026 16:17:04] [MessageProcessor] Mesaj primit: [12-05-2026 16:16:48] /127.0.0.1:49731 [Mihai Stan, 0726416317, mihai.stan@email.com] >>> licitez 1823
+[12-05-2026 16:17:04] [MessageProcessor] Mesaj primit: [12-05-2026 16:16:48] /127.0.0.1:49737 [Cristian Pavel, 0736196316, cristian.pavel@email.com] >>> licitez 5134
+[12-05-2026 16:17:04] [MessageProcessor] Mesaj primit: [12-05-2026 16:16:48] /127.0.0.1:49739 [Cristian Pavel, 0760475630, cristian.pavel@email.com] >>> licitez 2234
+[12-05-2026 16:17:04] [MessageProcessor] Mesaj primit: [12-05-2026 16:16:48] /127.0.0.1:49764 [Ion Popescu, 0786867588, ion.popescu@email.com] >>> licitez 4125
+[12-05-2026 16:17:04] [MessageProcessor] Mesaj primit: [12-05-2026 16:16:49] /127.0.0.1:49773 [Ana Radu, 0748385670, ana.radu@email.com] >>> licitez 7221
+[12-05-2026 16:17:04] [MessageProcessor] Mesaj primit: [12-05-2026 16:16:49] /127.0.0.1:49775 [Cristian Pavel, 0746579419, cristian.pavel@email.com] >>> licitez 9589
+[12-05-2026 16:17:04] [MessageProcessor] Mesaj primit: [12-05-2026 16:16:49] /127.0.0.1:49776 [Ion Popescu, 0749822445, ion.popescu@email.com] >>> licitez 3786
+[12-05-2026 16:17:04] [MessageProcessor] Mesajele au fost sortate si trimise catre BiddingProcessor
+[12-05-2026 16:17:04] [BiddingProcessor] Castigator decis: Andrei Georgescu, telefon: 0729964401, email: andrei.georgescu@email.com, oferta: licitez 9960
+[12-05-2026 16:17:04] [Auctioneer] Castigator: Andrei Georgescu, telefon: 0729964401, email: andrei.georgescu@email.com, pret: 9960
+[12-05-2026 16:17:04] [Auctioneer] Pornit pe portul 1500
+[12-05-2026 16:17:04] [Bidder] [49536] rezultat primit: Licitatie pierduta...
+[12-05-2026 16:17:04] [Bidder] [49527] rezultat primit: Licitatie pierduta...
+[12-05-2026 16:17:04] [Bidder] [49535] rezultat primit: Licitatie pierduta...
+[12-05-2026 16:17:04] [Bidder] [49532] rezultat primit: Licitatie pierduta...
+[12-05-2026 16:17:04] [Bidder] [49547] rezultat primit: Licitatie pierduta...
+[12-05-2026 16:17:04] [Bidder] [49548] rezultat primit: Licitatie pierduta...
+[12-05-2026 16:17:04] [Bidder] [49810] rezultat primit: Licitatie pierduta...
+[12-05-2026 16:17:04] [Bidder] [49807] rezultat primit: Licitatie pierduta...
+[12-05-2026 16:17:04] [Bidder] [49544] rezultat primit: Licitatie pierduta...
+[12-05-2026 16:17:04] [Bidder] [49610] rezultat primit: Licitatie pierduta...
+[12-05-2026 16:17:04] [Bidder] [49667] rezultat primit: Licitatie pierduta...
+[12-05-2026 16:17:04] [Bidder] [49658] rezultat primit: Licitatie pierduta...
+[12-05-2026 16:17:04] [Bidder] [49593] rezultat primit: Licitatie pierduta...
+[12-05-2026 16:17:04] [Bidder] [49655] rezultat primit: Licitatie pierduta...
+[12-05-2026 16:17:04] [Bidder] [49541] rezultat primit: Licitatie pierduta...
+[12-05-2026 16:17:04] [Bidder] [49534] rezultat primit: Licitatie pierduta...
+[12-05-2026 16:17:04] [Bidder] [49565] rezultat primit: Licitatie pierduta...
+[12-05-2026 16:17:04] [Bidder] [49549] rezultat primit: Licitatie pierduta...
+[12-05-2026 16:17:04] [Bidder] [49605] rezultat primit: Licitatie pierduta...
+[12-05-2026 16:17:04] [Bidder] [49633] rezultat primit: Licitatie pierduta...
+[12-05-2026 16:17:04] [Bidder] [49551] rezultat primit: Licitatie pierduta...
+[12-05-2026 16:17:04] [Bidder] [49545] rezultat primit: Licitatie pierduta...
+[12-05-2026 16:17:04] [Bidder] [49781] rezultat primit: Licitatie pierduta...
+[12-05-2026 16:17:04] [Bidder] [49553] rezultat primit: Licitatie pierduta...
+[12-05-2026 16:17:04] [Bidder] [49792] rezultat primit: Licitatie pierduta...
+[12-05-2026 16:17:04] [Bidder] [49552] rezultat primit: Licitatie pierduta...
+[12-05-2026 16:17:04] [Bidder] [49584] rezultat primit: Licitatie pierduta...
+[12-05-2026 16:17:04] [Bidder] [49562] rezultat primit: Licitatie pierduta...
+[12-05-2026 16:17:04] [Bidder] [49683] rezultat primit: Licitatie pierduta...
+[12-05-2026 16:17:04] [Bidder] [49612] rezultat primit: Licitatie pierduta...
+[12-05-2026 16:17:04] [Bidder] [49663] rezultat primit: Licitatie pierduta...
+[12-05-2026 16:17:04] [Bidder] [49834] rezultat primit: Licitatie pierduta...
+[12-05-2026 16:17:04] [Bidder] [49591] rezultat primit: Licitatie pierduta...
+[12-05-2026 16:17:04] [Bidder] [49581] rezultat primit: Licitatie pierduta...
+[12-05-2026 16:17:04] [Bidder] [49590] rezultat primit: Licitatie pierduta...
+[12-05-2026 16:17:04] [Bidder] [49628] rezultat primit: Licitatie pierduta...
+[12-05-2026 16:17:04] [Bidder] [49626] rezultat primit: Licitatie pierduta...
+[12-05-2026 16:17:04] [Bidder] [49608] rezultat primit: Licitatie pierduta...
+[12-05-2026 16:17:04] [Bidder] [49621] rezultat primit: Licitatie pierduta...
+[12-05-2026 16:17:04] [Bidder] [49566] rezultat primit: Licitatie pierduta...
+[12-05-2026 16:17:04] [Bidder] [49576] rezultat primit: Licitatie pierduta...
+[12-05-2026 16:17:04] [Bidder] [49614] rezultat primit: Licitatie castigata! Pret castigator: 9960
+[12-05-2026 16:17:04] [Bidder] [49567] rezultat primit: Licitatie pierduta...
+[12-05-2026 16:17:04] [Bidder] [49746] rezultat primit: Licitatie pierduta...
+[12-05-2026 16:17:04] [Bidder] [49747] rezultat primit: Licitatie pierduta...
+[12-05-2026 16:17:04] [Bidder] [49571] rezultat primit: Licitatie pierduta...
+[12-05-2026 16:17:04] [Bidder] [49752] rezultat primit: Licitatie pierduta...
+[12-05-2026 16:17:04] [Bidder] [49749] rezultat primit: Licitatie pierduta...
+[12-05-2026 16:17:04] [Bidder] [49574] rezultat primit: Licitatie pierduta...
+[12-05-2026 16:17:04] [Bidder] [49648] rezultat primit: Licitatie pierduta...
+[12-05-2026 16:17:04] [Bidder] [49796] rezultat primit: Licitatie pierduta...
+[12-05-2026 16:17:04] [Bidder] [49619] rezultat primit: Licitatie pierduta...
+[12-05-2026 16:17:04] [Bidder] [49640] rezultat primit: Licitatie pierduta...
+[12-05-2026 16:17:04] [Bidder] [49670] rezultat primit: Licitatie pierduta...
+[12-05-2026 16:17:04] [Bidder] [49632] rezultat primit: Licitatie pierduta...
+[12-05-2026 16:17:04] [Bidder] [49600] rezultat primit: Licitatie pierduta...
+[12-05-2026 16:17:04] [Bidder] [49831] rezultat primit: Licitatie pierduta...
+[12-05-2026 16:17:04] [Bidder] [49744] rezultat primit: Licitatie pierduta...
+[12-05-2026 16:17:04] [Bidder] [49835] rezultat primit: Licitatie pierduta...
+[12-05-2026 16:17:04] [Bidder] [49680] rezultat primit: Licitatie pierduta...
+[12-05-2026 16:17:04] [Bidder] [49692] rezultat primit: Licitatie pierduta...
+[12-05-2026 16:17:04] [Bidder] [49760] rezultat primit: Licitatie pierduta...
+[12-05-2026 16:17:04] [Bidder] [49761] rezultat primit: Licitatie pierduta...
+[12-05-2026 16:17:04] [Bidder] [49727] rezultat primit: Licitatie pierduta...
+[12-05-2026 16:17:04] [Bidder] [49731] rezultat primit: Licitatie pierduta...
+[12-05-2026 16:17:04] [Bidder] [49723] rezultat primit: Licitatie pierduta...
+[12-05-2026 16:17:04] [Bidder] [49773] rezultat primit: Licitatie pierduta...
+[12-05-2026 16:17:04] [Bidder] [49776] rezultat primit: Licitatie pierduta...
+[12-05-2026 16:17:04] [Bidder] [49673] rezultat primit: Licitatie pierduta...
+[12-05-2026 16:17:04] [Bidder] [49789] rezultat primit: Licitatie pierduta...
+[12-05-2026 16:17:04] [Bidder] [49710] rezultat primit: Licitatie pierduta...
+[12-05-2026 16:17:04] [Bidder] [49775] rezultat primit: Licitatie pierduta...
+[12-05-2026 16:17:04] [Bidder] [49704] rezultat primit: Licitatie pierduta...
+[12-05-2026 16:17:04] [Bidder] [49722] rezultat primit: Licitatie pierduta...
+[12-05-2026 16:17:04] [Bidder] [49764] rezultat primit: Licitatie pierduta...
+[12-05-2026 16:17:04] [Bidder] [49739] rezultat primit: Licitatie pierduta...
+[12-05-2026 16:17:04] [Bidder] [49709] rezultat primit: Licitatie pierduta...
+[12-05-2026 16:17:04] [Bidder] [49806] rezultat primit: Licitatie pierduta...
+[12-05-2026 16:17:04] [Bidder] [49575] rezultat primit: Licitatie pierduta...
+[12-05-2026 16:17:04] [Bidder] [49737] rezultat primit: Licitatie pierduta...
+[12-05-2026 16:17:04] [Bidder] [49644] rezultat primit: Licitatie pierduta...
+[12-05-2026 16:17:04] [Bidder] [49606] rezultat primit: Licitatie pierduta...
+[12-05-2026 16:17:04] [Bidder] [49691] rezultat primit: Licitatie pierduta...
+[12-05-2026 16:17:04] [Bidder] [49637] rezultat primit: Licitatie pierduta...
+[12-05-2026 16:17:04] [Bidder] [49668] rezultat primit: Licitatie pierduta...
+[12-05-2026 16:17:04] [Bidder] [49674] rezultat primit: Licitatie pierduta...
+[12-05-2026 16:17:04] [Bidder] [49703] rezultat primit: Licitatie pierduta...
+[12-05-2026 16:17:04] [Bidder] [49596] rezultat primit: Licitatie pierduta...
+[12-05-2026 16:17:04] [Bidder] [49779] rezultat primit: Licitatie pierduta...
+[12-05-2026 16:17:04] [Bidder] [49753] rezultat primit: Licitatie pierduta...
+[12-05-2026 16:17:04] [Bidder] [49757] rezultat primit: Licitatie pierduta...
+[12-05-2026 16:17:04] [Bidder] [49687] rezultat primit: Licitatie pierduta...
+[12-05-2026 16:17:04] [Bidder] [49693] rezultat primit: Licitatie pierduta...
+[12-05-2026 16:17:04] [Bidder] [49716] rezultat primit: Licitatie pierduta...
+[12-05-2026 16:17:04] [Bidder] [49713] rezultat primit: Licitatie pierduta...
+[12-05-2026 16:17:04] [Bidder] [49669] rezultat primit: Licitatie pierduta...
+[12-05-2026 16:17:04] [Bidder] [49711] rezultat primit: Licitatie pierduta...
+[12-05-2026 16:17:04] [Bidder] [49720] rezultat primit: Licitatie pierduta...
+[12-05-2026 16:17:04] [Bidder] [49643] rezultat primit: Licitatie pierduta...
+[12-05-2026 16:17:04] [Bidder] [49653] rezultat primit: Licitatie pierduta...

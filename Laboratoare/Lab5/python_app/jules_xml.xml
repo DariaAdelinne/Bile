@@ -1,0 +1,30 @@
+<books>
+<book>
+    <id>2</id>
+    <title>Steaua Sudului</title>
+    <author>Jules Verne</author>
+    <publisher>Corint</publisher>
+    <text>Nemaipomeniti sunt francezii astia! ...</text>
+</book>
+<book>
+    <id>3</id>
+    <title>O calatorie spre centrul pamantului</title>
+    <author>Jules Verne</author>
+    <publisher>Polirom</publisher>
+    <text>Cuvant inainte. Imaginatia copiilor...</text>
+</book>
+<book>
+    <id>4</id>
+    <title>Insula Misterioasa</title>
+    <author>Jules Verne</author>
+    <publisher>Teora</publisher>
+    <text>Partea intai. Naufragiatii vazduhului...</text>
+</book>
+<book>
+    <id>5</id>
+    <title>Casa cu aburi</title>
+    <author>Jules Verne</author>
+    <publisher>Albatros</publisher>
+    <text>Capitolul I. S-a pus un premiu pe capul unui om...</text>
+</book>
+</books>

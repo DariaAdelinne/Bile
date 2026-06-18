@@ -1,0 +1,685 @@
+DACA LA DESCHIDERE DA: Cause: org/gradle/internal/enterprise/impl/GradleEnterprisePluginServices has been compiled by a more recent version of the Java Runtime (class file version 61.0), this version of the Java Runtime only recognizes class file versions up to 55.0
+ATUNCI: 
+
+Fortezi grable sa foloseasca java17:
+
+cd /home/student/Downloads/SistemeDistribuite/SistemeDistribuite/Lab5/library-app
+
+export JAVA_HOME=/usr/lib/jvm/java-17-openjdk-amd64
+export PATH="$JAVA_HOME/bin:$PATH"
+
+java -version
+
+Apoi:
+
+./gradlew --stop
+rm -rf ~/.gradle/daemon
+./gradlew --version
+
+Apoi:
+
+./gradlew clean build
+
+
+2. SETEZ JAVA 17
+
+File -> Project Structure -> Project
+
+Setez:
+
+Project SDK:
+17
+
+Language level:
+17
+
+Apoi:
+
+File -> Settings -> Build, Execution, Deployment -> Build Tools -> Gradle
+
+Setez:
+
+Gradle JVM:
+Project SDK 17
+
+Gradle distribution:
+Wrapper
+
+Apply -> OK
+
+3. REÎNCARC GRADLE
+
+În dreapta deschid Gradle.
+
+Apăs:
+
+Reload All Gradle Projects
+
+Aștept să termine încărcarea.
+
+4. NU MODIFIC BUILD.GRADLE
+
+Proiectul are deja:
+
+Spring Boot
+Kotlin
+Spring AMQP
+Spring Web
+Jackson
+Kotlin Reflect
+
+Folosește:
+
+Java 17
+Spring Boot 3.3.5
+
+5. VERIFIC RABBITMQ
+
+Proiectul folosește:
+
+Host:
+localhost
+
+Port:
+5672
+
+Username:
+guest
+
+Password:
+guest
+
+Fișierul este:
+
+src/main/resources/application.properties
+
+Conținutul este:
+
+spring.application.name=library-app
+
+spring.rabbitmq.host=localhost
+spring.rabbitmq.port=5672
+spring.rabbitmq.username=guest
+spring.rabbitmq.password=guest
+
+Nu modific nimic pe calculatorul din laborator.
+
+6. COZILE FOLOSITE
+
+Proiectul creează automat două cozi:
+
+library_queue
+library_response_queue
+
+Nu trebuie să le creez manual în browser.
+
+library_queue:
+Python trimite cereri către Kotlin.
+
+library_response_queue:
+Kotlin trimite răspunsul către Python.
+
+7. CONFIGURAȚIA START RABBITMQ
+
+Run -> Edit Configurations
+
+* -> Shell Script
+
+Name:
+
+StartRabbitMQ
+
+Execute:
+
+Script text
+
+sudo systemctl start rabbitmq-server.service
+
+Working directory:
+
+folderul Lab5
+
+Environment variables:
+
+gol
+
+Apply -> OK
+
+Rulez StartRabbitMQ.
+
+Dacă cere parolă, introduc parola utilizatorului student.
+
+8. CONFIGURAȚIA STATUS RABBITMQ
+
+Run -> Edit Configurations
+
+* -> Shell Script
+
+Name:
+
+StatusRabbitMQ
+
+Script text:
+
+systemctl status rabbitmq-server.service
+
+Working directory:
+
+folderul Lab5
+
+Apply -> OK
+
+Rulez StatusRabbitMQ.
+
+Trebuie să apară:
+
+active (running)
+
+9. CONSOLA RABBITMQ
+
+Deschid în browser:
+
+http://localhost:15672
+
+Username:
+
+guest
+
+Password:
+
+guest
+
+Dacă pagina nu se deschide, pluginul de management nu este activ.
+
+Creez o configurație Shell Script:
+
+Name:
+
+EnableRabbitManagement
+
+Script text:
+
+sudo rabbitmq-plugins enable rabbitmq_management
+
+Rulez configurația și apoi rulez din nou StartRabbitMQ.
+
+10. CONFIGURAȚIA BOOTRUN
+
+Run -> Edit Configurations
+
+* -> Gradle
+
+Name:
+
+BootRunLab5
+
+Tasks and arguments:
+
+bootRun
+
+Gradle project:
+
+folderul library-app
+
+Exemplu:
+
+/home/student/Desktop/SistemeDistribuite/Lab5/library-app
+
+Environment variables:
+
+gol
+
+Apply -> OK
+
+11. PORNESC APLICAȚIA KOTLIN
+
+Mai întâi verific să nu ruleze GlassFish sau Lab 3 pe portul 8080.
+
+Pentru Lab 5 portul 8080 nu este important, dar alt proces poate produce conflicte.
+
+Rulez:
+
+BootRunLab5
+
+Aștept mesajele:
+
+Started LibraryAppApplicationKt
+
+și conectarea la RabbitMQ fără erori.
+
+Nu închid această aplicație.
+
+12. COZILE APAR AUTOMAT
+
+După ce pornesc BootRunLab5, deschid:
+
+http://localhost:15672
+
+Intru la:
+
+Queues and Streams
+
+Trebuie să apară:
+
+library_queue
+library_response_queue
+
+13. DESCHID PROIECTUL PYTHON
+
+În IntelliJ:
+
+File -> Open
+
+Aleg folderul:
+
+Lab5/python_app
+
+Pot alege:
+
+Open in New Window
+
+14. SETEZ PYTHON
+
+File -> Settings -> Project: python_app -> Python Interpreter
+
+Aleg un Python 3 instalat pe calculator.
+
+Nu folosesc obligatoriu folderul .venv venit în arhivă, deoarece poate proveni de pe alt calculator.
+
+Dacă nu am interpreter:
+
+Add Interpreter -> Add Local Interpreter -> System Interpreter
+
+Aleg ceva de forma:
+
+/usr/bin/python3
+
+Apply -> OK
+
+15. INSTALEZ PACHETUL PIKA
+
+În:
+
+File -> Settings -> Python Interpreter
+
+Apăs:
+
+*
+
+Caut:
+
+pika
+
+Apăs:
+
+Install Package
+
+Trebuie instalat pachetul pika.
+
+16. CORECTEZ ADĂUGAREA UNEI CĂRȚI
+
+Deschid:
+
+python_app/app.py
+
+Caut linia:
+
+send_and_receive(f"add_book:{book_id}:{title}:{author}:{publisher}:{text}")
+
+O înlocuiesc cu:
+
+send_and_receive(f"add_book:{book_id};{title};{author};{publisher};{text}")
+
+Motiv:
+
+Aplicația Kotlin separă datele cărții folosind punct și virgulă.
+
+Salvez fișierul.
+
+17. CONFIGURAȚIA PYTHON
+
+Run -> Edit Configurations
+
+* -> Python
+
+Name:
+
+RunPythonLab5
+
+Script path:
+
+calea completă către:
+
+Lab5/python_app/app.py
+
+Exemplu:
+
+/home/student/Desktop/SistemeDistribuite/Lab5/python_app/app.py
+
+Python interpreter:
+
+Python 3 selectat anterior
+
+Working directory:
+
+folderul python_app
+
+Exemplu:
+
+/home/student/Desktop/SistemeDistribuite/Lab5/python_app
+
+Program arguments:
+
+gol
+
+Environment variables:
+
+gol
+
+Apply -> OK
+
+18. ORDINEA CORECTĂ DE PORNIRE
+
+Rulez în această ordine:
+
+1. StartRabbitMQ
+2. BootRunLab5
+3. RunPythonLab5
+
+Trebuie să rămână pornite RabbitMQ și BootRunLab5 cât timp folosesc aplicația Python.
+
+19. MENIUL APLICAȚIEI PYTHON
+
+După rulare apare:
+
+1 - vezi toate cartile
+2 - vezi o carte dupa id
+3 - adauga o carte
+4 - cauta dupa autor
+5 - cauta dupa titlu
+6 - cauta dupa editura
+7 - afiseaza toate cartile in format ales
+8 - cauta si salveaza in fisier
+0 - iesire
+
+20. TESTEZ LISTAREA
+
+În aplicația Python introduc:
+
+1
+
+Trebuie să apară lista cărților.
+
+21. TESTEZ CĂUTAREA DUPĂ ID
+
+Introduc:
+
+2
+
+Apoi:
+
+ID:
+1
+
+Trebuie să apară cartea cu ID 1.
+
+22. TESTEZ ADĂUGAREA
+
+Introduc:
+
+3
+
+Exemplu:
+
+ID:
+10
+
+Titlu:
+Ion
+
+Autor:
+Liviu Rebreanu
+
+Editura:
+Litera
+
+Text:
+Text de test
+
+Trebuie să apară:
+
+Carte adaugata: Ion
+
+Apoi folosesc opțiunea 1 și verific dacă apare cartea.
+
+23. TESTEZ CĂUTAREA PARȚIALĂ
+
+Introduc:
+
+4
+
+Autor:
+
+jules
+
+Trebuie să găsească Jules Verne.
+
+Căutarea este:
+
+case-insensitive
+parțială
+
+Pot căuta și:
+
+5 -> insula
+
+Trebuie să găsească:
+
+Insula Misterioasa
+
+24. TESTEZ FORMATUL JSON
+
+Introduc:
+
+7
+
+Aleg:
+
+1
+
+Trebuie să apară cărțile în format JSON.
+
+25. TESTEZ FORMATUL HTML
+
+Introduc:
+
+7
+
+Aleg:
+
+2
+
+Trebuie să apară conținut HTML.
+
+26. TESTEZ FORMATUL TEXT
+
+Introduc:
+
+7
+
+Aleg:
+
+3
+
+Trebuie să apară text simplu.
+
+27. TESTEZ FORMATUL XML
+
+Introduc:
+
+7
+
+Aleg:
+
+4
+
+Trebuie să apară conținut XML între tag-uri precum:
+
+<books>
+<book>
+...
+</book>
+</books>
+
+28. TESTEZ SALVAREA ÎN FIȘIER
+
+Introduc:
+
+8
+
+Aleg tipul căutării:
+
+1 = autor
+2 = titlu
+3 = editură
+
+Exemplu:
+
+1
+
+Valoare:
+
+Jules
+
+Aleg formatul:
+
+1 = JSON
+2 = HTML
+3 = Text
+4 = XML
+
+Introduc numele fișierului:
+
+jules
+
+Fișierul se salvează în folderul:
+
+python_app
+
+Exemple:
+
+jules.json
+jules.html
+jules.txt
+jules.xml
+
+29. FUNCȚIONALITĂȚILE IMPLEMENTATE
+
+Aplicația conține:
+
+* afișarea tuturor cărților;
+* căutare după ID;
+* adăugare carte;
+* căutare după autor;
+* căutare după titlu;
+* căutare după editură;
+* căutare parțială;
+* căutare case-insensitive;
+* afișare JSON;
+* afișare HTML;
+* afișare Text;
+* afișare XML;
+* salvare rezultat în fișier;
+* două implementări LibraryPrinter;
+* comunicare prin RabbitMQ.
+
+30. PRINCIPIUL LISKOV
+
+Proiectul conține interfața:
+
+LibraryPrinter
+
+Și două implementări:
+
+LibraryPrinterService
+PrettyLibraryPrinterService
+
+Ambele pot fi folosite în locul interfeței LibraryPrinter.
+
+Acesta este exemplul pentru principiul Liskov.
+
+31. PRINCIPII SOLID PREZENTE
+
+SRP:
+Fiecare clasă are o responsabilitate.
+
+OCP:
+Pot adăuga alt printer fără să modific serviciile existente.
+
+LSP:
+LibraryPrinterService și PrettyLibraryPrinterService pot înlocui LibraryPrinter.
+
+ISP:
+Operațiile de printare sunt definite prin interfață.
+
+DIP:
+RabbitListener depinde de LibraryPrinter și servicii, nu de codul intern al implementărilor.
+
+32. CUM OPRESC
+
+În aplicația Python aleg:
+
+0
+
+Apoi opresc BootRunLab5 cu pătratul roșu Stop din IntelliJ.
+
+RabbitMQ poate rămâne pornit.
+
+Opțional, creez:
+
+Run -> Edit Configurations
+
+* -> Shell Script
+
+Name:
+
+StopRabbitMQ
+
+Script text:
+
+sudo systemctl stop rabbitmq-server.service
+
+Apply -> OK
+
+33. DACĂ NU VINE NICIUN RĂSPUNS
+
+Verific în ordine:
+
+1. RabbitMQ este active (running).
+
+2. BootRunLab5 este încă pornit.
+
+3. În BootRun nu există eroare de conectare.
+
+4. În RabbitMQ există cozile:
+   library_queue
+   library_response_queue
+
+5. Python are instalat pika.
+
+6. Username și password sunt guest / guest.
+
+7. Rulez mai întâi Kotlin și abia apoi Python.
+
+8. DACĂ APARE CONNECTION REFUSED
+
+Înseamnă că RabbitMQ nu rulează.
+
+Rulez:
+
+StartRabbitMQ
+
+Apoi pornesc din nou:
+
+BootRunLab5
+RunPythonLab5

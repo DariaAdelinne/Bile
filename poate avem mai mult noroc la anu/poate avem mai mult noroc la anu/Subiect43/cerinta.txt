@@ -1,0 +1,32 @@
+Problema nr 08.
+Realizati o aplicatie de monitorizare a vremei (laboratorul 3), unde fiecare serviciu este
+incapsulat individual. Creati un serviciu care sa respecte modelul de replicare al unui serviciu,
+si sa replice serviciul principal (WeatherAppController-ul) de un anumit numar de ori. De asemenea
+sa se creeze un serviciu de vizualizare a elementelor citite care sa comunice cu o interfata
+grafica realizata in PyQt. Toate serviciile comunica prin TCP intre ele si fiecare serviciu este
+pus intr-o masina virtuala. Diagrame + SOLID + explicat cod.
+
+---------------------------------------------------------------------------------------------
+REZOLVARE (toate serviciile comunica prin TCP):
+
+  [PyQt GUI]
+      │  TCP (GET <oras> / HISTORY)
+      ▼
+  [VisualizationService :1700]   - backend pt. interfata grafica; tine istoricul "elementelor citite"
+      │  TCP (GET <oras>)
+      ▼
+  [ReplicationService :1500]     - MODELUL DE REPLICARE: un singur punct de acces peste cele N
+      │  TCP (GET <oras>)           replici identice ale serviciului principal; distribuie cererile
+      │                             round-robin si face FAILOVER daca o replica pica.
+      ▼
+  [WeatherAppController x N : 1601, 1602, 1603, ...]   - serviciul principal din Lab3, incapsulat,
+      │                                                   rulat in N exemplare (fiecare "in masina ei").
+      ▼
+  Open-Meteo (geocodare + vreme curenta, gratuit, fara cheie)   [+ fallback local fara internet]
+
+Modelul de replicare: serviciul principal (WeatherAppController) este rulat in N replici identice;
+ReplicationService implementeaza modelul de replicare = acces transparent, cu distributie de
+incarcare (round-robin) si toleranta la caderea unei replici (failover). Raspunsul contine ID-ul
+replicii care a raspuns, ca sa se vada distributia.
+
+Tehnologii: Kotlin TCP sockets + org.json (Open-Meteo); PyQt5 pentru GUI. Fara broker, fara cheie API.

@@ -1,0 +1,3 @@
+
+rootProject.name="perechi-gradle"
+rootProject.buildFileName="build-local.gradle"

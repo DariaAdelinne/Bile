@@ -1,0 +1,9 @@
+Pornind de la aplicația exemplu cu Okazii (simulat evident) din
+laboratorul 7, să se modifice aceasta astfel încât să permită primirea
+de evaluari între 1-5 privind calitatea serviciului și să salveze
+numele utilizatorului și evaluarea într-un fișier local.
+Dacă se consideră necesar se mai pot crea oricâte servicii se dorește
+conform gândirii studentului. Se vor respecta principiile SOLID pentru
+microservicii. La prezentare se va arăta diagrama de clase și se va
+explica aceasta împreună cu gradul de respectare a principiilor. Apoi
+va urma discuția pe cod.

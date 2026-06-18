@@ -1,0 +1,6 @@
+dai in tcp server comenzile: 
+ export JAVA_HOME=/usr/lib/jvm/java-1.17.0-openjdk-amd64
+python3 finnhub_profile_server.py
+
+
+iar in sparlStreamClient dai pe triunghiul verde de la main (AI GRIJA SA FIE SELECTAT JAVA 11)

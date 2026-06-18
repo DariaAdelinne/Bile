@@ -1,0 +1,11 @@
+Utilizând algoritmul Map-Reduce (implementarea cu stdin/stdout), 
+să se calculeze indexul invers pentru un set de documente text. 
+Funcția de mapare va parsa conținutul fiecărui document și va returna perechi de forma <word, {document_id: 1}>, 
+unde document_id este numele documentului, iar 1 reprezintă o apariție a cuvântului respectiv. 
+Funcția de reducere primește toate perechile, sortează perechile corespunzătoare aceluiași cuvânt și emite o pereche de forma <word, 
+{document_id_i: count_word_in_document_id_i, ...}>.
+
+
+cd index-invers-docs
+chmod +x run.sh
+./run.sh

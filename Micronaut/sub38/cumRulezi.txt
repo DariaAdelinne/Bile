@@ -1,0 +1,1 @@
+dai run de pe vutonul verde si trebuie sa te duci in postman si sa faci cereri post/get

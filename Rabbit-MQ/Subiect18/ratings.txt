@@ -1,0 +1,2 @@
+timestamp,username,rating
+2026-06-18 18:04:47,alice,4

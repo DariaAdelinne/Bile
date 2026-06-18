@@ -1,0 +1,12 @@
+Pornind de la aplicația exemplu din laboratorul 10, să se modifice
+aceasta astfel încât să se introducă un procesor de flux care să
+realizeze statistici cu privire la erorile (posibile surse: cele de
+comunicare, cele de la sistemul de cozi) și tipul acestora care au
+apărut (dacă au apărut) pentru o licitație până la adjudecare și apoi
+să scrie aceste informații într-un fișier local. Se vor utiliza
+microservicii Python și o comunicare prin RabbitMQ.
+Dacă se consideră necesar se mai pot crea oricâte servicii se dorește
+conform gândirii studentului. Se vor respecta principiile SOLID pentru
+microservicii. La prezentare se va arăta diagrama de clase și se va
+explica aceasta împreună cu gradul de respectare a principiilor. Apoi
+va urma discuția pe cod.

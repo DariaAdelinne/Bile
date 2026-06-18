@@ -1,0 +1,6 @@
+Care e sensul vietii?
+42
+Cine preda SD?
+Profesorul de sisteme distribuite
+Ce este Docker?
+O platforma pentru containerizare

@@ -1,0 +1,5 @@
+Pornind de la aplicația exemplu pentru ciurul lui Eratostene din
+laboratorul 11, să se modifice aceasta astfel încât să se calculeze
+intersecția între A și B, unde A și B sunt două ADT-uri ce conțin
+fiecare câte 100 de valori inițializate aleator, apoi să se depună
+într-un ADT C rezultatele.

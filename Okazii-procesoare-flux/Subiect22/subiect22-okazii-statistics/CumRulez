@@ -1,0 +1,520 @@
+# SUBIECTUL 22 — Pașii finali de compilare și rulare
+
+Toate comenzile se rulează din rădăcina proiectului. Nu trebuie introdus niciun `cd Downloads`.
+
+## 1. Compilarea proiectului
+
+```bash
+chmod +x scripts/*.sh
+./scripts/build.sh
+```
+
+După compilare:
+
+```bash
+ls dist
+```
+
+Trebuie să apară:
+
+```text
+AuctioneerMicroservice.jar
+BidderMicroservice.jar
+BiddingProcessorMicroservice.jar
+MessageProcessorMicroservice.jar
+StatisticsStreamProcessorMicroservice.jar
+```
+
+---
+
+# Rularea manuală
+
+Se deschid cinci terminale separate.
+
+## Terminalul 1 — procesorul de flux pentru statistici
+
+```bash
+java -jar dist/StatisticsStreamProcessorMicroservice.jar
+```
+
+Trebuie să apară:
+
+```text
+[StatisticsStreamProcessor] ascultă pe portul 1800
+```
+
+Acest terminal rămâne pornit.
+
+---
+
+## Terminalul 2 — MessageProcessor
+
+```bash
+java -jar dist/MessageProcessorMicroservice.jar
+```
+
+Trebuie să apară:
+
+```text
+[MessageProcessor] ascultă pe portul 1600
+```
+
+---
+
+## Terminalul 3 — BiddingProcessor
+
+```bash
+java -jar dist/BiddingProcessorMicroservice.jar
+```
+
+Trebuie să apară:
+
+```text
+[BiddingProcessor] ascultă pe portul 1700
+```
+
+---
+
+## Terminalul 4 — Auctioneer
+
+```bash
+java -jar dist/AuctioneerMicroservice.jar
+```
+
+Trebuie să apară:
+
+```text
+[Auctioneer] bidderi: 1500; rezultat: 1501; durată: 15s
+```
+
+După această comandă există aproximativ 15 secunde pentru pornirea bidderilor.
+
+---
+
+## Terminalul 5 — cinci bidderi
+
+Imediat după pornirea Auctioneer-ului se copiază întregul bloc:
+
+```bash
+java -jar dist/BidderMicroservice.jar --name Daria &
+java -jar dist/BidderMicroservice.jar --name Mihai &
+java -jar dist/BidderMicroservice.jar --name Ioana &
+java -jar dist/BidderMicroservice.jar --name Andrei &
+java -jar dist/BidderMicroservice.jar --name Alex &
+wait
+```
+
+Trebuie să apară cinci oferte:
+
+```text
+[Daria] ofertă=...; aștept rezultatul...
+[Mihai] ofertă=...; aștept rezultatul...
+[Ioana] ofertă=...; aștept rezultatul...
+[Andrei] ofertă=...; aștept rezultatul...
+[Alex] ofertă=...; aștept rezultatul...
+```
+
+Un bidder va câștiga:
+
+```text
+[Daria] Licitatie castigata! Pret: ...
+```
+
+Ceilalți vor primi:
+
+```text
+Licitatie pierduta.
+```
+
+Prețurile și câștigătorul sunt aleatorii.
+
+---
+
+# Ce apare în procesorul de statistici
+
+Pe măsură ce mesajele circulă, procesorul afișează evenimente precum:
+
+```text
+[Statistics] licitație începută: licitatie-1
+[Statistics] BID_SENT -> 1
+[Statistics] BID_SENT -> 2
+[Statistics] BID_TO_MESSAGE_PROCESSOR -> 1
+[Statistics] PROCESSED_BID_TO_BIDDING -> 1
+[Statistics] RESULT_TO_AUCTIONEER -> 1
+[Statistics] RESULT_TO_BIDDER -> 1
+```
+
+La final trebuie să apară:
+
+```text
+[Statistics] ADJUDECATĂ licitatie-1; total mesaje=24
+[Statistics] salvat în data/auction-statistics.csv
+```
+
+---
+
+# Verificarea fișierului local
+
+```bash
+cat data/auction-statistics.csv
+```
+
+Trebuie să apară ceva asemănător:
+
+```csv
+auctionId,startedAt,adjudicatedAt,totalMessages,bids,bidToMessageProcessor,bidsEnd,acks,processedBids,processedEnd,resultToAuctioneer,resultToBidders
+licitatie-1,1781690000000,1781690015000,24,5,5,1,1,5,1,1,5
+```
+
+Valorile importante sunt:
+
+```text
+totalMessages = 24
+bids = 5
+bidToMessageProcessor = 5
+processedBids = 5
+resultToBidders = 5
+```
+
+Timpurile vor fi diferite la fiecare rulare.
+
+---
+
+# Cum este calculat numărul de mesaje
+
+Pentru `N` bidderi se numără mesajele reale trimise prin rețea.
+
+## 1. Bidder către Auctioneer
+
+Fiecare bidder trimite o ofertă:
+
+```text
+N mesaje
+```
+
+Pentru 5 bidderi:
+
+```text
+5 mesaje
+```
+
+## 2. Auctioneer către MessageProcessor
+
+Auctioneer trimite cele `N` oferte și mesajul de final:
+
+```text
+N + 1 mesaje
+```
+
+Pentru 5 bidderi:
+
+```text
+6 mesaje
+```
+
+## 3. MessageProcessor către Auctioneer
+
+MessageProcessor trimite confirmarea:
+
+```text
+1 mesaj
+```
+
+## 4. MessageProcessor către BiddingProcessor
+
+Trimite cele `N` oferte procesate și mesajul de final:
+
+```text
+N + 1 mesaje
+```
+
+Pentru 5 bidderi:
+
+```text
+6 mesaje
+```
+
+## 5. BiddingProcessor către Auctioneer
+
+Trimite câștigătorul:
+
+```text
+1 mesaj
+```
+
+## 6. Auctioneer către bidderi
+
+Trimite rezultatul fiecărui bidder:
+
+```text
+N mesaje
+```
+
+Pentru 5 bidderi:
+
+```text
+5 mesaje
+```
+
+## Total
+
+```text
+N + (N + 1) + 1 + (N + 1) + 1 + N
+```
+
+Rezultă:
+
+```text
+4 × N + 4
+```
+
+Pentru 5 bidderi:
+
+```text
+4 × 5 + 4 = 24 mesaje
+```
+
+Evenimentele `AUCTION_STARTED` și `AUCTION_ADJUDICATED` controlează începutul și sfârșitul statisticii, dar nu sunt incluse în numărul mesajelor licitației.
+
+---
+
+# Curățarea fișierului înainte de prezentare
+
+Pentru a demonstra proiectul cu un fișier curat:
+
+```bash
+rm -f data/auction-statistics.csv
+```
+
+Fișierul va fi recreat automat la adjudecarea licitației.
+
+---
+
+# Varianta automată
+
+După compilare se poate rula demonstrația completă cu:
+
+```bash
+./scripts/run-demo.sh
+```
+
+Scriptul:
+
+1. șterge statistica veche;
+2. pornește procesorul de statistici;
+3. pornește MessageProcessor;
+4. pornește BiddingProcessor;
+5. pornește Auctioneer;
+6. pornește cinci bidderi;
+7. așteaptă adjudecarea;
+8. afișează statistica;
+9. afișează fișierul CSV.
+
+---
+
+# Arhitectura microserviciilor
+
+Fluxul principal:
+
+```text
+BidderMicroservice
+        ↓
+AuctioneerMicroservice
+        ↓
+MessageProcessorMicroservice
+        ↓
+BiddingProcessorMicroservice
+        ↓
+AuctioneerMicroservice
+        ↓
+BidderMicroservice
+```
+
+Fluxul statistic:
+
+```text
+Bidder ───────────────┐
+Auctioneer ───────────┤
+MessageProcessor ─────┼──→ StatisticsStreamProcessorMicroservice
+BiddingProcessor ─────┘                     ↓
+                              data/auction-statistics.csv
+```
+
+Fiecare microserviciu trimite către procesorul statistic un eveniment pentru mesajul pe care l-a expediat.
+
+---
+
+# Clasele importante
+
+## StatisticsEvent
+
+Reprezintă un element al fluxului statistic:
+
+```kotlin
+data class StatisticsEvent(
+    val auctionId: String,
+    val type: StatisticsEventType,
+    val timestampEpochMillis: Long
+)
+```
+
+Conține:
+
+* identificatorul licitației;
+* tipul mesajului;
+* momentul producerii.
+
+## StatisticsEventType
+
+Definește tipurile de evenimente:
+
+```kotlin
+enum class StatisticsEventType {
+    AUCTION_STARTED,
+    BID_SENT,
+    BID_TO_MESSAGE_PROCESSOR,
+    BIDS_END_SENT,
+    ACK_TO_AUCTIONEER,
+    PROCESSED_BID_TO_BIDDING,
+    PROCESSED_END_SENT,
+    RESULT_TO_AUCTIONEER,
+    RESULT_TO_BIDDER,
+    AUCTION_ADJUDICATED
+}
+```
+
+## StatisticsClient
+
+Este folosit de celelalte microservicii pentru trimiterea evenimentelor:
+
+```kotlin
+class StatisticsClient {
+    fun record(type: StatisticsEventType)
+}
+```
+
+## StatisticsStreamProcessorMicroservice
+
+Ascultă pe portul `1800` și transformă conexiunile TCP într-un flux reactiv de evenimente.
+
+## AuctionStatisticsService
+
+Primește evenimentele, menține contoarele și calculează statistica finală.
+
+## AuctionStatisticsRepository
+
+Este interfața pentru salvare:
+
+```kotlin
+interface AuctionStatisticsRepository {
+    fun save(summary: AuctionStatisticsSummary)
+}
+```
+
+## CsvAuctionStatisticsRepository
+
+Implementează salvarea locală în:
+
+```text
+data/auction-statistics.csv
+```
+
+## AuctionStatisticsSummary
+
+Conține rezultatul final:
+
+```kotlin
+data class AuctionStatisticsSummary(
+    val auctionId: String,
+    val startedAt: Long,
+    val adjudicatedAt: Long,
+    val totalMessages: Int,
+    val counts: Map<StatisticsEventType, Int>
+)
+```
+
+---
+
+# Explicarea principiilor SOLID
+
+## S — Single Responsibility Principle
+
+Fiecare componentă are o responsabilitate clară:
+
+* `StatisticsClient` trimite evenimente;
+* `StatisticsStreamProcessorMicroservice` primește fluxul;
+* `AuctionStatisticsService` calculează statistica;
+* `CsvAuctionStatisticsRepository` scrie în fișier;
+* `AuctionStatisticsSummary` reprezintă rezultatul.
+
+## O — Open/Closed Principle
+
+Sistemul poate fi extins cu altă metodă de salvare fără modificarea logicii de calcul.
+
+De exemplu:
+
+```text
+JsonAuctionStatisticsRepository
+DatabaseAuctionStatisticsRepository
+ConsoleAuctionStatisticsRepository
+```
+
+## L — Liskov Substitution Principle
+
+`CsvAuctionStatisticsRepository` poate fi înlocuit cu orice implementare corectă a interfeței:
+
+```kotlin
+AuctionStatisticsRepository
+```
+
+Serviciul de statistici va continua să funcționeze.
+
+## I — Interface Segregation Principle
+
+Interfața repository este mică și conține doar operația necesară:
+
+```kotlin
+fun save(summary: AuctionStatisticsSummary)
+```
+
+## D — Dependency Inversion Principle
+
+`AuctionStatisticsService` depinde de abstracția:
+
+```kotlin
+AuctionStatisticsRepository
+```
+
+și nu direct de fișierul CSV.
+
+---
+
+# Ce se spune profesorului
+
+„Am păstrat aplicația Okazii din laborator și am introdus un procesor separat de flux pentru statistici. Fiecare microserviciu publică un eveniment atunci când trimite un mesaj relevant pentru licitație.
+
+Procesorul statistic primește aceste evenimente sub forma unui flux reactiv, le grupează după identificatorul licitației și păstrează câte un contor pentru fiecare tip. Când primește evenimentul de adjudecare, calculează numărul total de mesaje și scrie rezultatul în fișierul local `data/auction-statistics.csv`.
+
+Pentru cinci bidderi sunt necesare 24 de mesaje. Formula este `4 × N + 4`, unde `N` reprezintă numărul bidderilor.”
+
+---
+
+# Oprirea procesorului statistic
+
+Procesorul rămâne pornit pentru a putea calcula statistici și pentru alte licitații.
+
+Se oprește cu:
+
+```text
+Ctrl + C
+```
+
+Pentru oprirea proceselor rămase:
+
+```bash
+pkill -f 'StatisticsStreamProcessorMicroservice.jar'
+pkill -f 'MessageProcessorMicroservice.jar'
+pkill -f 'BiddingProcessorMicroservice.jar'
+pkill -f 'AuctioneerMicroservice.jar'
+pkill -f 'BidderMicroservice.jar'
+```

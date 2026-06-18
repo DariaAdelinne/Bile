@@ -1,0 +1,20 @@
+Pornind de la tema pe acasă care se referea la crearea unei aplicații REST pentru gestiunea cheltuielilor unei familii (laboratorul 4), să se realizeze următoarele:
+- să se deseneze diagrama de clase;
+- să se implementeze un serviciu (utilizând modelul porții API sau nu) care asigură o metodă de cache ce răspunde dacă noua cerere apare în primele 30 de minute;
+- să se implementeze un serviciu de replicare care multiplică serviciile respective și va combina toate cache-urile serviciilor replicate într-unul global;
+Dacă se consideră necesar se mai pot crea oricâte servicii se dorește conform gândirii studentului.
+Se va utiliza orchestrarea și respectarea principiilor SOLID pentru microservicii. La prezentare se va arăta diagrama de clase și
+ se va explica aceasta împreună cu gradul de respectare a principiilor. Apoi va urma discuția pe cod.
+
+
+cd cheltuieli-familie
+
+JAVA_HOME=~/jdk-11.0.23+9 mvn spring-boot:run
+
+curl http://localhost:8080/cheltuiala/1 
+curl http://localhost:8080/cheltuiala/1
+curl http://localhost:8080/cache/info
+
+
+primul da cache miss
+apoi hit

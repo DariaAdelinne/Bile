@@ -1,0 +1,2 @@
+auctionId,startedAt,adjudicatedAt,totalMessages,bids,bidToMessageProcessor,bidsEnd,acks,processedBids,processedEnd,resultToAuctioneer,resultToBidders
+licitatie-1,1781693641319,1781693657502,24,5,5,1,1,5,1,1,5

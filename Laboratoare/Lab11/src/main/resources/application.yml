@@ -1,0 +1,14 @@
+micronaut:
+  application:
+    name: lab11
+  server:
+    port: 8080
+rabbitmq:
+  host: ${RABBIT_HOST:localhost}
+  port: ${RABBIT_PORT:5672}
+  username: ${RABBIT_USER:guest}
+  password: ${RABBIT_PASSWORD:guest}
+mysql:
+  url: ${MYSQL_URL:`jdbc:mysql://localhost:3306/lab11?createDatabaseIfNotExist=true&useSSL=false&allowPublicKeyRetrieval=true`}
+  user: ${MYSQL_USER:lab11}
+  password: ${MYSQL_PASSWORD:lab11}

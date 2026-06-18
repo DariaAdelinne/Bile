@@ -1,0 +1,30 @@
+services:
+  rabbitmq:
+    image: rabbitmq:3-management
+    container_name: lab9_time_rabbitmq
+    ports: ["5672:5672", "15672:15672"]
+  time_source:
+    build: ./TimeSourceMicroservice
+    container_name: lab9_time_source
+    restart: on-failure
+    environment:
+      SPRING_RABBITMQ_HOST: rabbitmq
+      SPRING_CLOUD_STREAM_BINDINGS_OUTPUT_DESTINATION: time-raw
+    depends_on: [rabbitmq]
+  time_processor:
+    build: ./TimeProcessorMicroservice
+    container_name: lab9_time_processor
+    restart: on-failure
+    environment:
+      SPRING_RABBITMQ_HOST: rabbitmq
+      SPRING_CLOUD_STREAM_BINDINGS_INPUT_DESTINATION: time-raw
+      SPRING_CLOUD_STREAM_BINDINGS_OUTPUT_DESTINATION: time-formatted
+    depends_on: [rabbitmq]
+  time_sink:
+    build: ./TimeSinkMicroservice
+    container_name: lab9_time_sink
+    restart: on-failure
+    environment:
+      SPRING_RABBITMQ_HOST: rabbitmq
+      SPRING_CLOUD_STREAM_BINDINGS_INPUT_DESTINATION: time-formatted
+    depends_on: [rabbitmq]

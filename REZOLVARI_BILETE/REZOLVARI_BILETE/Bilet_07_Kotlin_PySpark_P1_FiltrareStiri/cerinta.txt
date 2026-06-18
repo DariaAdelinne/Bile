@@ -1,0 +1,9 @@
+Să se creeze în Kotlin un server TCP care să facă o cerere (khttp)
+pentru simbolurile companiilor cu acțiuni și folosind API-ul de știri
+despre o companie să trimită știrile din ziua precedentă prin socket,
+câte o știre o dată la 3 secunde. De asemenea, se va implementa în
+Python un flux de date direct (PySpark) care să prelucreze datele astfel:
+- se vor filtra acele știri care folosesc o imagine PNG;
+- se vor filtra acele știri al căror URL nu depășește 80 de caractere;
+- pentru fiecare RDD se va afișa URL-ul, data și titlul știrii.
+API token: brmrfu7rh5rcss140ogg

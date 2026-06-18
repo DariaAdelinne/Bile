@@ -1,0 +1,39 @@
+Simularea unui state machine prin coregrafia de microservicii / functii serverless.
+Bonus din PDF: in loc de microservicii ca noduri, se folosesc FUNCTII SERVERLESS (Micronaut) care
+comunica prin COZI RabbitMQ.
+
+Detaliere (din PDF):
+- Ai un state machine (graf). Fiecare nod este o FUNCTIE SERVERLESS care citeste DINTR-O COADA
+  (iti trebuie dependenta de rabbitmq pentru Micronaut, iar functia e configurata sa asculte
+  update-uri in coada, spre deosebire de cea din lab care asculta o ruta cu @Post).
+- Userul face un POST la un REST, iar acesta PUNE mesajul in coada.
+- Logica de graf e descrisa intr-un serviciu (paralela la "ErastoteneService" din lab): un HashMap
+  <String, List<Pair<tranzitie, destinatie>>>, adica <nod_curent, [(tranzitie, destinatie), ...]>.
+- Cand functia serverless primeste ceva in coada, DESTRUCTUREAZA mesajul (tu il concatenezi cu un
+  separator cand il pui in coada), iar datele (entry_node, tranzitie) le impachetezi intr-un
+  NodeRequest (paralela la EratosteneRequest). Dupa handler.apply(NodeRequest) raspunsul (nodul in
+  care ai ajuns) e impachetat intr-un NodeResponse (paralela la EratosteneResponse). Rezultatul se
+  ia cu un getter din NodeResponse si se afiseaza.
+- Logica grafului: daca entry_node e cheie in HashMap si are tranzitia ceruta -> intoarce nodul
+  destinatie (operatie valida); altfel -> "no se puede".
+
+---------------------------------------------------------------------------------------------
+REZOLVARE (un singur serviciu Micronaut: REST producator + functie serverless consumatoare):
+
+  user --POST /transition {entryNode, transition}--> [TransitionController]
+                                                            │ concateneaza "entryNode|transition"
+                                                            │ TransitionPublisher (@RabbitClient)
+                                                            ▼
+                                                   [coada RabbitMQ: state-machine-queue]
+                                                            ▼
+                                          [StateMachineFunction] (@RabbitListener - FUNCTIE SERVERLESS)
+                                                            │ destructureaza -> NodeRequest
+                                                            │ NodeGraphService.apply()  (graful)
+                                                            ▼ NodeResponse (destinatie / "no se puede")
+                                                   afisare + ResultStore (vizibil la GET /results)
+
+  Graful exemplu (workflow document):
+     DRAFT --submit--> REVIEW --approve--> PUBLISHED --archive--> ARCHIVED ;  REVIEW --reject--> DRAFT
+
+Tehnologii: Micronaut 3.1.4 (Kotlin) + micronaut-rabbitmq; broker RabbitMQ (Docker la dezvoltare,
+apt pe Debian). user student / parola student.

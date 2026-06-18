@@ -1,0 +1,3 @@
+cd index-invers-docs
+chmod +x run.sh
+./run.sh

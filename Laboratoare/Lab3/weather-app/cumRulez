@@ -1,0 +1,175 @@
+1. SETARE JAVA 17
+
+File -> Project Structure -> Project
+
+Setez:
+
+Project SDK:
+17
+
+Language level:
+17
+
+Apoi:
+
+File -> Settings -> Build, Execution, Deployment -> Build Tools -> Gradle
+
+Setez:
+
+Gradle JVM:
+Project SDK 17
+
+2. CONFIGURAȚIA BOOTRUN
+
+Run -> Edit Configurations
+
+Apăs:
+
+* -> Gradle
+
+Completez:
+
+Name:
+BootRun
+
+Tasks and arguments:
+bootRun
+
+Gradle project:
+folderul weather-app
+
+Exemplu:
+
+/home/student/Desktop/SistemeDistribuite/SistemeDistribuite/Lab3/weather-app
+
+Environment variables:
+gol
+
+Apply -> OK
+
+3. CONFIGURAȚIA RUNWEATHERAPP
+
+Run -> Edit Configurations
+
+Apăs:
+
+* -> Application
+
+Completez:
+
+Name:
+RunWeatherApp
+
+JRE:
+Java 17
+
+Main class:
+
+com.sd.laborator.WeatherAppApplicationKt
+
+Use classpath of module:
+
+weather-app.main
+
+Main class:
+
+com.sd.laborator.WeatherAppApplicationKt
+
+Working directory:
+
+folderul weather-app
+
+Exemplu:
+
+/home/student/Desktop/SistemeDistribuite/SistemeDistribuite/Lab3/weather-app
+
+Program arguments:
+gol
+
+Environment variables:
+gol
+
+Apply -> OK
+
+4. IMPORTANT
+
+Rulez doar una:
+
+BootRun
+
+sau:
+
+RunWeatherApp
+
+Nu le rulez pe amândouă.
+
+5. DACĂ GLASSFISH ESTE PORNIT
+
+GlassFish ocupă portul 8080.
+
+Rulez configurația:
+
+StopGlassFish
+
+Dacă nu mai am configurația, o creez:
+
+Run -> Edit Configurations
+
+* -> Shell Script
+
+Name:
+
+StopGlassFish
+
+Script text:
+
+export JAVA_HOME=/usr/lib/jvm/jdk1.8.0_301;
+export AS_JAVA=/usr/lib/jvm/jdk1.8.0_301;
+export PATH=/usr/lib/jvm/jdk1.8.0_301/bin:/usr/local/bin:/usr/bin:/bin;
+/home/student/Downloads/glassfish5/bin/asadmin stop-domain domain1
+
+Working directory:
+
+/home/student/Downloads/glassfish5
+
+Environment variables:
+gol
+
+Apply -> OK
+
+6. PORNIRE
+
+Rulez:
+
+BootRun
+
+sau:
+
+RunWeatherApp
+
+Aștept în consolă:
+
+Tomcat started on port 8080
+Started WeatherAppApplicationKt
+
+7. TESTARE
+
+Hello World:
+
+http://localhost:8080/helloworld
+
+Vreme:
+
+http://localhost:8080/getforecast/Iasi
+
+Chain:
+
+http://localhost:8080/getforecast-chain/Iasi
+
+Blacklist:
+
+http://localhost:8080/getforecast-chain/Moscow
+
+Orchestration:
+
+http://localhost:8080/getforecast-orchestrated/Iasi

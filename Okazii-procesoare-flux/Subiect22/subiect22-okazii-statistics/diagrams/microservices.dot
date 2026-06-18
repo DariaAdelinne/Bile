@@ -1,0 +1,19 @@
+digraph G {
+  rankdir=LR; graph [fontname="Arial"]; node [shape=box, style="rounded", fontname="Arial"];
+  Bidder [label="BidderMicroservice\nPresentation/Client"];
+  Auctioneer [label="AuctioneerMicroservice\nApplication"];
+  MessageProcessor [label="MessageProcessorMicroservice\nProcessing"];
+  BiddingProcessor [label="BiddingProcessorMicroservice\nBusiness"];
+  Statistics [label="StatisticsStreamProcessorMicroservice\nAnalytics + Persistence"];
+  CSV [shape=cylinder,label="data/auction-statistics.csv\nLocal storage"];
+  Bidder -> Auctioneer [label="ofertă"];
+  Auctioneer -> MessageProcessor [label="oferte"];
+  MessageProcessor -> BiddingProcessor [label="oferte filtrate/sortate"];
+  BiddingProcessor -> Auctioneer [label="câștigător"];
+  Auctioneer -> Bidder [label="rezultat"];
+  Bidder -> Statistics [style=dashed,label="BID_SENT"];
+  Auctioneer -> Statistics [style=dashed,label="evenimente"];
+  MessageProcessor -> Statistics [style=dashed,label="evenimente"];
+  BiddingProcessor -> Statistics [style=dashed,label="evenimente"];
+  Statistics -> CSV [label="scriere CSV"];
+}

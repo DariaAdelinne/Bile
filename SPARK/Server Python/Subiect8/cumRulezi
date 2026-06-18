@@ -1,0 +1,12 @@
+Deschizi separat cele doua foldere in intelij
+
+dai comanda:
+
+export JAVA_HOME=/usr/lib/jvm/java-1.17.0-openjdk-amd64
+python3 finnhub_news_stream.py
+
+in terminalul de la tcpServer
+
+
+apesi pe triunghiul verde de la main in Finnhub
+

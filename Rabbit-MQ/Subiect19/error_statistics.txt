@@ -1,0 +1,16 @@
+============================================================
+RAPORT ERORI LICITATIE
+Generat la: 2026-06-18 18:06:46
+Total erori: 1
+============================================================
+
+--- Distributie pe tipuri de erori ---
+  Oferta duplicata              : 1
+
+--- Distributie pe microservicii ---
+  MessageProcessor         : 1
+
+--- Detalii erori ---
+  1. [2026-06-18 18:06:31] [Oferta duplicata] (MessageProcessor) Oferta duplicata de la ca5704de-e762-49fb-90e7-af2d51db3917 (suma: 7611)
+
+============================================================

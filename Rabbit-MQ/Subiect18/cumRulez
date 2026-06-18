@@ -1,0 +1,12 @@
+schimb calea din start.sh cu calea in care se afla proiectul meu 
+
+
+Dupa care dau comenzile:
+
+sudo service rabbitmq-server start
+pip install pika retry
+
+
+Apoi:
+chmod +x start.sh
+./start.sh

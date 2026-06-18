@@ -1,0 +1,25 @@
+<ejb-jar xmlns="http://java.sun.com/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
+         http://java.sun.com/xml/ns/javaee/ejb-jar_3_0.xsd"
+         version="3.0">
+    <enterprise-beans>
+        <session>
+            <!-- Numele logic al bean-ului -->
+            <ejb-name>StudentServiceBean</ejb-name>
+
+            <!-- Numele sub care poate fi mapat -->
+            <mapped-name>studentservice</mapped-name>
+
+            <!-- Interfata locala/remote -->
+            <business-local>interfaces.StudentServiceBeanRemote</business-local>
+            <business-remote>interfaces.StudentServiceBeanRemote</business-remote>
+
+            <!-- Clasa concreta a bean-ului -->
+            <ejb-class>ejb.StudentServiceBeanImpl</ejb-class>
+
+            <!-- Tipul bean-ului -->
+            <session-type>Stateful</session-type>
+        </session>
+    </enterprise-beans>
+</ejb-jar>

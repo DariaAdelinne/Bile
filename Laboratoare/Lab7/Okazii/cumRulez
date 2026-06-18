@@ -1,0 +1,731 @@
+LAB 7 – CONFIGURARE ȘI RULARE PAS CU PAS
+
+CE CONȚINE PROIECTUL
+
+2. SETEZ JAVA 8
+
+File -> Project Structure -> Project
+
+Setez:
+
+Project SDK:
+1.8
+
+Language level:
+8
+
+La:
+
+File -> Project Structure -> SDKs
+
+selectez Java 1.8.
+
+JDK home path este:
+
+/usr/lib/jvm/jdk1.8.0_301
+
+Apply -> OK
+
+Lab 7 nu folosește Maven, Gradle, GlassFish sau Spring Boot.
+
+3. VERIFICĂ MODULELE
+
+File -> Project Structure -> Modules
+
+Trebuie să apară:
+
+AuctioneerMicroservice
+BidderMicroservice
+BiddingProcessorMicroservice
+MessageLibrary
+MessageProcessorMicroservice
+HeartbeatMonitorMicroservice
+MonitoringMicroservice
+
+Dacă apar toate, nu creez nimic manual.
+
+4. VERIFIC BIBLIOTECA RXKOTLIN
+
+File -> Project Structure -> Libraries
+
+Trebuie să existe:
+
+io.reactivex.rxjava3.rxkotlin
+
+Versiunea este:
+
+io.reactivex.rxjava3:rxkotlin:3.0.0
+
+Dacă există, nu modific nimic.
+
+Dacă lipsește:
+
+File -> Project Structure -> Libraries
+
+* -> From Maven
+
+Scriu:
+
+io.reactivex.rxjava3:rxkotlin:3.0.0
+
+Aleg modulele:
+
+AuctioneerMicroservice
+BidderMicroservice
+BiddingProcessorMicroservice
+MessageProcessorMicroservice
+
+OK -> Apply
+
+5. VERIFIC MESSAGELIBRARY
+
+În:
+
+File -> Project Structure -> Libraries
+
+trebuie să existe biblioteca:
+
+MessageLibrary
+
+Aceasta indică spre:
+
+out/artifacts/MessageLibrary_jar/MessageLibrary.jar
+
+Dacă importurile Message, LocalLogger, HeartbeatClient sau CentralLogger nu sunt roșii, nu schimb nimic.
+
+6. COMPILARE COMPLETĂ
+
+În IntelliJ:
+
+Build -> Rebuild Project
+
+Aștept să apară:
+
+Build completed successfully
+
+Dacă apare eroare la MessageLibrary:
+
+click dreapta pe modulul MessageLibrary
+Build Module 'MessageLibrary'
+
+Apoi rulez din nou:
+
+Build -> Rebuild Project
+
+7. CONFIGURAȚIA MONITORING
+
+Run -> Edit Configurations
+
+* -> Application
+
+Name:
+
+RunMonitoring
+
+Main class:
+
+MonitoringMicroservice_ktKt
+
+Use classpath of module:
+
+MonitoringMicroservice
+
+JRE:
+
+Java 8
+
+Working directory:
+
+folderul Okazii
+
+Exemplu:
+
+/home/student/Desktop/SistemeDistribuite/Lab7/Okazii
+
+Program arguments:
+
+gol
+
+Environment variables:
+
+gol
+
+Apply -> OK
+
+Dacă IntelliJ nu găsește clasa, apăs iconița din dreapta câmpului Main class și aleg funcția main din:
+
+MonitoringMicroservice.kt.kt
+
+8. CONFIGURAȚIA HEARTBEAT MONITOR
+
+Run -> Edit Configurations
+
+* -> Application
+
+Name:
+
+RunHeartbeatMonitor
+
+Main class:
+
+HeartbeatMonitorMicroserviceKt
+
+Use classpath of module:
+
+HeartbeatMonitorMicroservice
+
+JRE:
+
+Java 8
+
+Working directory:
+
+folderul Okazii
+
+Apply -> OK
+
+Acest microserviciu rulează pe portul:
+
+1800
+
+9. CONFIGURAȚIA BIDDING PROCESSOR
+
+Run -> Edit Configurations
+
+* -> Application
+
+Name:
+
+RunBiddingProcessor
+
+Main class:
+
+BiddingProcessorMicroserviceKt
+
+Use classpath of module:
+
+BiddingProcessorMicroservice
+
+JRE:
+
+Java 8
+
+Working directory:
+
+folderul Okazii
+
+Apply -> OK
+
+Acest microserviciu rulează pe portul:
+
+1700
+
+10. CONFIGURAȚIA MESSAGE PROCESSOR
+
+Run -> Edit Configurations
+
+* -> Application
+
+Name:
+
+RunMessageProcessor
+
+Main class:
+
+MessageProcessorMicroserviceKt
+
+Use classpath of module:
+
+MessageProcessorMicroservice
+
+JRE:
+
+Java 8
+
+Working directory:
+
+folderul Okazii
+
+Apply -> OK
+
+Acest microserviciu rulează pe portul:
+
+1600
+
+11. CONFIGURAȚIA AUCTIONEER
+
+Run -> Edit Configurations
+
+* -> Application
+
+Name:
+
+RunAuctioneer
+
+Main class:
+
+AuctioneerMicroserviceKt
+
+Use classpath of module:
+
+AuctioneerMicroservice
+
+JRE:
+
+Java 8
+
+Working directory:
+
+folderul Okazii
+
+Apply -> OK
+
+Acest microserviciu rulează pe portul:
+
+1500
+
+Licitația durează aproximativ:
+
+15 secunde
+
+12. CONFIGURAȚIA BIDDER
+
+Run -> Edit Configurations
+
+* -> Application
+
+Name:
+
+RunBidder
+
+Main class:
+
+BidderMicroserviceKt
+
+Use classpath of module:
+
+BidderMicroservice
+
+JRE:
+
+Java 8
+
+Working directory:
+
+folderul Okazii
+
+Bifez:
+
+Allow multiple instances
+
+Program arguments:
+
+gol
+
+Environment variables:
+
+gol
+
+Apply -> OK
+
+Este important să bifez Allow multiple instances pentru a putea porni mai mulți ofertanți.
+
+13. ORDINEA CORECTĂ DE PORNIRE
+
+Rulez exact în ordinea aceasta:
+
+1. RunMonitoring
+2. RunHeartbeatMonitor
+3. RunBiddingProcessor
+4. RunMessageProcessor
+5. RunAuctioneer
+6. RunBidder de mai multe ori
+
+BiddingProcessor trebuie pornit înainte de MessageProcessor.
+
+MessageProcessor trebuie pornit înainte de Auctioneer.
+
+Bidderii se pornesc imediat după Auctioneer, deoarece licitația durează doar 15 secunde.
+
+14. CE TREBUIE SĂ APARĂ
+
+La Monitoring:
+
+MonitoringMicroservice pornit pe portul 1900
+
+La Heartbeat:
+
+HeartbeatMonitorMicroservice pornit pe portul 1800
+
+La BiddingProcessor:
+
+BiddingProcessorMicroservice se executa pe portul 1700
+Se asteapta ofertele pentru finalizarea licitatiei
+
+La MessageProcessor:
+
+MessageProcessorMicroservice se executa pe portul 1600
+Se asteapta mesaje pentru procesare
+
+La Auctioneer:
+
+AuctioneerMicroservice se executa pe portul 1500
+Se asteapta oferte de la bidderi
+
+La Bidder:
+
+M-am conectat la Auctioneer
+Am trimis oferta
+Astept rezultatul licitatiei
+
+15. PORNESC MAI MULȚI BIDDERI
+
+După ce pornesc Auctioneer:
+
+selectez RunBidder
+apăs Run de mai multe ori
+
+Pot porni 3, 5 sau 10 bidderi pentru demonstrație.
+
+Fiecare bidder primește automat:
+
+nume
+număr de telefon
+adresă de e-mail
+sumă licitată
+
+16. REZULTATUL LICITAȚIEI
+
+După aproximativ 15 secunde, Auctioneer afișează:
+
+Licitatia s-a incheiat
+Se trimit ofertele spre procesare
+
+MessageProcessor:
+
+elimină mesajele duplicate
+sortează mesajele după timestamp
+trimite ofertele spre BiddingProcessor
+
+BiddingProcessor:
+
+alege oferta câștigătoare
+
+Auctioneer afișează:
+
+numele câștigătorului
+telefonul
+e-mailul
+prețul câștigător
+
+Fiecare bidder primește:
+
+Licitatie castigata
+
+sau:
+
+Licitatie pierduta
+
+17. TEMA DE LABORATOR – ELIMINAREA DUPLICATELOR
+
+În:
+
+MessageProcessorMicroservice.kt
+
+se folosește:
+
+.filter { raw -> seenMessages.add(raw) }
+
+Aceasta elimină mesajele duplicate.
+
+Bidder-ul poate trimite intenționat aceeași ofertă de două ori, iar MessageProcessor trebuie să o păstreze o singură dată.
+
+18. TEMA DE LABORATOR – SORTAREA
+
+În:
+
+MessageProcessorMicroservice.kt
+
+se folosește:
+
+messageQueue.toList().sortedBy { it.timestamp }
+
+Mesajele sunt sortate cronologic înainte să fie trimise către BiddingProcessor.
+
+19. TEST CU 100 DE BIDDERI
+
+Proiectul conține:
+
+run_100_bidders.sh
+
+Acest script pornește mai multe instanțe Bidder.
+
+Pentru demonstrația normală în IntelliJ nu este obligatoriu să pornesc 100.
+
+Îi pot arăta profesorului:
+
+* fișierul run_100_bidders.sh;
+* configurația RunBidder cu Allow multiple instances;
+* câteva instanțe pornite manual.
+
+20. HEARTBEAT
+
+Fiecare microserviciu pornește:
+
+HeartbeatClient.start(...)
+
+Heartbeat-urile sunt trimise către:
+
+HeartbeatMonitorMicroservice
+
+Port:
+
+1800
+
+În consolă trebuie să apară:
+
+Heartbeat primit de la Auctioneer
+Heartbeat primit de la MessageProcessor
+Heartbeat primit de la BiddingProcessor
+Heartbeat primit de la Bidder
+
+Dacă un serviciu nu mai trimite heartbeat timp de aproximativ 10 secunde, apare avertisment.
+
+Această parte este din tema pentru acasă.
+
+21. MONITORIZAREA CENTRALĂ
+
+MonitoringMicroservice rulează pe portul:
+
+1900
+
+Microserviciile scriu:
+
+* în fișiere locale;
+* către monitorul central.
+
+În consola RunMonitoring trebuie să apară:
+
+LOG CENTRAL: ...
+
+Această parte este din tema pentru acasă.
+
+22. FIȘIERELE LOG
+
+În folderul Okazii apar fișiere precum:
+
+auctioneer.log
+bidder.log
+message_processor.log
+bidding_processor.log
+heartbeat_monitor.log
+master_system.log
+
+Fiecare operație importantă este salvată în log.
+
+23. RECOVERY
+
+MessageProcessor salvează starea în:
+
+message_processor_state.log
+
+În cod există:
+
+SIMULATE_CRASH = false
+
+Pentru rularea normală las:
+
+false
+
+Dacă vreau să demonstrez recovery, schimb temporar în:
+
+SIMULATE_CRASH = true
+
+și las:
+
+CRASH_AFTER_MESSAGES = 5
+
+După crash, rulez din nou RunMessageProcessor.
+
+El trebuie să încarce mesajele din jurnal și să continue procesarea.
+
+După test pun din nou:
+
+SIMULATE_CRASH = false
+
+24. DACĂ APARE CONNECTION REFUSED PE 1500
+
+Înseamnă că Bidder a fost pornit înainte de Auctioneer.
+
+Soluție:
+
+1. opresc Bidder;
+
+2. pornesc RunAuctioneer;
+
+3. pornesc imediat RunBidder.
+
+4. DACĂ AUCTIONEER NU SE CONECTEAZĂ LA MESSAGEPROCESSOR
+
+Înseamnă că MessageProcessor nu este pornit pe portul 1600.
+
+Soluție:
+
+1. opresc procesele;
+
+2. pornesc RunBiddingProcessor;
+
+3. pornesc RunMessageProcessor;
+
+4. pornesc RunAuctioneer;
+
+5. pornesc bidderii.
+
+6. DACĂ MESSAGEPROCESSOR NU SE CONECTEAZĂ LA BIDDINGPROCESSOR
+
+Înseamnă că BiddingProcessor nu rulează pe portul 1700.
+
+Pornește întâi:
+
+RunBiddingProcessor
+
+apoi:
+
+RunMessageProcessor
+
+27. DACĂ APARE ADDRESS ALREADY IN USE
+
+Înseamnă că o instanță a microserviciului rulează deja.
+
+Porturile sunt:
+
+Auctioneer:
+1500
+
+MessageProcessor:
+1600
+
+BiddingProcessor:
+1700
+
+HeartbeatMonitor:
+1800
+
+Monitoring:
+1900
+
+Opresc vechea instanță cu pătratul roșu Stop.
+
+28. DACĂ IMPORTURILE RXKOTLIN SUNT ROȘII
+
+File -> Project Structure -> Libraries
+
+Verific:
+
+io.reactivex.rxjava3.rxkotlin
+
+Dacă lipsește:
+
+* -> From Maven
+
+Adaug:
+
+io.reactivex.rxjava3:rxkotlin:3.0.0
+
+Selectez cele 4 module principale.
+
+29. DACĂ MESSAGE NU ESTE RECUNOSCUT
+
+Build -> Rebuild Project
+
+Dacă tot nu merge:
+
+File -> Project Structure -> Libraries
+
+Verific biblioteca:
+
+MessageLibrary
+
+Aceasta trebuie să indice spre:
+
+out/artifacts/MessageLibrary_jar/MessageLibrary.jar
+
+30. CUM OPRESC
+
+În fiecare fereastră Run apăs pătratul roșu Stop.
+
+Opresc:
+
+RunBidder
+RunAuctioneer
+RunMessageProcessor
+RunBiddingProcessor
+RunHeartbeatMonitor
+RunMonitoring
+
+31. ORDINE RAPIDĂ PENTRU RULĂRILE URMĂTOARE
+
+32. Deschid proiectul Okazii.
+
+33. Verific Java 8.
+
+34. Build -> Rebuild Project.
+
+35. Rulez RunMonitoring.
+
+36. Rulez RunHeartbeatMonitor.
+
+37. Rulez RunBiddingProcessor.
+
+38. Rulez RunMessageProcessor.
+
+39. Rulez RunAuctioneer.
+
+40. Rulez rapid RunBidder de mai multe ori.
+
+41. Aștept 15 secunde.
+
+42. Verific rezultatul.
+
+43. Opresc toate procesele.
+
+44. CE ÎI ARĂT PROFESORULUI PENTRU TEMA DE LABORATOR
+
+Arăt:
+
+1. cele 5 module de bază;
+
+2. RxKotlin;
+
+3. Observable;
+
+4. Auctioneer pe portul 1500;
+
+5. MessageProcessor pe 1600;
+
+6. BiddingProcessor pe 1700;
+
+7. mai mulți bidderi;
+
+8. eliminarea duplicatelor;
+
+9. sortarea după timestamp;
+
+10. alegerea câștigătorului;
+
+11. fișierul run_100_bidders.sh.
+
+12. CE ESTE ÎN PLUS DIN TEMA PENTRU ACASĂ
+
+Proiectul mai conține:
+
+* nume, telefon și e-mail pentru bidder;
+* log local pentru fiecare microserviciu;
+* salvarea stării și recovery după crash;
+* HeartbeatMonitorMicroservice;
+* heartbeat pentru fiecare serviciu;
+* MonitoringMicroservice;
+* log centralizat;
+* fișiere generale și locale de monitorizare.
+
+Dacă profesorul cere doar tema de laborator, mă pot opri după demonstrarea licitației, eliminării duplicatelor, sortării și mai multor bidderi.

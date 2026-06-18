@@ -1,0 +1,112 @@
+services:
+  heartbeat:
+    build: ./HeartbeatMicroservice
+    container_name: heartbeat
+    networks: [ms-net]
+    ports: ["1800:1800"]
+
+  registry:
+    build: ./RegistryMicroservice
+    container_name: registry
+    depends_on: [heartbeat]
+    networks: [ms-net]
+    environment:
+      HEARTBEAT_HOST: heartbeat
+    ports: ["1900:1900"]
+
+  monitor:
+    build: ./MonitorMicroservice
+    container_name: monitor
+    depends_on: [heartbeat]
+    networks: [ms-net]
+    environment:
+      HEARTBEAT_HOST: heartbeat
+    ports: ["2200:2200"]
+
+  grades:
+    build: ./GradesMicroservice
+    container_name: grades
+    depends_on: [heartbeat]
+    networks: [ms-net]
+    environment:
+      HEARTBEAT_HOST: heartbeat
+    ports: ["2100:2100"]
+
+  assistant:
+    build: ./AssistantMicroservice
+    container_name: assistant
+    depends_on: [monitor, grades, heartbeat]
+    networks: [ms-net]
+    environment:
+      HEARTBEAT_HOST: heartbeat
+      MONITOR_HOST: monitor
+      GRADES_HOST: grades
+    ports: ["2000:2000"]
+
+  message_manager:
+    build: ./MessageManagerMicroservice
+    container_name: message_manager
+    depends_on: [registry, monitor, heartbeat]
+    networks: [ms-net]
+    environment:
+      HEARTBEAT_HOST: heartbeat
+      REGISTRY_HOST: registry
+      MONITOR_HOST: monitor
+    ports: ["1500:1500"]
+
+  teacher:
+    build: ./TeacherMicroservice
+    container_name: teacher
+    depends_on: [message_manager, grades]
+    networks: [ms-net]
+    environment:
+      MESSAGE_MANAGER_HOST: message_manager
+      HEARTBEAT_HOST: heartbeat
+      GRADES_HOST: grades
+    ports: ["1600:1600"]
+
+  student1:
+    build: ./StudentMicroservice
+    container_name: student1
+    depends_on: [message_manager, assistant]
+    networks: [ms-net]
+    environment:
+      STUDENT_NAME: student1
+      STUDENT_CODE: ABC123
+      STUDENT_CLIENT_PORT: 1701
+      MESSAGE_MANAGER_HOST: message_manager
+      ASSISTANT_HOST: assistant
+      HEARTBEAT_HOST: heartbeat
+    ports: ["1701:1701"]
+
+  student2:
+    build: ./StudentMicroservice
+    container_name: student2
+    depends_on: [message_manager, assistant]
+    networks: [ms-net]
+    environment:
+      STUDENT_NAME: student2
+      STUDENT_CODE: DEF456
+      STUDENT_CLIENT_PORT: 1702
+      MESSAGE_MANAGER_HOST: message_manager
+      ASSISTANT_HOST: assistant
+      HEARTBEAT_HOST: heartbeat
+    ports: ["1702:1702"]
+
+  student3:
+    build: ./StudentMicroservice
+    container_name: student3
+    depends_on: [message_manager, assistant]
+    networks: [ms-net]
+    environment:
+      STUDENT_NAME: student3
+      STUDENT_CODE: GHI789
+      STUDENT_CLIENT_PORT: 1703
+      MESSAGE_MANAGER_HOST: message_manager
+      ASSISTANT_HOST: assistant
+      HEARTBEAT_HOST: heartbeat
+    ports: ["1703:1703"]
+
+networks:
+  ms-net:
+    driver: bridge

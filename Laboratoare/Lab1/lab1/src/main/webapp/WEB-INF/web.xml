@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee
+         http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
+         version="4.0">
+
+    <display-name>lab1</display-name>
+
+    <servlet> <!-- definirea servlet-ului-->
+        <servlet-name>InitDb</servlet-name>
+        <servlet-class>InitDbServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>InitDb</servlet-name>
+        <url-pattern>/init-db</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>CreateStudent</servlet-name>
+        <servlet-class>CreateStudentServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>CreateStudent</servlet-name>
+        <url-pattern>/create-student</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>ListStudents</servlet-name>
+        <servlet-class>ListStudentsServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ListStudents</servlet-name>
+        <url-pattern>/list-students</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>UpdateStudent</servlet-name>
+        <servlet-class>UpdateStudentServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>UpdateStudent</servlet-name>
+        <url-pattern>/update-student</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>DeleteStudent</servlet-name>
+        <servlet-class>DeleteStudentServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>DeleteStudent</servlet-name>
+        <url-pattern>/delete-student</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>SearchStudent</servlet-name>
+        <servlet-class>SearchStudentServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>SearchStudent</servlet-name>
+        <url-pattern>/search-student</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>ExportJson</servlet-name>
+        <servlet-class>ExportJsonServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ExportJson</servlet-name>
+        <url-pattern>/export-json</url-pattern>
+    </servlet-mapping>
+
+</web-app>

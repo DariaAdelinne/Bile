@@ -1,0 +1,603 @@
+3. SETEZ JAVA 17 PENTRU LIBRARYAPP
+
+File -> Project Structure -> Project
+
+Setez:
+
+Project SDK:
+17
+
+Language level:
+17
+
+Apoi:
+
+File -> Settings -> Build, Execution, Deployment -> Build Tools -> Maven
+
+La JDK for importer / Runner aleg:
+
+Project SDK 17
+
+Apply -> OK
+
+4. REÎNCARC MAVEN
+
+În dreapta deschid Maven.
+
+Apăs:
+
+Reload All Maven Projects
+
+Aștept să termine descărcarea dependențelor.
+
+5. VERIFIC LIBRARYAPP
+
+Deschid:
+
+src/main/resources/application.properties
+
+Trebuie să conțină:
+
+spring.application.name=LibraryApp
+spring.datasource.url=jdbc:sqlite:library.db
+spring.datasource.driver-class-name=org.sqlite.JDBC
+server.port=8080
+
+Nu modific nimic.
+
+6. CREEZ CONFIGURAȚIA RUNLIBRARYAPP
+
+Run -> Edit Configurations
+
+* -> Maven
+
+Completez:
+
+Name:
+
+RunLibraryApp
+
+Run / Command line:
+
+spring-boot:run
+
+Working directory:
+
+folderul LibraryApp
+
+Exemplu:
+
+/home/student/Desktop/SistemeDistribuite/Lab6/LibraryApp
+
+JRE:
+
+Java 17
+
+Environment variables:
+
+gol
+
+Nu scriu mvn.
+
+Apply -> OK
+
+7. DESCHID CACHEMICROSERVICE
+
+File -> Open
+
+Aleg:
+
+Lab6/CacheMicroservice
+
+Aleg:
+
+Open in New Window
+Trust Project
+
+8. SETEZ JAVA 17 PENTRU CACHE
+
+File -> Project Structure -> Project
+
+Setez:
+
+Project SDK:
+17
+
+Language level:
+17
+
+La Maven aleg:
+
+Project SDK 17
+
+Apoi:
+
+Maven -> Reload All Maven Projects
+
+9. VERIFIC CACHEMICROSERVICE
+
+Deschid:
+
+src/main/resources/application.properties
+
+Trebuie să conțină:
+
+spring.application.name=CacheMicroservice
+spring.datasource.url=jdbc:sqlite:cache.db
+spring.datasource.driver-class-name=org.sqlite.JDBC
+server.port=8081
+
+library.service.url=http://localhost:8080
+merkle.service.url=http://localhost:8082
+
+spring.rabbitmq.host=localhost
+spring.rabbitmq.port=5672
+spring.rabbitmq.username=student
+spring.rabbitmq.password=student
+
+Nu modific nimic.
+
+10. CREEZ CONFIGURAȚIA RUNCACHE
+
+Run -> Edit Configurations
+
+* -> Maven
+
+Completez:
+
+Name:
+
+RunCache
+
+Run / Command line:
+
+spring-boot:run
+
+Working directory:
+
+folderul CacheMicroservice
+
+Exemplu:
+
+/home/student/Desktop/SistemeDistribuite/Lab6/CacheMicroservice
+
+JRE:
+
+Java 17
+
+Environment variables:
+
+gol
+
+Apply -> OK
+
+11. DESCHID MERKLEMICROSERVICE
+
+File -> Open
+
+Aleg:
+
+Lab6/MerkleMicroservice
+
+Aleg:
+
+Open in New Window
+Trust Project
+
+12. SETEZ JAVA 17 PENTRU MERKLE
+
+File -> Project Structure -> Project
+
+Setez:
+
+Project SDK:
+17
+
+Language level:
+17
+
+La Maven aleg:
+
+Project SDK 17
+
+Apoi:
+
+Maven -> Reload All Maven Projects
+
+13. VERIFIC MERKLEMICROSERVICE
+
+Deschid:
+
+src/main/resources/application.properties
+
+Trebuie să conțină:
+
+spring.application.name=MerkleMicroservice
+server.port=8082
+
+Nu modific nimic.
+
+14. CREEZ CONFIGURAȚIA RUNMERKLE
+
+Run -> Edit Configurations
+
+* -> Maven
+
+Completez:
+
+Name:
+
+RunMerkle
+
+Run / Command line:
+
+spring-boot:run
+
+Working directory:
+
+folderul MerkleMicroservice
+
+Exemplu:
+
+/home/student/Desktop/SistemeDistribuite/Lab6/MerkleMicroservice
+
+JRE:
+
+Java 17
+
+Environment variables:
+
+gol
+
+Apply -> OK
+
+15. PORNESC RABBITMQ
+
+Pot crea configurația într-unul dintre proiecte:
+
+Run -> Edit Configurations
+
+* -> Shell Script
+
+Name:
+
+StartRabbitMQ
+
+Execute:
+
+Script text
+
+Script text:
+
+sudo systemctl start rabbitmq-server.service
+
+Working directory:
+
+folderul Lab6
+
+Environment variables:
+
+gol
+
+Apply -> OK
+
+Rulez:
+
+StartRabbitMQ
+
+Dacă cere parolă, introduc parola utilizatorului student.
+
+16. VERIFIC RABBITMQ
+
+Creez alt Shell Script:
+
+Name:
+
+StatusRabbitMQ
+
+Script text:
+
+systemctl status rabbitmq-server.service
+
+Rulez configurația.
+
+Trebuie să apară:
+
+active (running)
+
+17. CONSOLA RABBITMQ
+
+Deschid în browser:
+
+http://localhost:15672
+
+Username:
+
+student
+
+Password:
+
+student
+
+Microserviciul Cache creează automat:
+
+Exchange:
+
+cache.direct
+
+Cozi:
+
+cache.request.queue
+cache.response.queue
+
+Routing keys:
+
+cache.request
+cache.response
+
+Nu trebuie să creez manual cozile.
+
+18. ORDINEA CORECTĂ DE PORNIRE
+
+Rulez exact în această ordine:
+
+1. StartRabbitMQ
+2. RunLibraryApp
+3. RunMerkle
+4. RunCache
+
+Aștept la fiecare să apară mesajul:
+
+Started ...
+
+Porturile trebuie să fie:
+
+LibraryApp:
+8080
+
+CacheMicroservice:
+8081
+
+MerkleMicroservice:
+8082
+
+19. TESTEZ LIBRARYAPP DIRECT
+
+În browser deschid:
+
+http://localhost:8080/print?format=json
+
+Trebuie să apară toate cărțile în format JSON.
+
+Pentru HTML:
+
+http://localhost:8080/print?format=html
+
+Pentru text:
+
+http://localhost:8080/print?format=raw
+
+20. TESTEZ CĂUTAREA ÎN LIBRARYAPP
+
+După autor:
+
+http://localhost:8080/find?author=Jules%20Verne
+
+După titlu:
+
+http://localhost:8080/find?title=Insula%20Misterioasa
+
+După editură:
+
+http://localhost:8080/find?publisher=Teora
+
+21. TESTEZ CĂUTAREA ȘI FORMATUL
+
+Exemplu autor + JSON:
+
+http://localhost:8080/find-and-print?author=Jules%20Verne&format=json
+
+Autor + HTML:
+
+http://localhost:8080/find-and-print?author=Jules%20Verne&format=html
+
+Autor + text:
+
+http://localhost:8080/find-and-print?author=Jules%20Verne&format=raw
+
+22. TESTEZ CACHEMICROSERVICE
+
+Nu mai accesez direct portul 8080.
+
+Deschid:
+
+http://localhost:8081/cached-print?format=json
+
+Prima accesare trebuie să afișeze în consola Cache:
+
+CACHE MISS
+
+La a doua accesare a aceluiași link trebuie să afișeze:
+
+CACHE HIT
+
+23. TESTEZ CACHE PENTRU HTML
+
+Deschid de două ori:
+
+http://localhost:8081/cached-print?format=html
+
+Prima dată:
+
+CACHE MISS
+
+A doua dată:
+
+CACHE HIT
+
+24. TESTEZ CĂUTAREA PRIN CACHE
+
+După autor:
+
+http://localhost:8081/cached-find?author=Jules%20Verne
+
+După titlu:
+
+http://localhost:8081/cached-find?title=Insula%20Misterioasa
+
+După editură:
+
+http://localhost:8081/cached-find?publisher=Teora
+
+Deschid același link de două ori.
+
+Prima dată trebuie să fie:
+
+CACHE MISS
+
+A doua dată:
+
+CACHE HIT
+
+25. TESTEZ CĂUTAREA ȘI FORMATUL PRIN CACHE
+
+JSON:
+
+http://localhost:8081/cached-find-and-print?author=Jules%20Verne&format=json
+
+HTML:
+
+http://localhost:8081/cached-find-and-print?author=Jules%20Verne&format=html
+
+Text:
+
+http://localhost:8081/cached-find-and-print?author=Jules%20Verne&format=raw
+
+26. VERIFIC MERKLEMICROSERVICE
+
+Când CacheMicroservice primește un CACHE MISS, el apelează automat MerkleMicroservice.
+
+În consola Cache trebuie să apară:
+
+MERKLE USED for query=...
+
+și răspunsul cu:
+
+leafHashes
+levels
+merkleRoot
+
+Nu trebuie să deschid manual Merkle în browser pentru testul normal.
+
+27. TEST DIRECT PENTRU MERKLE DIN INTELLIJ
+
+În proiectul MerkleMicroservice creez un fișier:
+
+test.http
+
+Pun în el:
+
+POST http://localhost:8082/merkle/build
+Content-Type: application/json
+
+{
+"items": [
+"carte1",
+"carte2",
+"carte3"
+]
+}
+
+Deasupra cererii apare triunghiul verde.
+
+Apăs triunghiul verde.
+
+Trebuie să primesc:
+
+leafHashes
+levels
+merkleRoot
+
+28. BAZELE DE DATE
+
+LibraryApp folosește:
+
+LibraryApp/library.db
+
+CacheMicroservice folosește:
+
+CacheMicroservice/cache.db
+
+Tabelele sunt create automat la pornire.
+
+Nu trebuie să inițializez manual baza.
+
+29. CUM FUNCȚIONEAZĂ CACHE-UL
+
+Prima cerere:
+
+* Cache caută rezultatul în cache.db;
+* nu îl găsește;
+* afișează CACHE MISS;
+* apelează MerkleMicroservice;
+* cere rezultatul de la LibraryApp;
+* salvează rezultatul în cache.db.
+
+A doua cerere identică:
+
+* găsește rezultatul în cache.db;
+* afișează CACHE HIT;
+* nu mai cere din nou datele de la LibraryApp.
+
+Cache-ul este valabil o oră.
+
+30. DACĂ APARE PORT ALREADY IN USE
+
+Dacă portul 8080 este ocupat:
+
+* opresc GlassFish;
+* opresc Lab 3;
+* opresc Lab 5.
+
+Dacă portul 8081 sau 8082 este ocupat:
+
+* verific dacă RunCache sau RunMerkle rulează deja;
+* apăs pătratul roșu Stop.
+
+31. DACĂ CACHE NU PORNEȘTE
+
+Verific:
+
+1. RabbitMQ este active (running).
+
+2. Username este student.
+
+3. Password este student.
+
+4. Portul RabbitMQ este 5672.
+
+5. Java este 17.
+
+6. LibraryApp rulează pe 8080.
+
+7. Merkle rulează pe 8082.
+
+8. DACĂ PRIMESC CONNECTION REFUSED
+
+Dacă eroarea conține:
+
+localhost:8080
+
+LibraryApp nu este pornit.
+
+Dacă eroarea conține:
+
+localhost:8082
+
+MerkleMicroservice nu este pornit.
+
+Dacă eroarea conține:
+
+localhost:5672
+
+RabbitMQ nu este pornit.

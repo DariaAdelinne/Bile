@@ -1,0 +1,10 @@
+Pornind de la exemplul 1 din laboratorul 6 să se modifice acesta
+astfel încât să fie câte un microserviciu separat pentru fiecare
+operație CRUD, iar acestea să fie accesate prin intermediul unui model
+de proiectare de tip poartă API în interiorul altui microserviciu.
+Dacă se consideră necesar se mai pot crea oricâte servicii se dorește
+conform gândirii studentului.
+Se va utiliza orchestrarea și respectarea principiilor SOLID pentru
+microservicii. La prezentare se va arăta diagrama de clase și se va
+explica aceasta împreună cu gradul de respectare a principiilor. Apoi
+va urma discuția pe cod.

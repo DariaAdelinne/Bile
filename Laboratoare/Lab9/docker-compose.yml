@@ -1,0 +1,72 @@
+services:
+  rabbitmq:
+    image: rabbitmq:3-management
+    container_name: lab9_rabbitmq
+    ports: ["5672:5672", "15672:15672"]
+  database:
+    build: ./DatabaseService
+    container_name: lab9_database
+    ports: ["2300:2300"]
+    volumes: ["lab9_db:/data"]
+  producer:
+    build: ./ProducerService
+    container_name: lab9_producer
+    ports: ["2400:2400"]
+    environment: { DB_URL: "http://database:2300" }
+    depends_on: [database]
+  gui:
+    build: ./GuiService
+    container_name: lab9_gui
+    ports: ["2500:2500"]
+    environment: { DB_URL: "http://database:2300" }
+    depends_on: [database]
+  client:
+    build: ./ClientSourceMicroservice
+    container_name: lab9_client_source
+    restart: on-failure
+    environment:
+      SPRING_RABBITMQ_HOST: rabbitmq
+      SPRING_CLOUD_STREAM_BINDINGS_OUTPUT_DESTINATION: raw-orders
+      DB_URL: http://database:2300
+    depends_on: [rabbitmq, database]
+  comanda:
+    build: ./ComandaProcessorMicroservice
+    container_name: lab9_comanda_processor
+    restart: on-failure
+    environment:
+      SPRING_RABBITMQ_HOST: rabbitmq
+      SPRING_CLOUD_STREAM_BINDINGS_INPUT_DESTINATION: raw-orders
+      SPRING_CLOUD_STREAM_BINDINGS_OUTPUT_DESTINATION: registered-orders
+      DB_URL: http://database:2300
+    depends_on: [rabbitmq, database]
+  depozit:
+    build: ./DepozitProcessorMicroservice
+    container_name: lab9_depozit_processor
+    restart: on-failure
+    environment:
+      SPRING_RABBITMQ_HOST: rabbitmq
+      SPRING_CLOUD_STREAM_BINDINGS_INPUT_DESTINATION: registered-orders
+      SPRING_CLOUD_STREAM_BINDINGS_OUTPUT_DESTINATION: warehouse-events
+      DB_URL: http://database:2300
+      PRODUCER_URL: http://producer:2400
+    depends_on: [rabbitmq, database, producer]
+  facturare:
+    build: ./FacturareProcessorMicroservice
+    container_name: lab9_facturare_processor
+    restart: on-failure
+    environment:
+      SPRING_RABBITMQ_HOST: rabbitmq
+      SPRING_CLOUD_STREAM_BINDINGS_INPUT_DESTINATION: warehouse-events
+      SPRING_CLOUD_STREAM_BINDINGS_OUTPUT_DESTINATION: invoice-events
+      DB_URL: http://database:2300
+    depends_on: [rabbitmq, database]
+  livrare:
+    build: ./LivrareSinkMicroservice
+    container_name: lab9_livrare_sink
+    restart: on-failure
+    environment:
+      SPRING_RABBITMQ_HOST: rabbitmq
+      SPRING_CLOUD_STREAM_BINDINGS_INPUT_DESTINATION: invoice-events
+    depends_on: [rabbitmq]
+volumes:
+  lab9_db:

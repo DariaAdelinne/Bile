@@ -1,0 +1,8 @@
+Să se creeze în Kotlin un server TCP care să facă o cerere pentru
+simbolurile companiilor cu acțiuni și folosind API-ul de prețuri țintă
+să trimită datele prin socket câte o companie la 3 secunde. Se va
+implementa în Python un flux PySpark care să:
+- calculeze profitul mediu posibil pe baza targetMean și targetLow;
+- filtreze rezultatele, păstrând doar cele cu profit > 40%;
+- afișeze compania (symbol) și profitul mediu pentru fiecare RDD.
+API token: brl7eb7rh5re1lvco7fg

@@ -1,0 +1,215 @@
+2. SETARE JAVA 8
+
+În IntelliJ:
+
+* File -> Project Structure.
+* La Project SDK aleg Java 8 / JDK 1.8.
+* La Project language level aleg 8.
+* Apply -> OK.
+
+GlassFish 5 trebuie rulat cu Java 8.
+
+3. VERIFICARE GLASSFISH
+
+GlassFish se află la:
+
+/home/student/Downloads/glassfish5
+
+Folderul trebuie să conțină directoare precum:
+
+bin
+glassfish
+javadb
+mq
+
+4. MODIFICARE pom.xml PENTRU GLASSFISH
+
+În pom.xml, pluginul Cargo trebuie să fie configurat astfel:
+
+<plugin>
+    <groupId>org.codehaus.cargo</groupId>
+    <artifactId>cargo-maven3-plugin</artifactId>
+    <version>1.10.13</version>
+
+```
+<configuration>
+    <container>
+        <containerId>glassfish5x</containerId>
+        <type>installed</type>
+        <home>/home/student/Downloads/glassfish5</home>
+    </container>
+
+    <configuration>
+        <type>existing</type>
+        <home>/home/student/Downloads/glassfish5/glassfish/domains</home>
+
+        <properties>
+            <cargo.glassfish.domain.name>domain1</cargo.glassfish.domain.name>
+            <cargo.remote.username>admin</cargo.remote.username>
+            <cargo.remote.password></cargo.remote.password>
+        </properties>
+    </configuration>
+</configuration>
+```
+
+</plugin>
+
+Important:
+
+* Domeniul folosit este domain1.
+* Folderul domeniului este:
+
+/home/student/Downloads/glassfish5/glassfish/domains/domain1
+
+5. REÎNCĂRCARE MAVEN
+
+După modificarea pom.xml:
+
+* Deschid panoul Maven din partea dreaptă.
+* Apăs Reload All Maven Projects.
+* Aștept să se încarce toate dependențele.
+
+6. CREARE RUN CONFIGURATION ÎN INTELLIJ
+
+În partea de sus:
+
+* Apăs Add Configuration... sau Edit Configurations.
+* Apăs +.
+* Aleg Maven.
+
+Completez:
+
+Name:
+PornesteLab
+
+Run / Command line:
+clean package org.codehaus.cargo:cargo-maven3-plugin:run
+
+Working directory:
+folderul lab1 care conține pom.xml
+
+Exemplu:
+
+/home/student/Desktop/SistemeDistribuite/SistemeDistribuite/Lab1/lab1
+
+Apăs:
+
+Apply -> OK
+
+7. PORNIREA APLICAȚIEI
+
+* Selectez configurația PornesteLab.
+* Apăs triunghiul verde Run.
+* Aștept până apare în consolă:
+
+GlassFish 5.0.1 started on port [8080]
+
+și mesaje că aplicația a fost deployed.
+
+Deschid în browser:
+
+http://localhost:8080/lab1/
+
+8. SCHIMBAREA CĂII BAZEI DE DATE
+
+Problema inițială a fost că proiectul folosea o cale veche de Mac:
+
+/Users/daria.adelinne/...
+
+În DatabaseUtil.java caut variabila URL pentru SQLite.
+
+O schimb în:
+
+private static final String URL =
+"jdbc:sqlite:/home/student/Desktop/SistemeDistribuite/SistemeDistribuite/Lab1/lab1/students.db";
+
+Fișierul students.db se află lângă pom.xml.
+
+După modificare:
+
+* Salvez fișierul.
+* Opresc aplicația.
+* Rulez din nou PornesteLab.
+
+9. TESTAREA APLICAȚIEI
+
+Deschid:
+
+http://localhost:8080/lab1/
+
+Testez în ordinea aceasta:
+
+1. Inițializare baza de date
+
+2. Adaugă student
+
+3. Afișează toți studenții
+
+4. Caută student
+
+5. Actualizează student
+
+6. Șterge student
+
+7. Export JSON
+
+8. DACĂ APARE EROAREA CU GLASSFISH
+
+Eroare:
+
+is not a directory
+
+Înseamnă că adresa din pom.xml către GlassFish este greșită.
+
+Trebuie folosit:
+
+/home/student/Downloads/glassfish5
+
+11. DACĂ APARE EROAREA cargo-domain
+
+Eroare:
+
+There is no such domain directory:
+.../cargo-domain
+
+Înseamnă că lipsește numele domeniului în pom.xml.
+
+Trebuie adăugat:
+
+<cargo.glassfish.domain.name>domain1</cargo.glassfish.domain.name>
+
+12. DACĂ APARE HTTP STATUS 500 CU /Users/daria...
+
+Înseamnă că DatabaseUtil.java încă folosește calea veche de Mac.
+
+Trebuie schimbată cu:
+
+jdbc:sqlite:/home/student/Desktop/SistemeDistribuite/SistemeDistribuite/Lab1/lab1/students.db
+
+13. LINKURILE FOLOSITE
+
+Pagina principală:
+
+http://localhost:8080/lab1/
+
+Inițializare bază de date:
+
+http://localhost:8080/lab1/init-db
+
+Adăugare student:
+
+http://localhost:8080/lab1/create-student
+
+Consola GlassFish:
+
+http://localhost:4848
+
+14. OPRIREA SERVERULUI
+
+Serverul se oprește din fereastra Run din IntelliJ.
+
+Nu pornesc încă o dată PornesteLab dacă GlassFish este deja pornit.
+
+Dacă portul 8080 este deja folosit, verific mai întâi:
+
+http://localhost:8080/lab1/

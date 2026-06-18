@@ -1,0 +1,371 @@
+# Subiectul 14 — Pașii finali de rulare
+
+Proiectul se află în:
+
+```bash
+cd ~/Downloads/subiect14-okazii-rating-fixed-v2
+```
+
+Pentru rulare se deschid **5 terminale**.
+
+---
+
+## Terminalul 1 — RatingMicroservice
+
+```bash
+cd ~/Downloads/subiect14-okazii-rating-fixed-v2
+java -jar dist/RatingMicroservice.jar
+```
+
+Trebuie să apară:
+
+```text
+[RatingService] ascultă pe 1800; fișier=data/ratings.csv
+```
+
+Acest microserviciu rămâne pornit și primește evaluările utilizatorilor.
+
+---
+
+## Terminalul 2 — BiddingProcessorMicroservice
+
+```bash
+cd ~/Downloads/subiect14-okazii-rating-fixed-v2
+java -jar dist/BiddingProcessorMicroservice.jar
+```
+
+Trebuie să apară:
+
+```text
+[BiddingProcessor] ascultă pe portul 1700
+``` Bobica2017!
+
+---
+
+## Terminalul 3 — MessageProcessorMicroservice
+
+```bash
+cd ~/Downloads/subiect14-okazii-rating-fixed-v2
+java -jar dist/MessageProcessorMicroservice.jar
+```
+
+Trebuie să apară:
+
+```text
+[MessageProcessor] ascultă pe portul 1600
+```
+
+---
+
+## Terminalul 4 — AuctioneerMicroservice
+
+```bash
+cd ~/Downloads/subiect14-okazii-rating-fixed-v2
+java -jar dist/AuctioneerMicroservice.jar
+```
+
+Trebuie să apară:
+
+```text
+[Auctioneer] bidderi: 1500; rezultat: 1501; durată: 15s
+```
+
+Din momentul pornirii Auctioneer-ului există aproximativ 15 secunde pentru pornirea bidderilor.
+
+---
+
+## Terminalul 5 — Pornirea celor 5 bidderi
+
+Imediat după pornirea Auctioneer-ului se rulează:
+
+```bash
+cd ~/Downloads/subiect14-okazii-rating-fixed-v2
+
+java -jar dist/BidderMicroservice.jar --name "Daria" --rating 5 &
+java -jar dist/BidderMicroservice.jar --name "Mihai" --rating 4 &
+java -jar dist/BidderMicroservice.jar --name "Andrei" --rating 3 &
+java -jar dist/BidderMicroservice.jar --name "Ioana" --rating 2 &
+java -jar dist/BidderMicroservice.jar --name "Alex" --rating 1 &
+
+wait
+```
+
+Caracterul `&` pornește bidderii aproape simultan, astfel încât toți să intre în licitație înainte de expirarea celor 15 secunde.
+
+---
+
+# Rezultatul așteptat
+
+În terminalul Auctioneer trebuie să apară cinci mesaje primite:
+
+```text
+[Auctioneer] primit: Message(...)
+[Auctioneer] primit: Message(...)
+[Auctioneer] primit: Message(...)
+[Auctioneer] primit: Message(...)
+[Auctioneer] primit: Message(...)
+[Auctioneer] licitația s-a încheiat; oferte=5
+[Auctioneer] așteaptă rezultatul...
+[Auctioneer] toți bidderii au fost anunțați
+```
+
+În terminalul BiddingProcessor trebuie să apară cele cinci oferte și rezultatul:
+
+```text
+[BiddingProcessor] ofertă: Message(...)
+[BiddingProcessor] ofertă: Message(...)
+[BiddingProcessor] ofertă: Message(...)
+[BiddingProcessor] ofertă: Message(...)
+[BiddingProcessor] ofertă: Message(...)
+[BiddingProcessor] rezultat trimis: Message(...)
+```
+
+Un bidder va primi mesajul:
+
+```text
+Licitatie castigata!
+```
+
+Ceilalți vor primi:
+
+```text
+Licitatie pierduta!
+```
+
+Fiecare bidder trebuie să afișeze:
+
+```text
+OK evaluare salvata
+```
+
+În terminalul RatingService trebuie să apară de cinci ori:
+
+```text
+[RatingService] OK evaluare salvata
+```
+
+---
+
+# Verificarea fișierului local
+
+După terminarea licitației, într-un terminal nou se rulează:
+
+```bash
+cd ~/Downloads/subiect14-okazii-rating-fixed-v2
+cat data/ratings.csv
+```
+
+Fișierul trebuie să conțină:
+
+```csv
+timestampEpochMillis,username,rating
+...,"Daria",5
+...,"Mihai",4
+...,"Andrei",3
+...,"Ioana",2
+...,"Alex",1
+```
+
+Pentru a verifica numărul de linii:
+
+```bash
+wc -l data/ratings.csv
+```
+
+Dacă fișierul era gol înainte de test, trebuie să apară:
+
+```text
+6 data/ratings.csv
+```
+
+Sunt șase linii deoarece există un antet și cinci evaluări.
+
+---
+
+# Curățarea fișierului înainte de prezentare
+
+Pentru a începe demonstrația cu un fișier gol:
+
+```bash
+cd ~/Downloads/subiect14-okazii-rating-fixed-v2
+rm -f data/ratings.csv
+```
+
+Fișierul va fi recreat automat de RatingMicroservice la prima evaluare.
+
+Comanda trebuie rulată înainte de pornirea serviciilor.
+
+---
+
+# Testarea validării 1–5
+
+Pentru a demonstra că o evaluare invalidă este respinsă, se poate porni un bidder cu valoarea 7:
+
+```bash
+java -jar dist/BidderMicroservice.jar --name "TestInvalid" --rating 7
+```
+
+Evaluarea 7 nu trebuie salvată în:
+
+```text
+data/ratings.csv
+```
+
+Valorile acceptate sunt numai:
+
+```text
+1, 2, 3, 4, 5
+```
+
+---
+
+# Ce se explică profesorului
+
+Aplicația primește evaluări între 1 și 5 de la utilizatori. Fiecare evaluare conține numele utilizatorului și nota oferită. Datele sunt trimise către RatingMicroservice, validate și salvate local în fișierul:
+
+```text
+data/ratings.csv
+```
+
+RatingMicroservice rămâne pornit pentru a putea primi succesiv evaluările mai multor utilizatori.
+
+Celelalte microservicii se ocupă separat de:
+
+* primirea ofertelor;
+* eliminarea duplicatelor și sortarea mesajelor;
+* stabilirea câștigătorului;
+* transmiterea rezultatului;
+* salvarea evaluărilor.
+
+Această separare ajută la respectarea principiului Single Responsibility din SOLID.
+
+
+
+
+1. Aplicația Okazii funcționează cu mai mulți ofertanți
+
+Au participat 5 bidderi:
+
+Ioana
+Mihai
+Daria
+Andrei
+Alex
+
+Auctioneer a primit 5 oferte:
+
+[Auctioneer] licitația s-a încheiat; oferte=5
+
+BiddingProcessor a ales corect oferta maximă:
+
+Ioana: 9936
+Alex: 9543
+Daria: 5188
+Andrei: 4871
+Mihai: 1416
+
+Prin urmare:
+
+[Ioana] Licitatie castigata! Pret: 9936
+
+este rezultatul corect.
+
+2. Primește evaluări între 1 și 5
+
+Ai trimis toate cele cinci valori posibile:
+
+Daria  -> 5
+Mihai  -> 4
+Andrei -> 3
+Ioana  -> 2
+Alex   -> 1
+
+În cod, validarea este:
+
+require(score in 1..5) {
+    "Evaluarea trebuie să fie între 1 și 5"
+}
+
+Deci sunt acceptate doar valorile 1, 2, 3, 4, 5.
+
+3. Salvează numele utilizatorului și evaluarea local
+
+În fișierul CSV apar ultimele cinci evaluări:
+
+1781690646564,"Daria",5
+1781690646567,"Andrei",3
+1781690646568,"Ioana",2
+1781690646567,"Mihai",4
+1781690646577,"Alex",1
+
+Acestea sunt salvate local în:
+
+data/ratings.csv
+
+Prin urmare, cerința:
+
+să salveze numele utilizatorului și evaluarea într-un fișier local
+
+este îndeplinită.
+
+4. RatingMicroservice primește toate evaluările
+
+Ai exact cinci confirmări:
+
+[RatingService] OK evaluare salvata
+[RatingService] OK evaluare salvata
+[RatingService] OK evaluare salvata
+[RatingService] OK evaluare salvata
+[RatingService] OK evaluare salvata
+
+Și fiecare bidder primește confirmarea:
+
+OK evaluare salvata
+Atenție înainte de prezentare
+
+Fișierul tău conține și evaluările vechi de la testul cu 100 de bidderi. Nu este o eroare, deoarece aplicația adaugă datele la finalul fișierului.
+
+Înainte de prezentare, șterge fișierul vechi:
+
+cd ~/Downloads/subiect14-okazii-rating-fixed-v2
+rm -f data/ratings.csv
+
+Apoi pornești din nou serviciile și cei 5 bidderi. La final:
+
+cat data/ratings.csv
+
+trebuie să afișeze doar:
+
+timestampEpochMillis,username,rating
+...,"Daria",5
+...,"Mihai",4
+...,"Andrei",3
+...,"Ioana",2
+...,"Alex",1
+
+Ordinea liniilor poate fi diferită, deoarece bidderii rulează simultan. Este normal.
+
+Ce să spui profesorului
+
+„Am păstrat fluxul aplicației Okazii din laborator și am adăugat un microserviciu separat, RatingMicroservice. După primirea rezultatului licitației, fiecare bidder trimite numele utilizatorului și evaluarea serviciului. Evaluarea este validată să fie între 1 și 5, apoi este salvată în fișierul local data/ratings.csv. În demonstrație au participat cinci utilizatori și au fost salvate toate evaluările de la 1 la 5.”
+
+SOLID în partea de evaluări
+
+Codul este separat astfel:
+
+Rating — modelul datelor;
+RatingValidator — validează numele și scorul;
+RatingRepository — abstracția pentru salvare;
+CsvRatingRepository — salvarea efectivă în CSV;
+RatingApplicationService — coordonează validarea și salvarea;
+RatingMicroservice — comunicația prin socket și primirea cererilor.
+
+Asta susține explicația SOLID:
+
+S: fiecare clasă are o singură responsabilitate;
+O: poți adăuga alt repository, de exemplu JSON sau bază de date;
+L: o altă implementare RatingRepository poate înlocui repository-ul CSV;
+I: interfața repository are doar metoda necesară save;
+D: serviciul aplicației depinde de RatingRepository, nu direct de fișierul CSV.
+
+Concluzie: da, codul tău realizează cerința Subiectului 14. Pentru o prezentare curată, șterge CSV-ul vechi și rulează din nou demonstrația cu cei 5 bidderi.

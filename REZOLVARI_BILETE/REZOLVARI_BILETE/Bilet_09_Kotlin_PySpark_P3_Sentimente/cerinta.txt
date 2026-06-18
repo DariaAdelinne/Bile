@@ -1,0 +1,6 @@
+Să se creeze un server TCP în Kotlin care să trimită știrile Apple (AAPL)
+din ultimele 2 săptămâni câte una la 5 secunde. Utilizând Spark Streaming
+și Spark RDD, să se creeze un stream direct care să clasifice fiecare
+știre ca pozitivă/negativă/neutră pe baza fișierelor positive/negative-words.txt
+(încărcate ca RDD-uri). Rezultatul clasificării va fi afișat la consolă.
+API token: brmu7ovrh5r90ebn6jrg
