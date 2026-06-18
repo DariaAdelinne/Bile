@@ -1,2 +1,0 @@
-Acesta este un fisier de test pentru Subiect 25.
-Contiut trimis prin StreamProcessor cu corutine Kotlin.

@@ -1,3 +1,0 @@
-o cerere post la http://localhost:8080/union   
-
-corp java gol '{}'

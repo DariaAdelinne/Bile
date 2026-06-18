@@ -1,1 +1,0 @@
-ma duc in weatherapp.kt si dau run dupa care deschid linkuri dupa WeatherAppController
