@@ -14,11 +14,11 @@ Multimi: 3, 4, 16, 17                     https://github.com/DariaAdelinne/Multi
 Aplicatii Meteo: 5, 35, 36, 37, 40        https://github.com/DariaAdelinne/AplicatiiMeteo
 Okazii: 6, 14, 21, 22                     https://github.com/DariaAdelinne/Okazii-procesoare-flux
 Docker: 2, 24, 25, 26, 27, 28, 29, 46     https://github.com/DariaAdelinne/Docker
-Spark: 7, 30, 33  ;  8, 31, 32            https://github.com/DariaAdelinne/Spark
+Spark: 7, 30, 33  ;  8, 31, 32, 34        https://github.com/DariaAdelinne/Spark
 Rest, Crud, Cache: 1, 10, 12, 13          https://github.com/DariaAdelinne/REST-CRUD-Cache
 RabbitMQ: 18, 19, 20, 23                  https://github.com/DariaAdelinne/Rabbit-MQ
 Map-Reduce:11, 15                         https://github.com/DariaAdelinne/Map-Reduce
-Micronaut: 38, 47                         https://github.com/DariaAdelinne/Bile
+Micronaut: 38, 39, 47                     https://github.com/DariaAdelinne/Bile
 poate_ne_vedem_la_toamna: 41, 42, 43, 44, 45     https://github.com/DariaAdelinne/poate-avem-noroc-la-anu
 
 
