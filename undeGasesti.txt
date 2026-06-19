@@ -10,16 +10,16 @@ git sparse-checkout set "Docker/Bilet_24"
 
 
 
-Multimi: 3, 4, 16, 17                 https://github.com/DariaAdelinne/Multimi
-Aplicatii Meteo: 5, 35, 36, 37, 40    https://github.com/DariaAdelinne/AplicatiiMeteo
-Okazii: 6, 14, 21, 22                 https://github.com/DariaAdelinne/Okazii-procesoare-flux
-Docker: 2, 24, 25, 26, 27, 28, 29     https://github.com/DariaAdelinne/Docker
-Spark: 7, 30, 33  ;  8, 31, 32        https://github.com/DariaAdelinne/Spark
-Rest, Crud, Cache: 1, 10, 12, 13      https://github.com/DariaAdelinne/REST-CRUD-Cache
-RabbitMQ: 18, 19, 20, 23              https://github.com/DariaAdelinne/Rabbit-MQ
-Map-Reduce:11, 15                     https://github.com/DariaAdelinne/Map-Reduce
-Micronaut: 38                         https://github.com/DariaAdelinne/Bile
-POATE_NE_VEDEM_LA_TOAMNA: 41, 42, 43, 44, 45     https://github.com/DariaAdelinne/poate-avem-noroc-la-anu
+Multimi: 3, 4, 16, 17                     https://github.com/DariaAdelinne/Multimi
+Aplicatii Meteo: 5, 35, 36, 37, 40        https://github.com/DariaAdelinne/AplicatiiMeteo
+Okazii: 6, 14, 21, 22                     https://github.com/DariaAdelinne/Okazii-procesoare-flux
+Docker: 2, 24, 25, 26, 27, 28, 29, 46     https://github.com/DariaAdelinne/Docker
+Spark: 7, 30, 33  ;  8, 31, 32            https://github.com/DariaAdelinne/Spark
+Rest, Crud, Cache: 1, 10, 12, 13          https://github.com/DariaAdelinne/REST-CRUD-Cache
+RabbitMQ: 18, 19, 20, 23                  https://github.com/DariaAdelinne/Rabbit-MQ
+Map-Reduce:11, 15                         https://github.com/DariaAdelinne/Map-Reduce
+Micronaut: 38, 47                         https://github.com/DariaAdelinne/Bile
+poate_ne_vedem_la_toamna: 41, 42, 43, 44, 45     https://github.com/DariaAdelinne/poate-avem-noroc-la-anu
 
 
 
@@ -401,7 +401,14 @@ Detaliere (din PDF):
 - Logica grafului: daca entry_node e cheie in HashMap si are tranzitia ceruta -> intoarce nodul
   destinatie (operatie valida); altfel -> "no se puede".
 
+SUBIECT 46
+-------------
+Pornind de la aplicația exemplu de chat din laboratorul 8, să se modifice aceasta prin utilizarea corutinelor și introducerea unui procesor de flux care implementează multicast-ul (unul la mai mulți - trebuie să existe posibilitatea creării unui subgrup de studenți cu ajutorul unui microserviciu suplimentar de tip web care va prezenta o pagina web cu toți utilizatorii și va permite selectia subgrupului precum si conținutul mesajului). Microserviciile conform definiției unui microserviciu vor fi fiecare în masina lor virtuala. Dacă se consideră necesar se mai pot crea oricâte servicii se dorește conform gândirii studentului. Se va utiliza coregrafia și respectarea principiilor SOLID pentru microservicii. La prezentare se va arata diagrama de servicii și apoi cea de clase asociate implementarii fiecarui serviciu și se va explica aceasta împreună cu gradul de respectare a principiilor Solid pentru microservicii dar și solid pentru clase in cazul in care implementarea unui serviciu este mai complicata. Apoi va urma discuția pe cod.
 
+
+SUBIECT 47
+-------------
+Utilizand functii servless sa se implementeze automatul de mai jos, fiecare stare este gestionata de o aplicatie servless iar datele vin fin Kafka unde fiecare coada este asociata unei stari. Pentru introducerea datelor in cealalta parte a lui Kafka va fi un serviciu REST care le preia de la utlizator ai le pune in cozi.
 
 
 --- CATEGORIE 1: REST / CRUD / Cache / Microservicii (Laboratoarele 4, 6) ---
